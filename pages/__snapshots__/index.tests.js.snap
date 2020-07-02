@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`the home page should render 1`] = `
+<h1
+  className="pages__Title-sc-121yijq-0 jOOztS"
+>
+  My page
+</h1>
+`;

@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "test": "jest"
   },
   "dependencies": {
     "next": "latest",
@@ -14,7 +15,10 @@
     "styled-components": "^5.0.0"
   },
   "devDependencies": {
-    "babel-plugin-styled-components": "^1.8.0"
+    "babel-jest": "^26.1.0",
+    "babel-plugin-styled-components": "^1.8.0",
+    "jest": "^26.1.0",
+    "react-test-renderer": "^16.13.1"
   },
   "license": "ISC"
 }
