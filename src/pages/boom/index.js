@@ -2,6 +2,8 @@ import styled from "styled-components";
 
 import { Title } from "../../ui";
 
-export default function Home() {
+function Boom() {
   return <Title>Boom page</Title>;
 }
+
+export default Boom;
