@@ -15,13 +15,13 @@ yarn dev
 
 ### Built with technology we ❤️
 
-- [The Apollos Project]("https://apollos.app")
-- [React]("https://reactjs.org/")
-- [Next.js]("https://nextjs.org/")
-- [Apollo]("https://www.apollographql.com/")
-- [StyledComponents]("#StyledComponents")
-- [Storybook]("#Storybook")
-- [Jest]("#Jest")
+- [The Apollos Project](https://apollos.app)
+- [React](https://reactjs.org/)
+- [Next.js](https://nextjs.org/)
+- [Apollo](https://www.apollographql.com/)
+- [StyledComponents](#styledcomponents)
+- [Storybook](#Storybook)
+- [Jest](#Jest)
 
 ### StyledComponents
 
