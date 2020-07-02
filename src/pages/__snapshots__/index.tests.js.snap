@@ -2,7 +2,7 @@
 
 exports[`the home page should render 1`] = `
 <h1
-  className="pages__Title-sc-121yijq-0 jOOztS"
+  className="pages__Title-v3zfi9-0 ORmyw"
 >
   My page
 </h1>
