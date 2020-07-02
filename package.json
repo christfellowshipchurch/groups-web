@@ -6,6 +6,7 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
+    "storybook": "start-storybook -p 6006",
     "test": "jest"
   },
   "dependencies": {
@@ -16,7 +17,10 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-export-default-from": "^7.10.4",
+    "@storybook/addons": "^5.3.19",
+    "@storybook/react": "^5.3.19",
     "babel-jest": "^26.1.0",
+    "babel-loader": "^8.1.0",
     "babel-plugin-styled-components": "^1.8.0",
     "jest": "^26.1.0",
     "react-test-renderer": "^16.13.1"
