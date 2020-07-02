@@ -1,10 +1,19 @@
-import styled from 'styled-components'
+import styled from "styled-components";
+import Link from "next/link";
 
-const Title = styled.h1`
-  font-size: 50px;
-  color: ${({ theme }) => theme.colors.primary};
-`
+import { Title } from "../ui";
 
 export default function Home() {
-  return <Title>My page</Title>
+  return (
+    <>
+      <Title>My page</Title>
+      <ul>
+        <li>
+          <Link href="/boom">
+            <a>Boom</a>
+          </Link>
+        </li>
+      </ul>
+    </>
+  );
 }
