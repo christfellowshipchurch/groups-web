@@ -2,7 +2,7 @@ import App from "next/app";
 
 import Providers from "../Providers";
 
-export default class MyApp extends App {
+class MyApp extends App {
   render() {
     const { Component, pageProps } = this.props;
     return (
@@ -12,3 +12,5 @@ export default class MyApp extends App {
     );
   }
 }
+
+export default MyApp;
