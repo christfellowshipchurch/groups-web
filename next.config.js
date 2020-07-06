@@ -8,7 +8,7 @@ if (dotEnvResult.error) {
 
 module.exports = {
   env: {
-    TEST: process.env.TEST,
-    BACKEND_URL: prod ? "https://api.example.com" : "https://localhost:8080"
+    API: process.env.API,
+    TEST: process.env.TEST
   }
 };
