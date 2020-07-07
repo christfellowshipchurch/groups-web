@@ -31,6 +31,38 @@ This project integrates Apollo with Next and is SSR ready by allowing us to wrap
 
 On initial page load, while on the server and inside getInitialProps, we invoke the Apollo method, getDataFromTree. This method returns a promise; at the point in which the promise resolves, our Apollo Client store is completely initialized.
 
+<details>
+<summary>Query Examples</summary>
+<br />
+
+**Client side query (default behavior)**
+
+```javascript
+import { useQuery } from "@apollo/react-hooks";
+
+function Boom() {
+  const { data } = useQuery(exampleQuery);
+  //...
+}
+
+export default withApollo()(ClientOnlyPage);
+```
+
+**SSR enabled query**
+
+```javascript
+import { useQuery } from "@apollo/react-hooks";
+
+function Boom() {
+  const { data } = useQuery(exampleQuery);
+  //...
+}
+
+export default withApollo({ ssr: true })(ClientOnlyPage);
+```
+
+</details>
+
 ##### Note
 
 Do not be alarmed that you see two renders being executed. Apollo uses [`getDataFromTree`](https://www.apollographql.com/docs/react/api/react-ssr/#getdatafromtree) to recursively traverse the React render tree looking for Apollo query components. When it has done that, it fetches all these queries and then passes the result to a cache. This cache is then used to render the data on the server side (another React render).
@@ -46,7 +78,7 @@ For this purpose we are extending the `<Document />` and injecting the server si
 When wrapping a [Link](https://nextjs.org/docs/api-reference/next/link) from `next/link` within a styled-component, the [as](https://styled-components.com/docs/api#as-polymorphic-prop) prop provided by `styled` will collide with the Link's `as` prop and cause styled-components to throw an `Invalid tag` error. To avoid this, you can either use the recommended [forwardedAs](https://styled-components.com/docs/api#forwardedas-prop) prop from styled-components or use a different named prop to pass to a `styled` Link.
 
 <details>
-<summary>Click to expand workaround example</summary>
+<summary>Workaround example</summary>
 <br />
 
 **src/components/StyledLink.js**
