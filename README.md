@@ -18,10 +18,22 @@ yarn dev
 - [The Apollos Project](https://apollos.app)
 - [React](https://reactjs.org/)
 - [Next.js](https://nextjs.org/)
-- [Apollo](https://www.apollographql.com/)
+- [Apollo](#Apollo)
 - [StyledComponents](#styledcomponents)
 - [Storybook](#Storybook)
 - [Jest](#Jest)
+
+### Apollo
+
+[Apollo](https://www.apollographql.com/) is a GraphQL client that allows you to easily query the exact data you need from a GraphQL server. In addition to fetching and mutating data, Apollo analyzes your queries and their results to construct a client-side cache of your data, which is kept up to date as further queries and mutations are run, fetching more results from the server.
+
+This project integrates Apollo with Next and is SSR ready by allowing us to wrap necessary `/pages` inside a custom [`withApollo`](https://github.com/christfellowshipchurch/groups-web/blob/master/src/lib/apollo.js#L74-L176) higher-order component (HOC). Using the HOC pattern allows us to pass down a central store of query result data created by Apollo into the React component hierarchy for that page while maintaining Next optimizations like [Automatic Static Optimization](https://nextjs.org/docs/advanced-features/automatic-static-optimization).
+
+On initial page load, while on the server and inside getInitialProps, we invoke the Apollo method, getDataFromTree. This method returns a promise; at the point in which the promise resolves, our Apollo Client store is completely initialized.
+
+##### Note
+
+Do not be alarmed that you see two renders being executed. Apollo uses [`getDataFromTree`](https://www.apollographql.com/docs/react/api/react-ssr/#getdatafromtree) to recursively traverse the React render tree looking for Apollo query components. When it has done that, it fetches all these queries and then passes the result to a cache. This cache is then used to render the data on the server side (another React render).
 
 ### StyledComponents
 
@@ -29,7 +41,7 @@ This project uses [StyledComponents](https://github.com/styled-components/styled
 
 For this purpose we are extending the `<Document />` and injecting the server side rendered styles into the `<head>`, and also adding the `babel-plugin-styled-components` (which is required for server side rendering). Additionally we set up a global [theme](https://www.styled-components.com/docs/advanced#theming) for styled-components using NextJS custom [`<App>`](https://nextjs.org/docs/advanced-features/custom-app) component.
 
-#### Notes
+##### Note
 
 When wrapping a [Link](https://nextjs.org/docs/api-reference/next/link) from `next/link` within a styled-component, the [as](https://styled-components.com/docs/api#as-polymorphic-prop) prop provided by `styled` will collide with the Link's `as` prop and cause styled-components to throw an `Invalid tag` error. To avoid this, you can either use the recommended [forwardedAs](https://styled-components.com/docs/api#forwardedas-prop) prop from styled-components or use a different named prop to pass to a `styled` Link.
 

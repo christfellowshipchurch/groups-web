@@ -1,45 +1,13 @@
-import gql from "graphql-tag";
 import { useQuery } from "@apollo/react-hooks";
 
 import { withApollo } from "../../lib/apollo";
 import { Title } from "../../ui";
 
-const boom = gql`
-  query getBrowseFilters {
-    getBrowseFilters {
-      id
-      childContentItemsConnection(first: 1) {
-        edges {
-          node {
-            id
-
-            childContentItemsConnection(first: 1) {
-              edges {
-                node {
-                  id
-
-                  childContentItemsConnection(first: 4) {
-                    edges {
-                      node {
-                        id
-                        title
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-`;
+import exampleQuery from "./exampleQuery";
 
 function Boom() {
-  const { data } = useQuery(boom);
+  const { data } = useQuery(exampleQuery);
 
-  console.count("Boom");
   return (
     <>
       <Title>Boom pages</Title>
