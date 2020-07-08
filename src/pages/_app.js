@@ -1,6 +1,6 @@
-import App from "next/app";
+import App from 'next/app';
 
-import Providers from "../Providers";
+import Providers from '../Providers';
 
 class MyApp extends App {
   render() {

@@ -1,9 +1,9 @@
-import { useQuery } from "@apollo/react-hooks";
+import { useQuery } from '@apollo/react-hooks';
 
-import { withApollo } from "../../lib/apollo";
-import { Title } from "../../ui";
+import { withApollo } from '../../lib/apollo';
+import { Title } from '../../ui';
 
-import exampleQuery from "./exampleQuery";
+import exampleQuery from './exampleQuery';
 
 function Boom() {
   const { data } = useQuery(exampleQuery);

@@ -1,8 +1,8 @@
-import App from "next/app";
-import Head from "next/head";
-import { ApolloProvider } from "@apollo/react-hooks";
+import App from 'next/app';
+import Head from 'next/head';
+import { ApolloProvider } from '@apollo/react-hooks';
 
-import createApolloClient from "../createApolloClient";
+import createApolloClient from '../createApolloClient';
 
 // On the client, we store the Apollo Client in the following variable.
 // This prevents the client from reinitializing between page transitions.
@@ -14,16 +14,16 @@ let globalApolloClient = null;
  * inside getStaticProps, getStaticPaths or getServerSideProps
  * @param {NextPageContext | NextAppContext} ctx
  */
-const initOnContext = ctx => {
+const initOnContext = (ctx) => {
   const inAppContext = Boolean(ctx.ctx);
 
   // We consider installing `withApollo({ ssr: true })` on global App level
   // as antipattern since it disables project wide Automatic Static Optimization.
-  if (process.env.NODE_ENV === "development") {
+  if (process.env.NODE_ENV === 'development') {
     if (inAppContext) {
       console.warn(
-        "Warning: You have opted-out of Automatic Static Optimization due to `withApollo` in `pages/_app`.\n" +
-          "Read more: https://err.sh/next.js/opt-out-auto-static-optimization\n"
+        'Warning: You have opted-out of Automatic Static Optimization due to `withApollo` in `pages/_app`.\n' +
+          'Read more: https://err.sh/next.js/opt-out-auto-static-optimization\n'
       );
     }
   }
@@ -59,7 +59,7 @@ const initOnContext = ctx => {
 const initApolloClient = (initialState, ctx) => {
   // Make sure to create a new client for every server-side request so that data
   // isn't shared between connections (which would be bad)
-  if (typeof window === "undefined") {
+  if (typeof window === 'undefined') {
     return createApolloClient(initialState, ctx);
   }
 
@@ -79,7 +79,7 @@ const initApolloClient = (initialState, ctx) => {
  * @param  {Boolean} [withApolloOptions.ssr=false]
  * @returns {(PageComponent: ReactNode) => ReactNode}
  */
-const withApollo = ({ ssr = false } = {}) => PageComponent => {
+const withApollo = ({ ssr = false } = {}) => (PageComponent) => {
   const WithApollo = ({ apolloClient, apolloState, ...pageProps }) => {
     let client;
     if (apolloClient) {
@@ -98,14 +98,14 @@ const withApollo = ({ ssr = false } = {}) => PageComponent => {
   };
 
   // Set the correct displayName in development
-  if (process.env.NODE_ENV !== "production") {
+  if (process.env.NODE_ENV !== 'production') {
     const displayName =
-      PageComponent.displayName || PageComponent.name || "Component";
+      PageComponent.displayName || PageComponent.name || 'Component';
     WithApollo.displayName = `withApollo(${displayName})`;
   }
 
   if (ssr || PageComponent.getInitialProps) {
-    WithApollo.getInitialProps = async ctx => {
+    WithApollo.getInitialProps = async (ctx) => {
       const inAppContext = Boolean(ctx.ctx);
       const { apolloClient } = initOnContext(ctx);
 
@@ -118,7 +118,7 @@ const withApollo = ({ ssr = false } = {}) => PageComponent => {
       }
 
       // Only on the server:
-      if (typeof window === "undefined") {
+      if (typeof window === 'undefined') {
         const { AppTree } = ctx;
         // When redirecting, the response is finished.
         // No point in continuing to render
@@ -131,7 +131,7 @@ const withApollo = ({ ssr = false } = {}) => PageComponent => {
           try {
             // Import `@apollo/react-ssr` dynamically.
             // We don't want to have this in our client bundle.
-            const { getDataFromTree } = await import("@apollo/react-ssr");
+            const { getDataFromTree } = await import('@apollo/react-ssr');
 
             // Since AppComponents and PageComponents have different context types
             // we need to modify their props a little.
@@ -152,7 +152,7 @@ const withApollo = ({ ssr = false } = {}) => PageComponent => {
             // Prevent Apollo Client GraphQL errors from crashing SSR.
             // Handle them in components via the data.error prop:
             // https://www.apollographql.com/docs/react/api/react-apollo.html#graphql-query-data-error
-            console.error("Error while running `getDataFromTree`", error);
+            console.error('Error while running `getDataFromTree`', error);
           }
 
           // getDataFromTree does not call componentWillUnmount
@@ -167,7 +167,7 @@ const withApollo = ({ ssr = false } = {}) => PageComponent => {
         apolloState: apolloClient.cache.extract(),
         // Provide the client for ssr. As soon as this payload
         // gets JSON.stringified it will remove itself.
-        apolloClient: ctx.apolloClient
+        apolloClient: ctx.apolloClient,
       };
     };
   }

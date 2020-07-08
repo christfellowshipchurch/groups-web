@@ -1,7 +1,7 @@
 const theme = {
   colors: {
-    primary: "salmon"
-  }
+    primary: 'salmon',
+  },
 };
 
 export default theme;

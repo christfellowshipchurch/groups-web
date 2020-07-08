@@ -1,5 +1,5 @@
-import { storiesOf } from "@storybook/react";
+import { storiesOf } from '@storybook/react';
 
-import Boom from "./";
+import Boom from '.';
 
-storiesOf("pages/boom", module).add("default", () => <Boom />);
+storiesOf('pages/boom', module).add('default', () => <Boom />);

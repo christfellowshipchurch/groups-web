@@ -1,7 +1,7 @@
-import styled from "styled-components";
-import Link from "next/link";
+import styled from 'styled-components';
+import Link from 'next/link';
 
-import { Title } from "../ui";
+import { Title } from '../ui';
 
 export default function Home() {
   return (
