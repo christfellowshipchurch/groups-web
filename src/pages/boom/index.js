@@ -1,3 +1,4 @@
+import React from 'react';
 import { useQuery } from '@apollo/react-hooks';
 
 import { withApollo } from '../../lib/apollo';
@@ -18,7 +19,7 @@ function Boom() {
           )
         )}
       </ul>
-      <p>Environment variable process.env.TEST is "{process.env.TEST}"</p>
+      <p>{`Environment variable process.env.TEST is "${process.env.TEST}"`}</p>
     </>
   );
 }

@@ -1,3 +1,4 @@
+import React from 'react';
 import App from 'next/app';
 
 import Providers from '../Providers';
