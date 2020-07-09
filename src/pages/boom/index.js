@@ -2,7 +2,7 @@ import React from 'react';
 import { useQuery } from '@apollo/react-hooks';
 
 import { withApollo } from '../../lib/apollo';
-import { Title } from '../../ui';
+import { Title } from '../../ui-kit';
 
 import exampleQuery from './exampleQuery';
 

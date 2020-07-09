@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 
-import { Title } from '../ui';
+import { Title } from '../ui-kit';
 
 export default function Home() {
   return (

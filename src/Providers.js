@@ -2,10 +2,10 @@ import React from 'react';
 import { ThemeProvider } from 'styled-components';
 import PropTypes from 'prop-types';
 
-import theme from './theme';
+import { defaultTheme } from './ui-kit/theme';
 
 const Providers = ({ children }) => (
-  <ThemeProvider theme={theme}>{children}</ThemeProvider>
+  <ThemeProvider theme={defaultTheme}>{children}</ThemeProvider>
 );
 
 Providers.propTypes = {
