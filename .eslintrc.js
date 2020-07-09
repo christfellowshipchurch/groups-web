@@ -1,3 +1,3 @@
 module.exports = {
-  extends: ["@apollosproject/eslint-config/web"]
+  extends: ['@apollosproject/eslint-config/web'],
 };

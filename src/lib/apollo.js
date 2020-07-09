@@ -9,6 +9,27 @@ import createApolloClient from '../createApolloClient';
 let globalApolloClient = null;
 
 /**
+ * Always creates a new apollo client on the server
+ * Creates or reuses apollo client in the browser.
+ * @param  {NormalizedCacheObject} initialState
+ * @param  {NextPageContext} ctx
+ */
+const initApolloClient = (initialState, ctx) => {
+  // Make sure to create a new client for every server-side request so that data
+  // isn't shared between connections (which would be bad)
+  if (typeof window === 'undefined') {
+    return createApolloClient(initialState, ctx);
+  }
+
+  // Reuse client on the client-side
+  if (!globalApolloClient) {
+    globalApolloClient = createApolloClient(initialState, ctx);
+  }
+
+  return globalApolloClient;
+};
+
+/**
  * Installs the Apollo Client on NextPageContext
  * or NextAppContext. Useful if you want to use apolloClient
  * inside getStaticProps, getStaticPaths or getServerSideProps
@@ -48,27 +69,6 @@ const initOnContext = (ctx) => {
   }
 
   return ctx;
-};
-
-/**
- * Always creates a new apollo client on the server
- * Creates or reuses apollo client in the browser.
- * @param  {NormalizedCacheObject} initialState
- * @param  {NextPageContext} ctx
- */
-const initApolloClient = (initialState, ctx) => {
-  // Make sure to create a new client for every server-side request so that data
-  // isn't shared between connections (which would be bad)
-  if (typeof window === 'undefined') {
-    return createApolloClient(initialState, ctx);
-  }
-
-  // Reuse client on the client-side
-  if (!globalApolloClient) {
-    globalApolloClient = createApolloClient(initialState, ctx);
-  }
-
-  return globalApolloClient;
 };
 
 /**
