@@ -22,6 +22,7 @@ yarn dev
 - [StyledComponents](#styledcomponents)
 - [Storybook](#Storybook)
 - [Jest](#Jest)
+- [Eslint + Prettier](#eslint--prettier)
 
 ### Apollo
 
@@ -33,7 +34,6 @@ On initial page load, while on the server and inside getInitialProps, we invoke 
 
 <details>
 <summary>Query Examples</summary>
-<br />
 
 **Client side query (default behavior)**
 
@@ -79,7 +79,6 @@ When wrapping a [Link](https://nextjs.org/docs/api-reference/next/link) from `ne
 
 <details>
 <summary>Workaround example</summary>
-<br />
 
 **src/components/StyledLink.js**
 
@@ -150,22 +149,30 @@ yarn test -u
 
 ### ESLint + Prettier
 
-We use ESLint in collaboration with Prettier to keep code clean and free of potential errors. Our ESLint configuration is dependent on the [eslint-config-airbnb](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb) package.
+We use [ESLint](https://eslint.org/) in collaboration with [Prettier](https://prettier.io/) to keep code clean and free of potential errors. Our ESLint configuration is dependent on the [eslint-config-airbnb](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb) package.
 
-ESLint and all required packages are built-in so once you `yarn`, you'll have the linter enabled. However, Prettier will need to be downloaded using your preferred code editor.
+ESLint and all required packages are built-in so once you `yarn`, you'll have the linter enabled. If you don't have a `schema.json` in your root directory you will need to run `yarn generate-schema`. A Prettier plugin will need to be downloaded using your preferred code editor.
 
-#### Install/Configure using Atom
+#### Install/Configure using
 
-- Prettier is a package you can download by going to Preferences > Install > search "Prettier"
-- Download the package, "prettier-atom"
-- In the settings menu for the package, make sure `ESLint Integration` is checked.
+<details>
+<summary>Atom</summary>
+<ul>
+  <li>Preferences > Install > search "Prettier"</li>
+  <li>Download the package, "prettier-atom"</li>
+  <li>In the settings menu for the package, make sure `ESLint Integration` is checked.</li>
+</ul>
+</details>
 
-#### Install/Configure using VS Code
+<details>
+<summary>VS Code</summary>
+<ul>
+  <li>You actually don't need the Prettier extension on VS code, just the ESLint extension</li>
+  <li>Download the ESLint extension by clicking the `Extension` icon and searching for `ESLINT`</li>
+  <li>Open up your `USER_SETTINGS` by going to Preferences > Settings</li>
+</ul>
 
-- You actually don't need the Prettier extension on VS code, just the ESLint extension
-- Download the ESLint extension by clicking the `Extension` icon and searching for `ESLINT`
-- Open up your `USER_SETTINGS` by going to Preferences > Settings
-- Make sure your settings have the following:
+**Make sure your settings have the following**
 
 ```json
 {
@@ -179,7 +186,12 @@ ESLint and all required packages are built-in so once you `yarn`, you'll have th
 }
 ```
 
-#### Install/Configure using Sublime
+</details>
 
-- You will need to install the [sublime-prettier](https://github.com/danreeves/sublime-prettier) plugins
-- Make sure you go through the above links instructions to correctly install this plugin.
+<details>
+<summary>Sublime</summary>
+<ul>
+  <li>You will need to install the <a href="https://github.com/danreeves/sublime-prettier" />sublime-prettier</a> plugin</li>
+  <li>Make sure you go through the above links instructions to correctly install this plugin.</li>
+</ul>
+</details>
