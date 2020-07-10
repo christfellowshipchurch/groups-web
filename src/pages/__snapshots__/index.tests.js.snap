@@ -1,9 +1,22 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`the home page should render 1`] = `
-<h1
-  className="pages__Title-v3zfi9-0 ORmyw"
->
-  My page
-</h1>
+Array [
+  <h1
+    className="Title-sc-1kmdb0u-0 uSapQ"
+  >
+    My page
+  </h1>,
+  <ul>
+    <li>
+      <a
+        href="/boom"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+      >
+        Boom
+      </a>
+    </li>
+  </ul>,
+]
 `;
