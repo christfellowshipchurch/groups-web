@@ -4,16 +4,12 @@ import { storiesOf } from '@storybook/react';
 import CardWrapper from '.';
 
 storiesOf('ui-kit/Card/CardWrapper', module)
-  .add('Default', () => <CardWrapper>Boom!</CardWrapper>)
-  .add('With backgroundColor', () => {
-    const cardDimensions = {
-      height: 400,
-      width: '92%',
+  .addDecorator((story) => <div style={{ width: '50%' }}>{story()}</div>)
+  .add('default', () => <CardWrapper>Boom!</CardWrapper>)
+  .add('cardColor', () => {
+    const styles = {
+      paddingTop: '56.25%',
+      width: '100%',
     };
-
-    return (
-      <CardWrapper style={cardDimensions} cardColor={'salmon'}>
-        Boom!
-      </CardWrapper>
-    );
+    return <CardWrapper cardColor={'salmon'} style={styles} />;
   });
