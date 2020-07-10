@@ -6,36 +6,31 @@ import PropTypes from 'prop-types';
 
 const StyledCard = styled.div`
   /* card styles */
-  backgroundcolor: ${({ cardColor, theme }) =>
+  background: ${({ cardColor, theme }) =>
     cardColor ||
     theme.colors.background.paper ||
     undefined}; /* bail out if no bg color */
-  borderradius: ${({ theme }) => theme.sizing.borderRadius};
-  ${({ inHorizontalList }) =>
+  border-radius: ${({ theme }) => theme.sizing.baseBorderRadius}px;
+  ${({ inHorizontalList, theme }) =>
     inHorizontalList
       ? `
         /* provides spacing between cards also fixes android shadow needing "space" to render into */
-        margin: 8px,
-        marginBottom: 12px,
+        margin: ${theme.sizing.baseUnit * 0.5}px;
+        marginBottom: ${theme.sizing.baseUnit * 0.75}px;
       `
       : `
-        marginHorizontal: 16px,
-        marginVertical: 12px,
-      `},;
+        margin: ${theme.sizing.baseUnit * 0.75}px ${theme.sizing.baseUnit}px;
+      `}
   ${({ theme }) => theme.shadows.default};
 `;
 
-const Card = ({ children, forceRatio, ...otherProps }) => (
-  <StyledCard forceRatio={forceRatio} {...otherProps}>
-    {children}
-  </StyledCard>
+const Card = ({ children, ...otherProps }) => (
+  <StyledCard {...otherProps}>{children}</StyledCard>
 );
 
 Card.propTypes = {
   cardColor: PropTypes.string,
-  children: PropTypes.node,
-  forceRatio: PropTypes.number,
-  style: PropTypes.any, // eslint-disable-line
+  children: PropTypes.node.isRequired,
 };
 
 export default Card;
