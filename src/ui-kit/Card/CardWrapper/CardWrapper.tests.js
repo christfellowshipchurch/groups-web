@@ -1,8 +1,7 @@
 import React from 'react';
-import { Text } from 'react-native';
 import renderer from 'react-test-renderer';
 
-import Providers from '../../Providers';
+import Providers from '../../../Providers';
 
 import CardWrapper from '.';
 
@@ -10,17 +9,7 @@ describe('the CardWrapper component', () => {
   it('should render', () => {
     const tree = renderer.create(
       <Providers>
-        <CardWrapper />
-      </Providers>
-    );
-    expect(tree).toMatchSnapshot();
-  });
-  it('should render children', () => {
-    const tree = renderer.create(
-      <Providers>
-        <CardWrapper>
-          <Text>Boom!</Text>
-        </CardWrapper>
+        <CardWrapper>Boom!</CardWrapper>
       </Providers>
     );
     expect(tree).toMatchSnapshot();
@@ -28,22 +17,20 @@ describe('the CardWrapper component', () => {
   it('should accept a backgroundColor', () => {
     const tree = renderer.create(
       <Providers>
-        <CardWrapper backgroundColor={'salmon'}>
-          <Text>Boom!</Text>
-        </CardWrapper>
+        <CardWrapper cardColor={'salmon'}>Boom!</CardWrapper>
       </Providers>
     );
     expect(tree).toMatchSnapshot();
   });
   it('should accept and render passed in styles', () => {
     const cardDimensions = {
-      height: 400,
-      width: '92%',
+      paddingTop: '56.25%',
+      width: '100%',
     };
 
     const tree = renderer.create(
       <Providers>
-        <CardWrapper style={cardDimensions} />
+        <CardWrapper style={cardDimensions}>Boom!</CardWrapper>
       </Providers>
     );
     expect(tree).toMatchSnapshot();
@@ -51,7 +38,7 @@ describe('the CardWrapper component', () => {
   it('should accept additional props', () => {
     const tree = renderer.create(
       <Providers>
-        <CardWrapper accessible={false} />
+        <CardWrapper role={'article listitem'}>Boom!</CardWrapper>
       </Providers>
     );
     expect(tree).toMatchSnapshot();

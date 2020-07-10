@@ -1,158 +1,40 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`the CardWrapper component should accept a backgroundColor 1`] = `
-<View
-  backgroundColor="salmon"
-  style={
-    Object {
-      "backgroundColor": "#FFFFFF",
-      "borderRadius": 16,
-      "marginHorizontal": 16,
-      "marginVertical": 12,
-      "shadowColor": "rgba(0, 0, 0, 0.09999999999999998)",
-      "shadowOffset": Object {
-        "height": 2,
-        "width": 0,
-      },
-      "shadowOpacity": 1,
-      "shadowRadius": 8,
-    }
-  }
+<div
+  className="CardWrapper__StyledCard-sc-1t3lqai-0 faYqrP"
 >
-  <View
-    style={
-      Object {
-        "borderRadius": 16,
-        "overflow": "hidden",
-      }
-    }
-  >
-    <Text>
-      Boom!
-    </Text>
-  </View>
-</View>
+  Boom!
+</div>
 `;
 
 exports[`the CardWrapper component should accept additional props 1`] = `
-<View
-  accessible={false}
-  style={
-    Object {
-      "backgroundColor": "#FFFFFF",
-      "borderRadius": 16,
-      "marginHorizontal": 16,
-      "marginVertical": 12,
-      "shadowColor": "rgba(0, 0, 0, 0.09999999999999998)",
-      "shadowOffset": Object {
-        "height": 2,
-        "width": 0,
-      },
-      "shadowOpacity": 1,
-      "shadowRadius": 8,
-    }
-  }
+<div
+  className="CardWrapper__StyledCard-sc-1t3lqai-0 kcdMke"
+  role="article listitem"
 >
-  <View
-    style={
-      Object {
-        "borderRadius": 16,
-        "overflow": "hidden",
-      }
-    }
-  />
-</View>
+  Boom!
+</div>
 `;
 
 exports[`the CardWrapper component should accept and render passed in styles 1`] = `
-<View
+<div
+  className="CardWrapper__StyledCard-sc-1t3lqai-0 kcdMke"
   style={
     Object {
-      "backgroundColor": "#FFFFFF",
-      "borderRadius": 16,
-      "height": 400,
-      "marginHorizontal": 16,
-      "marginVertical": 12,
-      "shadowColor": "rgba(0, 0, 0, 0.09999999999999998)",
-      "shadowOffset": Object {
-        "height": 2,
-        "width": 0,
-      },
-      "shadowOpacity": 1,
-      "shadowRadius": 8,
-      "width": "92%",
+      "paddingTop": "56.25%",
+      "width": "100%",
     }
   }
 >
-  <View
-    style={
-      Object {
-        "borderRadius": 16,
-        "overflow": "hidden",
-      }
-    }
-  />
-</View>
+  Boom!
+</div>
 `;
 
 exports[`the CardWrapper component should render 1`] = `
-<View
-  style={
-    Object {
-      "backgroundColor": "#FFFFFF",
-      "borderRadius": 16,
-      "marginHorizontal": 16,
-      "marginVertical": 12,
-      "shadowColor": "rgba(0, 0, 0, 0.09999999999999998)",
-      "shadowOffset": Object {
-        "height": 2,
-        "width": 0,
-      },
-      "shadowOpacity": 1,
-      "shadowRadius": 8,
-    }
-  }
+<div
+  className="CardWrapper__StyledCard-sc-1t3lqai-0 kcdMke"
 >
-  <View
-    style={
-      Object {
-        "borderRadius": 16,
-        "overflow": "hidden",
-      }
-    }
-  />
-</View>
-`;
-
-exports[`the CardWrapper component should render children 1`] = `
-<View
-  style={
-    Object {
-      "backgroundColor": "#FFFFFF",
-      "borderRadius": 16,
-      "marginHorizontal": 16,
-      "marginVertical": 12,
-      "shadowColor": "rgba(0, 0, 0, 0.09999999999999998)",
-      "shadowOffset": Object {
-        "height": 2,
-        "width": 0,
-      },
-      "shadowOpacity": 1,
-      "shadowRadius": 8,
-    }
-  }
->
-  <View
-    style={
-      Object {
-        "borderRadius": 16,
-        "overflow": "hidden",
-      }
-    }
-  >
-    <Text>
-      Boom!
-    </Text>
-  </View>
-</View>
+  Boom!
+</div>
 `;
