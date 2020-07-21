@@ -6,7 +6,7 @@ const theme = {
     },
   },
   sizing: {
-    baseUnit: '16',
+    baseUnit: (unit = 1) => `${unit}rem`,
     baseBorderRadius: '16',
     avatar: {
       small: '40',

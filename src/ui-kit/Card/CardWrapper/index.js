@@ -11,16 +11,12 @@ const StyledCard = styled.div`
     theme.colors.background.paper ||
     undefined}; /* bail out if no bg color */
   border-radius: ${({ theme }) => theme.sizing.baseBorderRadius}px;
-  ${({ inHorizontalList, theme }) =>
+  margin: ${({ inHorizontalList, theme }) =>
     inHorizontalList
-      ? `
-        /* provides spacing between cards */
-        margin: ${theme.sizing.baseUnit * 0.5}px;
-        marginBottom: ${theme.sizing.baseUnit * 0.75}px;
-      `
-      : `
-        margin: ${theme.sizing.baseUnit * 0.75}px ${theme.sizing.baseUnit}px;
-      `}
+      ? `${theme.sizing.baseUnit(0.5)}
+      ${theme.sizing.baseUnit(0.5)}
+      ${theme.sizing.baseUnit(0.75)}`
+      : `${theme.sizing.baseUnit(0.75)} ${theme.sizing.baseUnit(1)}`};
   ${({ theme }) => theme.shadows.default};
 `;
 
