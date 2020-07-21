@@ -14,7 +14,7 @@ const StyledCard = styled.div`
   ${({ inHorizontalList, theme }) =>
     inHorizontalList
       ? `
-        /* provides spacing between cards also fixes android shadow needing "space" to render into */
+        /* provides spacing between cards */
         margin: ${theme.sizing.baseUnit * 0.5}px;
         marginBottom: ${theme.sizing.baseUnit * 0.75}px;
       `
