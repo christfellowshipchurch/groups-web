@@ -15,7 +15,7 @@ const theme = {
     },
   },
   shadows: {
-    default: 'box-shadow: 0px 5px 18px rgba(0, 0, 0, 0.1)',
+    default: '0px 5px 18px rgba(0, 0, 0, 0.1)',
   },
 };
 

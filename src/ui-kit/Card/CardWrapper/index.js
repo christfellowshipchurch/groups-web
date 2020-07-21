@@ -17,7 +17,7 @@ const StyledCard = styled.div`
       ${theme.sizing.baseUnit(0.5)}
       ${theme.sizing.baseUnit(0.75)}`
       : `${theme.sizing.baseUnit(0.75)} ${theme.sizing.baseUnit(1)}`};
-  ${({ theme }) => theme.shadows.default};
+  box-shadow: ${({ theme }) => theme.shadows.default};
 `;
 
 const Card = ({ children, ...otherProps }) => (
