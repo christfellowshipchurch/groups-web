@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`the CardImage component should render 1`] = `
+.c0 {
+  width: '100%';
+}
+
+<img
+  className="c0 ui-kit.card.CardImage"
+  src="https://picsum.photos/300/200"
+/>
+`;
