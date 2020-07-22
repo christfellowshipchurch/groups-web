@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 
 import CardWrapper from '.';
 
-storiesOf('ui-kit/Card/CardWrapper', module)
+storiesOf('ui-kit/card/CardWrapper', module)
   .addDecorator((story) => <div style={{ width: '50%' }}>{story()}</div>)
   .add('default', () => <CardWrapper>Boom!</CardWrapper>)
   .add('cardColor', () => {
