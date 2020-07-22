@@ -1,6 +1,4 @@
-// import React from 'react';
 import styled from 'styled-components';
-
 import PropTypes from 'prop-types';
 
 const PaddedDiv = styled.div.attrs({
@@ -25,5 +23,7 @@ PaddedDiv.defaultProps = {
   horizontal: true,
   vertical: true,
 };
+
+PaddedDiv.displayName = 'ui-kit.PaddedDiv';
 
 export default PaddedDiv;
