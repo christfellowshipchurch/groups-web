@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 
 // import { withIsLoading } from '../../isLoading';
 
-const Card = styled.div.attrs({
-  className: 'ui-kit.Card.CardWrapper',
+const CardWrapper = styled.div.attrs({
+  className: 'ui-kit.card.CardWrapper',
 })`
   /* card styles */
   background: ${({ cardColor, theme }) =>
@@ -21,9 +21,9 @@ const Card = styled.div.attrs({
   box-shadow: ${({ theme }) => theme.shadows.default};
 `;
 
-Card.propTypes = {
+CardWrapper.propTypes = {
   cardColor: PropTypes.string,
   children: PropTypes.node.isRequired,
 };
 
-export default Card;
+export default CardWrapper;
