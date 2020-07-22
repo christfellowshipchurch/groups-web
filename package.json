@@ -50,6 +50,7 @@
     "eslint-plugin-react": "^7.20.3",
     "eslint-plugin-react-hooks": "^4.0.5",
     "jest": "^26.1.0",
+    "jest-styled-components": "^7.0.2",
     "react-test-renderer": "^16.13.1"
   },
   "license": "ISC"
