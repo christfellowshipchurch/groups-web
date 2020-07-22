@@ -2,15 +2,12 @@
 
 exports[`the CardContent component should render 1`] = `
 .c0 {
-  padding-top: 1rem;
-  padding-right: 1rem;
-  padding-bottom: 1rem;
-  padding-left: 1rem;
+  padding: 1rem 1rem;
   padding: 1.5rem 2rem;
 }
 
 <div
-  className="PaddedDiv-sc-9taxng-0 c0 ui-kit.PaddedDiv ui-kit.card.CardContent"
+  className="sc-9taxng-0 c0 ui-kit.PaddedDiv ui-kit.card.CardContent"
 >
   Boom!
 </div>

@@ -4,14 +4,12 @@ import PropTypes from 'prop-types';
 const PaddedDiv = styled.div.attrs({
   className: 'ui-kit.PaddedDiv',
 })`
-  padding-top: ${({ theme, vertical }) =>
-    vertical ? theme.sizing.baseUnit(1) : 0};
-  padding-right: ${({ theme, horizontal }) =>
-    horizontal ? theme.sizing.baseUnit(1) : 0};
-  padding-bottom: ${({ theme, vertical }) =>
-    vertical ? theme.sizing.baseUnit(1) : 0};
-  padding-left: ${({ theme, horizontal }) =>
-    horizontal ? theme.sizing.baseUnit(1) : 0};
+  padding: ${({ horizontal, theme, vertical }) => {
+    const verticalValue = vertical ? theme.sizing.baseUnit(1) : 0;
+    const horizontalValue = horizontal ? theme.sizing.baseUnit(1) : 0;
+
+    return `${verticalValue} ${horizontalValue}`;
+  }};
 `;
 
 PaddedDiv.propTypes = {

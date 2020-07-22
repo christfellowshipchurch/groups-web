@@ -2,10 +2,7 @@
 
 exports[`the PaddedDiv component should render 1`] = `
 .c0 {
-  padding-top: 1rem;
-  padding-right: 1rem;
-  padding-bottom: 1rem;
-  padding-left: 1rem;
+  padding: 1rem 1rem;
 }
 
 <div
@@ -15,10 +12,7 @@ exports[`the PaddedDiv component should render 1`] = `
 
 exports[`the PaddedDiv component should render without horizontal padding 1`] = `
 .c0 {
-  padding-top: 1rem;
-  padding-right: 0;
-  padding-bottom: 1rem;
-  padding-left: 0;
+  padding: 1rem 0;
 }
 
 <div
@@ -28,10 +22,7 @@ exports[`the PaddedDiv component should render without horizontal padding 1`] = 
 
 exports[`the PaddedDiv component should render without vertical padding 1`] = `
 .c0 {
-  padding-top: 0;
-  padding-right: 1rem;
-  padding-bottom: 0;
-  padding-left: 1rem;
+  padding: 0 1rem;
 }
 
 <div
