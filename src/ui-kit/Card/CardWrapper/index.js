@@ -1,15 +1,16 @@
-import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
 // import { withIsLoading } from '../../isLoading';
 
-const StyledCard = styled.div`
+const Card = styled.div.attrs({
+  className: 'ui-kit.Card.CardWrapper',
+})`
   /* card styles */
   background: ${({ cardColor, theme }) =>
     cardColor ||
     theme.colors.background.paper ||
-    undefined}; /* bail out if no bg color */
+    `initial`}; /* bail out if no bg color */
   border-radius: ${({ theme }) => theme.sizing.baseBorderRadius}px;
   margin: ${({ inHorizontalList, theme }) =>
     inHorizontalList
@@ -19,10 +20,6 @@ const StyledCard = styled.div`
       : `${theme.sizing.baseUnit(0.75)} ${theme.sizing.baseUnit(1)}`};
   box-shadow: ${({ theme }) => theme.shadows.default};
 `;
-
-const Card = ({ children, ...otherProps }) => (
-  <StyledCard {...otherProps}>{children}</StyledCard>
-);
 
 Card.propTypes = {
   cardColor: PropTypes.string,
