@@ -3,6 +3,13 @@
   "plugins": [
     "@babel/plugin-proposal-export-default-from",
     "graphql-tag",
-    ["styled-components", { "ssr": true }]
+    [
+      "styled-components",
+      {
+        "displayName": false,
+        "fileName": false,
+        "ssr": true
+      }
+    ]
   ]
 }
