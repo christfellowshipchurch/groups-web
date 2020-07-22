@@ -3,8 +3,8 @@ import styled from 'styled-components';
 
 import PropTypes from 'prop-types';
 
-const PaddedView = styled.div.attrs({
-  className: 'ui-kit.PaddedView',
+const PaddedDiv = styled.div.attrs({
+  className: 'ui-kit.PaddedDiv',
 })`
   padding-top: ${({ theme, vertical }) =>
     vertical ? theme.sizing.baseUnit(1) : 0};
@@ -16,14 +16,14 @@ const PaddedView = styled.div.attrs({
     horizontal ? theme.sizing.baseUnit(1) : 0};
 `;
 
-PaddedView.propTypes = {
+PaddedDiv.propTypes = {
   horizontal: PropTypes.bool,
   vertical: PropTypes.bool,
 };
 
-PaddedView.defaultProps = {
+PaddedDiv.defaultProps = {
   horizontal: true,
   vertical: true,
 };
 
-export default PaddedView;
+export default PaddedDiv;

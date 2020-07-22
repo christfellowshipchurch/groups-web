@@ -4,13 +4,13 @@ import 'jest-styled-components';
 
 import Providers from '../../Providers';
 
-import PaddedView from '.';
+import PaddedDiv from '.';
 
-describe('the PaddedView component', () => {
+describe('the PaddedDiv component', () => {
   it('should render', () => {
     const tree = renderer.create(
       <Providers>
-        <PaddedView />
+        <PaddedDiv />
       </Providers>
     );
     expect(tree).toMatchSnapshot();
@@ -18,7 +18,7 @@ describe('the PaddedView component', () => {
   it('should render without horizontal padding', () => {
     const tree = renderer.create(
       <Providers>
-        <PaddedView horizontal={false} />
+        <PaddedDiv horizontal={false} />
       </Providers>
     );
     expect(tree).toMatchSnapshot();
@@ -26,7 +26,7 @@ describe('the PaddedView component', () => {
   it('should render without vertical padding', () => {
     const tree = renderer.create(
       <Providers>
-        <PaddedView vertical={false} />
+        <PaddedDiv vertical={false} />
       </Providers>
     );
     expect(tree).toMatchSnapshot();

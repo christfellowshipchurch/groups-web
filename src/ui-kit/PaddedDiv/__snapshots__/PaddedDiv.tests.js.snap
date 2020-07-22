@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`the PaddedView component should render 1`] = `
+exports[`the PaddedDiv component should render 1`] = `
 .c0 {
   padding-top: 1rem;
   padding-right: 1rem;
@@ -9,11 +9,11 @@ exports[`the PaddedView component should render 1`] = `
 }
 
 <div
-  className="c0 ui-kit.PaddedView"
+  className="c0 ui-kit.PaddedDiv"
 />
 `;
 
-exports[`the PaddedView component should render without horizontal padding 1`] = `
+exports[`the PaddedDiv component should render without horizontal padding 1`] = `
 .c0 {
   padding-top: 1rem;
   padding-right: 0;
@@ -22,11 +22,11 @@ exports[`the PaddedView component should render without horizontal padding 1`] =
 }
 
 <div
-  className="c0 ui-kit.PaddedView"
+  className="c0 ui-kit.PaddedDiv"
 />
 `;
 
-exports[`the PaddedView component should render without vertical padding 1`] = `
+exports[`the PaddedDiv component should render without vertical padding 1`] = `
 .c0 {
   padding-top: 0;
   padding-right: 1rem;
@@ -35,6 +35,6 @@ exports[`the PaddedView component should render without vertical padding 1`] = `
 }
 
 <div
-  className="c0 ui-kit.PaddedView"
+  className="c0 ui-kit.PaddedDiv"
 />
 `;
