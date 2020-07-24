@@ -1,9 +1,10 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
+import 'jest-styled-components';
 
-import Providers from '../Providers';
+import Providers from '../../../Providers';
 
-import { Media } from './Media';
+import Media from '.';
 
 describe('The Media placeholder', () => {
   it('should render', () => {
