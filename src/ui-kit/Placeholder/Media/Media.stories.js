@@ -10,5 +10,5 @@ storiesOf('ui-kit/Placeholder/Media', module)
     <div style={{ width: '50vw', height: '50vw' }}>{story()}</div>
   ))
   .add('default', () => <Media />)
-  .add('width', () => <Media size={'50%'} />)
+  .add('size', () => <Media size={'50%'} />)
   .add('showLoadingAnimation', () => <Media showLoadingAnimation />);

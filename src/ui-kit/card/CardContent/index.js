@@ -9,4 +9,6 @@ const CardContent = styled(PaddedDiv).attrs({
     `${theme.sizing.baseUnit(1.5)} ${theme.sizing.baseUnit(2)}`};
 `;
 
+CardContent.displayName = 'ui-kit.card.CardContent';
+
 export default CardContent;

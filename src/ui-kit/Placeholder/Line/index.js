@@ -32,4 +32,6 @@ Line.propTypes = {
   width: PropTypes.string,
 };
 
+Line.displayName = 'ui-kit.Placeholder.Line';
+
 export default Line;

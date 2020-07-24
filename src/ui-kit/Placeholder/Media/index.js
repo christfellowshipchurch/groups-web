@@ -33,4 +33,6 @@ Media.propTypes = {
   size: PropTypes.string,
 };
 
+Media.displayName = 'ui-kit.Placeholder.Media';
+
 export default Media;

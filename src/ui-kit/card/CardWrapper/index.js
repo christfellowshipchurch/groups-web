@@ -26,4 +26,6 @@ CardWrapper.propTypes = {
   children: PropTypes.node.isRequired,
 };
 
+CardWrapper.displayName = 'ui-kit.card.CardWrapper';
+
 export default CardWrapper;
