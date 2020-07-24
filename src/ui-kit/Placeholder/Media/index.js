@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import ReactPlaceholder from 'react-placeholder';
 import PropTypes from 'prop-types';
 
+import 'react-placeholder/lib/reactPlaceholder.css';
+
 const StyledMedia = styled.mark.attrs({
   // `rect-shape` comes from ReactPlaceholder and enables it's `showLoadingAnimation` to work
   className: 'ui-kit.Placeholder.Media rect-shape',

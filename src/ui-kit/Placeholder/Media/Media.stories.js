@@ -1,8 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import 'react-placeholder/lib/reactPlaceholder.css';
-
 import Media from '.';
 
 storiesOf('ui-kit/Placeholder/Media', module)

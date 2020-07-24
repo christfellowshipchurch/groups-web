@@ -1,8 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import 'react-placeholder/lib/reactPlaceholder.css';
-
 import Line from '.';
 
 storiesOf('ui-kit/Placeholder/Line', module)

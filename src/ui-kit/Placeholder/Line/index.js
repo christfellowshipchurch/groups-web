@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import ReactPlaceholder from 'react-placeholder';
 import PropTypes from 'prop-types';
 
+import 'react-placeholder/lib/reactPlaceholder.css';
+
 const StyledLine = styled.mark.attrs({
   // `rect-shape` comes from ReactPlaceholder and enables it's `showLoadingAnimation` to work
   className: 'ui-kit.Placeholder.Line rect-shape',
