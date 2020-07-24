@@ -3,11 +3,12 @@ const theme = {
     primary: 'salmon',
     background: {
       paper: '#FFFFFF',
+      inactive: '#A5A5A5',
     },
   },
   sizing: {
     baseUnit: (unit = 1) => `${unit}rem`,
-    baseBorderRadius: '16',
+    baseBorderRadius: '16px',
     avatar: {
       small: '40',
       medium: '80',

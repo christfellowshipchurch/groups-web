@@ -11,7 +11,7 @@ const CardWrapper = styled.div.attrs({
     cardColor ||
     theme.colors.background.paper ||
     `initial`}; /* bail out if no bg color */
-  border-radius: ${({ theme }) => theme.sizing.baseBorderRadius}px;
+  border-radius: ${({ theme }) => theme.sizing.baseBorderRadius};
   margin: ${({ inHorizontalList, theme }) =>
     inHorizontalList
       ? `${theme.sizing.baseUnit(0.5)}
