@@ -29,3 +29,18 @@ exports[`The Media placeholder should render a custom size 1`] = `
   size="50%"
 />
 `;
+
+exports[`The Media placeholder should render showLoadingAnimation 1`] = `
+.c0 {
+  background: #A5A5A5;
+  border-radius: 16px;
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+<mark
+  className="c0 show-loading-animation ui-kit.Placeholder.Media custom-placeholder"
+  size="100%"
+/>
+`;

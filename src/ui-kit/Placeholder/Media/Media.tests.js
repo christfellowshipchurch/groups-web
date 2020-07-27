@@ -23,4 +23,12 @@ describe('The Media placeholder', () => {
     );
     expect(tree).toMatchSnapshot();
   });
+  it('should render showLoadingAnimation', () => {
+    const tree = renderer.create(
+      <Providers>
+        <Media showLoadingAnimation />
+      </Providers>
+    );
+    expect(tree).toMatchSnapshot();
+  });
 });

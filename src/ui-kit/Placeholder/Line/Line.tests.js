@@ -23,4 +23,12 @@ describe('the Line component', () => {
     );
     expect(tree).toMatchSnapshot();
   });
+  it('should render showLoadingAnimation', () => {
+    const tree = renderer.create(
+      <Providers>
+        <Line showLoadingAnimation />
+      </Providers>
+    );
+    expect(tree).toMatchSnapshot();
+  });
 });
