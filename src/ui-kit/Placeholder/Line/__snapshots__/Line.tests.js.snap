@@ -10,7 +10,7 @@ exports[`the Line component should render 1`] = `
 }
 
 <mark
-  className="c0 ui-kit.Placeholder.Line rect-shape"
+  className="c0 ui-kit.Placeholder.Line custom-placeholder"
   width="100%"
 />
 `;
@@ -25,7 +25,7 @@ exports[`the Line component should render with a custom width 1`] = `
 }
 
 <mark
-  className="c0 ui-kit.Placeholder.Line rect-shape"
+  className="c0 ui-kit.Placeholder.Line custom-placeholder"
   width="50%"
 />
 `;

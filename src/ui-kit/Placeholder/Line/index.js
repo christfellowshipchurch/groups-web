@@ -21,7 +21,7 @@ import PropTypes from 'prop-types';
 
 const StyledLine = styled.mark.attrs({
   // `rect-shape` comes from ReactPlaceholder and enables it's `showLoadingAnimation` to work
-  className: 'ui-kit.Placeholder.Line rect-shape',
+  className: 'ui-kit.Placeholder.Line custom-placeholder',
 })`
   background: ${({ theme }) => theme.colors.background.inactive};
   border-radius: ${({ theme }) => theme.sizing.baseBorderRadius};
