@@ -119,10 +119,10 @@
   dependencies:
     "@apollographql/graphql-language-service-types" "^2.0.0"
 
-"@apollosproject/eslint-config@^1.4.4-alpha.4":
-  version "1.4.4-alpha.4"
-  resolved "https://registry.yarnpkg.com/@apollosproject/eslint-config/-/eslint-config-1.4.4-alpha.4.tgz#0037e3bcfa32e14d4a05c4f1607618d13acbeb65"
-  integrity sha512-t0n5jRu59qmnuzb2auJ5kSRBY39sV9Jf15o355rHlTIRBH8BrbDNcRk9zchy+48gIrhxh9++JWNdA/d1R1ewPw==
+"@apollosproject/eslint-config@^1.4.4-alpha.15":
+  version "1.4.4-alpha.15"
+  resolved "https://registry.yarnpkg.com/@apollosproject/eslint-config/-/eslint-config-1.4.4-alpha.15.tgz#0c1ad49405dcff6fce851f138831d50e5bd73365"
+  integrity sha512-vZ0hndKNDWek/YKSkrEIesDEEbYtTdzekrJnP/urzAjy4b4+oRwhkArCXTyJ3SYjB6WAd7ORAB4jknLJxM6faA==
 
 "@ardatan/aggregate-error@0.0.1":
   version "0.0.1"
