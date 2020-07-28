@@ -1,5 +1,25 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`The Media placeholder accepts custom styles 1`] = `
+.c0 {
+  background: #A5A5A5;
+  border-radius: 16px;
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+<mark
+  className="c0 ui-kit.Placeholder.Media custom-placeholder"
+  size="100%"
+  style={
+    Object {
+      "background": "salmon",
+    }
+  }
+/>
+`;
+
 exports[`The Media placeholder should render 1`] = `
 .c0 {
   background: #A5A5A5;

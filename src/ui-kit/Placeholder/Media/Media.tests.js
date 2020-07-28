@@ -23,6 +23,16 @@ describe('The Media placeholder', () => {
     );
     expect(tree).toMatchSnapshot();
   });
+  it('accepts custom styles', () => {
+    const customStyle = { background: 'salmon' };
+
+    const tree = renderer.create(
+      <Providers>
+        <Media style={customStyle} />
+      </Providers>
+    );
+    expect(tree).toMatchSnapshot();
+  });
   it('should render showLoadingAnimation', () => {
     const tree = renderer.create(
       <Providers>

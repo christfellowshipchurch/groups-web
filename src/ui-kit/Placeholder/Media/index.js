@@ -15,9 +15,9 @@ const StyledMedia = styled.mark.attrs({
   width: ${({ size }) => size};
 `;
 
-const Media = ({ isLoading, size, ...props }) => (
+const Media = ({ isLoading, size, style, ...props }) => (
   <ReactPlaceholder
-    customPlaceholder={<StyledMedia size={size} />}
+    customPlaceholder={<StyledMedia size={size} style={style} />}
     ready={!isLoading}
     {...props}
   />
@@ -31,6 +31,7 @@ Media.defaultProps = {
 Media.propTypes = {
   isLoading: PropTypes.bool,
   size: PropTypes.string,
+  style: PropTypes.any, // eslint-disable-line react/forbid-prop-types
 };
 
 Media.displayName = 'ui-kit.Placeholder.Media';

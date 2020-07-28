@@ -9,4 +9,5 @@ storiesOf('ui-kit/Placeholder/Media', module)
   ))
   .add('default', () => <Media />)
   .add('size', () => <Media size={'50%'} />)
+  .add('style', () => <Media style={{ background: 'salmon' }} />)
   .add('showLoadingAnimation', () => <Media showLoadingAnimation />);
