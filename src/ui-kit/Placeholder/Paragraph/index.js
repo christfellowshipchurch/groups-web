@@ -51,8 +51,8 @@ Paragraph.defaultProps = {
 };
 
 Paragraph.propTypes = {
-  firstLineWidth: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
-  lastLineWidth: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+  firstLineWidth: PropTypes.string,
+  lastLineWidth: PropTypes.string,
   isLoading: PropTypes.bool,
   lineNumber: PropTypes.number,
   lineStyle: PropTypes.any, // eslint-disable-line

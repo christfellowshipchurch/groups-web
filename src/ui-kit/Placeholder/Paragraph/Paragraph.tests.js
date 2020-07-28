@@ -7,7 +7,7 @@ import Providers from '../../../Providers';
 import Paragraph from '.';
 
 describe('The Paragraph placeholder', () => {
-  it('renders correctly', () => {
+  it('should render', () => {
     const tree = renderer.create(
       <Providers>
         <Paragraph />
@@ -15,7 +15,7 @@ describe('The Paragraph placeholder', () => {
     );
     expect(tree).toMatchSnapshot();
   });
-  it('renders multiple lines', () => {
+  it('should render with a custom lineNumber', () => {
     const tree = renderer.create(
       <Providers>
         <Paragraph lineNumber={50} />
@@ -23,16 +23,24 @@ describe('The Paragraph placeholder', () => {
     );
     expect(tree).toMatchSnapshot();
   });
-  it('has varying width lines', () => {
+  it('should render with a custom firstLineWidth', () => {
     const tree = renderer.create(
       <Providers>
-        <Paragraph lastLineWidth={33} firstLineWidth={'23%'} />
+        <Paragraph firstLineWidth={'23%'} />
+      </Providers>
+    );
+    expect(tree).toMatchSnapshot();
+  });
+  it('should render with a custom lastLineWidth', () => {
+    const tree = renderer.create(
+      <Providers>
+        <Paragraph lastLineWidth={'33%'} />
       </Providers>
     );
     expect(tree).toMatchSnapshot();
   });
   it('accepts custom line styles', () => {
-    const customStyle = { height: 33 };
+    const customStyle = { background: 'salmon' };
 
     const tree = renderer.create(
       <Providers>
@@ -41,12 +49,10 @@ describe('The Paragraph placeholder', () => {
     );
     expect(tree).toMatchSnapshot();
   });
-  it('accepts custom styles', () => {
-    const customStyle = { backgroundColor: 'salmon' };
-
+  it('should render showLoadingAnimation', () => {
     const tree = renderer.create(
       <Providers>
-        <Paragraph style={customStyle} />
+        <Paragraph showLoadingAnimation />
       </Providers>
     );
     expect(tree).toMatchSnapshot();

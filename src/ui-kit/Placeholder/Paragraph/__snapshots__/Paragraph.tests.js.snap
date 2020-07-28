@@ -1,0 +1,1151 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The Paragraph placeholder accepts custom line styles 1`] = `
+Array [
+  .c0 {
+  background: #A5A5A5;
+  border-radius: 16px;
+  display: block;
+  height: 1rem;
+  width: 85%;
+}
+
+.c1 {
+  height: 1rem;
+  margin: 0.7rem 0;
+}
+
+<mark
+    className="c0 c1 ui-kit.Placeholder.ParagraphLine ui-kit.Placeholder.Line custom-placeholder"
+    style={
+      Object {
+        "background": "salmon",
+      }
+    }
+    width="85%"
+  />,
+  .c0 {
+  background: #A5A5A5;
+  border-radius: 16px;
+  display: block;
+  height: 1rem;
+  width: 100%;
+}
+
+.c1 {
+  height: 1rem;
+  margin: 0.7rem 0;
+}
+
+<mark
+    className="c0 c1 ui-kit.Placeholder.ParagraphLine ui-kit.Placeholder.Line custom-placeholder"
+    style={
+      Object {
+        "background": "salmon",
+      }
+    }
+    width="100%"
+  />,
+  .c0 {
+  background: #A5A5A5;
+  border-radius: 16px;
+  display: block;
+  height: 1rem;
+  width: 75%;
+}
+
+.c1 {
+  height: 1rem;
+  margin: 0.7rem 0;
+}
+
+<mark
+    className="c0 c1 ui-kit.Placeholder.ParagraphLine ui-kit.Placeholder.Line custom-placeholder"
+    style={
+      Object {
+        "background": "salmon",
+      }
+    }
+    width="75%"
+  />,
+]
+`;
+
+exports[`The Paragraph placeholder should render 1`] = `
+Array [
+  .c0 {
+  background: #A5A5A5;
+  border-radius: 16px;
+  display: block;
+  height: 1rem;
+  width: 85%;
+}
+
+.c1 {
+  height: 1rem;
+  margin: 0.7rem 0;
+}
+
+<mark
+    className="c0 c1 ui-kit.Placeholder.ParagraphLine ui-kit.Placeholder.Line custom-placeholder"
+    width="85%"
+  />,
+  .c0 {
+  background: #A5A5A5;
+  border-radius: 16px;
+  display: block;
+  height: 1rem;
+  width: 100%;
+}
+
+.c1 {
+  height: 1rem;
+  margin: 0.7rem 0;
+}
+
+<mark
+    className="c0 c1 ui-kit.Placeholder.ParagraphLine ui-kit.Placeholder.Line custom-placeholder"
+    width="100%"
+  />,
+  .c0 {
+  background: #A5A5A5;
+  border-radius: 16px;
+  display: block;
+  height: 1rem;
+  width: 75%;
+}
+
+.c1 {
+  height: 1rem;
+  margin: 0.7rem 0;
+}
+
+<mark
+    className="c0 c1 ui-kit.Placeholder.ParagraphLine ui-kit.Placeholder.Line custom-placeholder"
+    width="75%"
+  />,
+]
+`;
+
+exports[`The Paragraph placeholder should render showLoadingAnimation 1`] = `
+Array [
+  .c0 {
+  background: #A5A5A5;
+  border-radius: 16px;
+  display: block;
+  height: 1rem;
+  width: 85%;
+}
+
+.c1 {
+  height: 1rem;
+  margin: 0.7rem 0;
+}
+
+<mark
+    className="c0 show-loading-animation c1 ui-kit.Placeholder.ParagraphLine ui-kit.Placeholder.Line custom-placeholder"
+    width="85%"
+  />,
+  .c0 {
+  background: #A5A5A5;
+  border-radius: 16px;
+  display: block;
+  height: 1rem;
+  width: 100%;
+}
+
+.c1 {
+  height: 1rem;
+  margin: 0.7rem 0;
+}
+
+<mark
+    className="c0 show-loading-animation c1 ui-kit.Placeholder.ParagraphLine ui-kit.Placeholder.Line custom-placeholder"
+    width="100%"
+  />,
+  .c0 {
+  background: #A5A5A5;
+  border-radius: 16px;
+  display: block;
+  height: 1rem;
+  width: 75%;
+}
+
+.c1 {
+  height: 1rem;
+  margin: 0.7rem 0;
+}
+
+<mark
+    className="c0 show-loading-animation c1 ui-kit.Placeholder.ParagraphLine ui-kit.Placeholder.Line custom-placeholder"
+    width="75%"
+  />,
+]
+`;
+
+exports[`The Paragraph placeholder should render with a custom firstLineWidth 1`] = `
+Array [
+  .c0 {
+  background: #A5A5A5;
+  border-radius: 16px;
+  display: block;
+  height: 1rem;
+  width: 23%;
+}
+
+.c1 {
+  height: 1rem;
+  margin: 0.7rem 0;
+}
+
+<mark
+    className="c0 c1 ui-kit.Placeholder.ParagraphLine ui-kit.Placeholder.Line custom-placeholder"
+    width="23%"
+  />,
+  .c0 {
+  background: #A5A5A5;
+  border-radius: 16px;
+  display: block;
+  height: 1rem;
+  width: 100%;
+}
+
+.c1 {
+  height: 1rem;
+  margin: 0.7rem 0;
+}
+
+<mark
+    className="c0 c1 ui-kit.Placeholder.ParagraphLine ui-kit.Placeholder.Line custom-placeholder"
+    width="100%"
+  />,
+  .c0 {
+  background: #A5A5A5;
+  border-radius: 16px;
+  display: block;
+  height: 1rem;
+  width: 75%;
+}
+
+.c1 {
+  height: 1rem;
+  margin: 0.7rem 0;
+}
+
+<mark
+    className="c0 c1 ui-kit.Placeholder.ParagraphLine ui-kit.Placeholder.Line custom-placeholder"
+    width="75%"
+  />,
+]
+`;
+
+exports[`The Paragraph placeholder should render with a custom lastLineWidth 1`] = `
+Array [
+  .c0 {
+  background: #A5A5A5;
+  border-radius: 16px;
+  display: block;
+  height: 1rem;
+  width: 85%;
+}
+
+.c1 {
+  height: 1rem;
+  margin: 0.7rem 0;
+}
+
+<mark
+    className="c0 c1 ui-kit.Placeholder.ParagraphLine ui-kit.Placeholder.Line custom-placeholder"
+    width="85%"
+  />,
+  .c0 {
+  background: #A5A5A5;
+  border-radius: 16px;
+  display: block;
+  height: 1rem;
+  width: 100%;
+}
+
+.c1 {
+  height: 1rem;
+  margin: 0.7rem 0;
+}
+
+<mark
+    className="c0 c1 ui-kit.Placeholder.ParagraphLine ui-kit.Placeholder.Line custom-placeholder"
+    width="100%"
+  />,
+  .c0 {
+  background: #A5A5A5;
+  border-radius: 16px;
+  display: block;
+  height: 1rem;
+  width: 33%;
+}
+
+.c1 {
+  height: 1rem;
+  margin: 0.7rem 0;
+}
+
+<mark
+    className="c0 c1 ui-kit.Placeholder.ParagraphLine ui-kit.Placeholder.Line custom-placeholder"
+    width="33%"
+  />,
+]
+`;
+
+exports[`The Paragraph placeholder should render with a custom lineNumber 1`] = `
+Array [
+  .c0 {
+  background: #A5A5A5;
+  border-radius: 16px;
+  display: block;
+  height: 1rem;
+  width: 85%;
+}
+
+.c1 {
+  height: 1rem;
+  margin: 0.7rem 0;
+}
+
+<mark
+    className="c0 c1 ui-kit.Placeholder.ParagraphLine ui-kit.Placeholder.Line custom-placeholder"
+    width="85%"
+  />,
+  .c0 {
+  background: #A5A5A5;
+  border-radius: 16px;
+  display: block;
+  height: 1rem;
+  width: 100%;
+}
+
+.c1 {
+  height: 1rem;
+  margin: 0.7rem 0;
+}
+
+<mark
+    className="c0 c1 ui-kit.Placeholder.ParagraphLine ui-kit.Placeholder.Line custom-placeholder"
+    width="100%"
+  />,
+  .c0 {
+  background: #A5A5A5;
+  border-radius: 16px;
+  display: block;
+  height: 1rem;
+  width: 100%;
+}
+
+.c1 {
+  height: 1rem;
+  margin: 0.7rem 0;
+}
+
+<mark
+    className="c0 c1 ui-kit.Placeholder.ParagraphLine ui-kit.Placeholder.Line custom-placeholder"
+    width="100%"
+  />,
+  .c0 {
+  background: #A5A5A5;
+  border-radius: 16px;
+  display: block;
+  height: 1rem;
+  width: 100%;
+}
+
+.c1 {
+  height: 1rem;
+  margin: 0.7rem 0;
+}
+
+<mark
+    className="c0 c1 ui-kit.Placeholder.ParagraphLine ui-kit.Placeholder.Line custom-placeholder"
+    width="100%"
+  />,
+  .c0 {
+  background: #A5A5A5;
+  border-radius: 16px;
+  display: block;
+  height: 1rem;
+  width: 100%;
+}
+
+.c1 {
+  height: 1rem;
+  margin: 0.7rem 0;
+}
+
+<mark
+    className="c0 c1 ui-kit.Placeholder.ParagraphLine ui-kit.Placeholder.Line custom-placeholder"
+    width="100%"
+  />,
+  .c0 {
+  background: #A5A5A5;
+  border-radius: 16px;
+  display: block;
+  height: 1rem;
+  width: 100%;
+}
+
+.c1 {
+  height: 1rem;
+  margin: 0.7rem 0;
+}
+
+<mark
+    className="c0 c1 ui-kit.Placeholder.ParagraphLine ui-kit.Placeholder.Line custom-placeholder"
+    width="100%"
+  />,
+  .c0 {
+  background: #A5A5A5;
+  border-radius: 16px;
+  display: block;
+  height: 1rem;
+  width: 100%;
+}
+
+.c1 {
+  height: 1rem;
+  margin: 0.7rem 0;
+}
+
+<mark
+    className="c0 c1 ui-kit.Placeholder.ParagraphLine ui-kit.Placeholder.Line custom-placeholder"
+    width="100%"
+  />,
+  .c0 {
+  background: #A5A5A5;
+  border-radius: 16px;
+  display: block;
+  height: 1rem;
+  width: 100%;
+}
+
+.c1 {
+  height: 1rem;
+  margin: 0.7rem 0;
+}
+
+<mark
+    className="c0 c1 ui-kit.Placeholder.ParagraphLine ui-kit.Placeholder.Line custom-placeholder"
+    width="100%"
+  />,
+  .c0 {
+  background: #A5A5A5;
+  border-radius: 16px;
+  display: block;
+  height: 1rem;
+  width: 100%;
+}
+
+.c1 {
+  height: 1rem;
+  margin: 0.7rem 0;
+}
+
+<mark
+    className="c0 c1 ui-kit.Placeholder.ParagraphLine ui-kit.Placeholder.Line custom-placeholder"
+    width="100%"
+  />,
+  .c0 {
+  background: #A5A5A5;
+  border-radius: 16px;
+  display: block;
+  height: 1rem;
+  width: 100%;
+}
+
+.c1 {
+  height: 1rem;
+  margin: 0.7rem 0;
+}
+
+<mark
+    className="c0 c1 ui-kit.Placeholder.ParagraphLine ui-kit.Placeholder.Line custom-placeholder"
+    width="100%"
+  />,
+  .c0 {
+  background: #A5A5A5;
+  border-radius: 16px;
+  display: block;
+  height: 1rem;
+  width: 100%;
+}
+
+.c1 {
+  height: 1rem;
+  margin: 0.7rem 0;
+}
+
+<mark
+    className="c0 c1 ui-kit.Placeholder.ParagraphLine ui-kit.Placeholder.Line custom-placeholder"
+    width="100%"
+  />,
+  .c0 {
+  background: #A5A5A5;
+  border-radius: 16px;
+  display: block;
+  height: 1rem;
+  width: 100%;
+}
+
+.c1 {
+  height: 1rem;
+  margin: 0.7rem 0;
+}
+
+<mark
+    className="c0 c1 ui-kit.Placeholder.ParagraphLine ui-kit.Placeholder.Line custom-placeholder"
+    width="100%"
+  />,
+  .c0 {
+  background: #A5A5A5;
+  border-radius: 16px;
+  display: block;
+  height: 1rem;
+  width: 100%;
+}
+
+.c1 {
+  height: 1rem;
+  margin: 0.7rem 0;
+}
+
+<mark
+    className="c0 c1 ui-kit.Placeholder.ParagraphLine ui-kit.Placeholder.Line custom-placeholder"
+    width="100%"
+  />,
+  .c0 {
+  background: #A5A5A5;
+  border-radius: 16px;
+  display: block;
+  height: 1rem;
+  width: 100%;
+}
+
+.c1 {
+  height: 1rem;
+  margin: 0.7rem 0;
+}
+
+<mark
+    className="c0 c1 ui-kit.Placeholder.ParagraphLine ui-kit.Placeholder.Line custom-placeholder"
+    width="100%"
+  />,
+  .c0 {
+  background: #A5A5A5;
+  border-radius: 16px;
+  display: block;
+  height: 1rem;
+  width: 100%;
+}
+
+.c1 {
+  height: 1rem;
+  margin: 0.7rem 0;
+}
+
+<mark
+    className="c0 c1 ui-kit.Placeholder.ParagraphLine ui-kit.Placeholder.Line custom-placeholder"
+    width="100%"
+  />,
+  .c0 {
+  background: #A5A5A5;
+  border-radius: 16px;
+  display: block;
+  height: 1rem;
+  width: 100%;
+}
+
+.c1 {
+  height: 1rem;
+  margin: 0.7rem 0;
+}
+
+<mark
+    className="c0 c1 ui-kit.Placeholder.ParagraphLine ui-kit.Placeholder.Line custom-placeholder"
+    width="100%"
+  />,
+  .c0 {
+  background: #A5A5A5;
+  border-radius: 16px;
+  display: block;
+  height: 1rem;
+  width: 100%;
+}
+
+.c1 {
+  height: 1rem;
+  margin: 0.7rem 0;
+}
+
+<mark
+    className="c0 c1 ui-kit.Placeholder.ParagraphLine ui-kit.Placeholder.Line custom-placeholder"
+    width="100%"
+  />,
+  .c0 {
+  background: #A5A5A5;
+  border-radius: 16px;
+  display: block;
+  height: 1rem;
+  width: 100%;
+}
+
+.c1 {
+  height: 1rem;
+  margin: 0.7rem 0;
+}
+
+<mark
+    className="c0 c1 ui-kit.Placeholder.ParagraphLine ui-kit.Placeholder.Line custom-placeholder"
+    width="100%"
+  />,
+  .c0 {
+  background: #A5A5A5;
+  border-radius: 16px;
+  display: block;
+  height: 1rem;
+  width: 100%;
+}
+
+.c1 {
+  height: 1rem;
+  margin: 0.7rem 0;
+}
+
+<mark
+    className="c0 c1 ui-kit.Placeholder.ParagraphLine ui-kit.Placeholder.Line custom-placeholder"
+    width="100%"
+  />,
+  .c0 {
+  background: #A5A5A5;
+  border-radius: 16px;
+  display: block;
+  height: 1rem;
+  width: 100%;
+}
+
+.c1 {
+  height: 1rem;
+  margin: 0.7rem 0;
+}
+
+<mark
+    className="c0 c1 ui-kit.Placeholder.ParagraphLine ui-kit.Placeholder.Line custom-placeholder"
+    width="100%"
+  />,
+  .c0 {
+  background: #A5A5A5;
+  border-radius: 16px;
+  display: block;
+  height: 1rem;
+  width: 100%;
+}
+
+.c1 {
+  height: 1rem;
+  margin: 0.7rem 0;
+}
+
+<mark
+    className="c0 c1 ui-kit.Placeholder.ParagraphLine ui-kit.Placeholder.Line custom-placeholder"
+    width="100%"
+  />,
+  .c0 {
+  background: #A5A5A5;
+  border-radius: 16px;
+  display: block;
+  height: 1rem;
+  width: 100%;
+}
+
+.c1 {
+  height: 1rem;
+  margin: 0.7rem 0;
+}
+
+<mark
+    className="c0 c1 ui-kit.Placeholder.ParagraphLine ui-kit.Placeholder.Line custom-placeholder"
+    width="100%"
+  />,
+  .c0 {
+  background: #A5A5A5;
+  border-radius: 16px;
+  display: block;
+  height: 1rem;
+  width: 100%;
+}
+
+.c1 {
+  height: 1rem;
+  margin: 0.7rem 0;
+}
+
+<mark
+    className="c0 c1 ui-kit.Placeholder.ParagraphLine ui-kit.Placeholder.Line custom-placeholder"
+    width="100%"
+  />,
+  .c0 {
+  background: #A5A5A5;
+  border-radius: 16px;
+  display: block;
+  height: 1rem;
+  width: 100%;
+}
+
+.c1 {
+  height: 1rem;
+  margin: 0.7rem 0;
+}
+
+<mark
+    className="c0 c1 ui-kit.Placeholder.ParagraphLine ui-kit.Placeholder.Line custom-placeholder"
+    width="100%"
+  />,
+  .c0 {
+  background: #A5A5A5;
+  border-radius: 16px;
+  display: block;
+  height: 1rem;
+  width: 100%;
+}
+
+.c1 {
+  height: 1rem;
+  margin: 0.7rem 0;
+}
+
+<mark
+    className="c0 c1 ui-kit.Placeholder.ParagraphLine ui-kit.Placeholder.Line custom-placeholder"
+    width="100%"
+  />,
+  .c0 {
+  background: #A5A5A5;
+  border-radius: 16px;
+  display: block;
+  height: 1rem;
+  width: 100%;
+}
+
+.c1 {
+  height: 1rem;
+  margin: 0.7rem 0;
+}
+
+<mark
+    className="c0 c1 ui-kit.Placeholder.ParagraphLine ui-kit.Placeholder.Line custom-placeholder"
+    width="100%"
+  />,
+  .c0 {
+  background: #A5A5A5;
+  border-radius: 16px;
+  display: block;
+  height: 1rem;
+  width: 100%;
+}
+
+.c1 {
+  height: 1rem;
+  margin: 0.7rem 0;
+}
+
+<mark
+    className="c0 c1 ui-kit.Placeholder.ParagraphLine ui-kit.Placeholder.Line custom-placeholder"
+    width="100%"
+  />,
+  .c0 {
+  background: #A5A5A5;
+  border-radius: 16px;
+  display: block;
+  height: 1rem;
+  width: 100%;
+}
+
+.c1 {
+  height: 1rem;
+  margin: 0.7rem 0;
+}
+
+<mark
+    className="c0 c1 ui-kit.Placeholder.ParagraphLine ui-kit.Placeholder.Line custom-placeholder"
+    width="100%"
+  />,
+  .c0 {
+  background: #A5A5A5;
+  border-radius: 16px;
+  display: block;
+  height: 1rem;
+  width: 100%;
+}
+
+.c1 {
+  height: 1rem;
+  margin: 0.7rem 0;
+}
+
+<mark
+    className="c0 c1 ui-kit.Placeholder.ParagraphLine ui-kit.Placeholder.Line custom-placeholder"
+    width="100%"
+  />,
+  .c0 {
+  background: #A5A5A5;
+  border-radius: 16px;
+  display: block;
+  height: 1rem;
+  width: 100%;
+}
+
+.c1 {
+  height: 1rem;
+  margin: 0.7rem 0;
+}
+
+<mark
+    className="c0 c1 ui-kit.Placeholder.ParagraphLine ui-kit.Placeholder.Line custom-placeholder"
+    width="100%"
+  />,
+  .c0 {
+  background: #A5A5A5;
+  border-radius: 16px;
+  display: block;
+  height: 1rem;
+  width: 100%;
+}
+
+.c1 {
+  height: 1rem;
+  margin: 0.7rem 0;
+}
+
+<mark
+    className="c0 c1 ui-kit.Placeholder.ParagraphLine ui-kit.Placeholder.Line custom-placeholder"
+    width="100%"
+  />,
+  .c0 {
+  background: #A5A5A5;
+  border-radius: 16px;
+  display: block;
+  height: 1rem;
+  width: 100%;
+}
+
+.c1 {
+  height: 1rem;
+  margin: 0.7rem 0;
+}
+
+<mark
+    className="c0 c1 ui-kit.Placeholder.ParagraphLine ui-kit.Placeholder.Line custom-placeholder"
+    width="100%"
+  />,
+  .c0 {
+  background: #A5A5A5;
+  border-radius: 16px;
+  display: block;
+  height: 1rem;
+  width: 100%;
+}
+
+.c1 {
+  height: 1rem;
+  margin: 0.7rem 0;
+}
+
+<mark
+    className="c0 c1 ui-kit.Placeholder.ParagraphLine ui-kit.Placeholder.Line custom-placeholder"
+    width="100%"
+  />,
+  .c0 {
+  background: #A5A5A5;
+  border-radius: 16px;
+  display: block;
+  height: 1rem;
+  width: 100%;
+}
+
+.c1 {
+  height: 1rem;
+  margin: 0.7rem 0;
+}
+
+<mark
+    className="c0 c1 ui-kit.Placeholder.ParagraphLine ui-kit.Placeholder.Line custom-placeholder"
+    width="100%"
+  />,
+  .c0 {
+  background: #A5A5A5;
+  border-radius: 16px;
+  display: block;
+  height: 1rem;
+  width: 100%;
+}
+
+.c1 {
+  height: 1rem;
+  margin: 0.7rem 0;
+}
+
+<mark
+    className="c0 c1 ui-kit.Placeholder.ParagraphLine ui-kit.Placeholder.Line custom-placeholder"
+    width="100%"
+  />,
+  .c0 {
+  background: #A5A5A5;
+  border-radius: 16px;
+  display: block;
+  height: 1rem;
+  width: 100%;
+}
+
+.c1 {
+  height: 1rem;
+  margin: 0.7rem 0;
+}
+
+<mark
+    className="c0 c1 ui-kit.Placeholder.ParagraphLine ui-kit.Placeholder.Line custom-placeholder"
+    width="100%"
+  />,
+  .c0 {
+  background: #A5A5A5;
+  border-radius: 16px;
+  display: block;
+  height: 1rem;
+  width: 100%;
+}
+
+.c1 {
+  height: 1rem;
+  margin: 0.7rem 0;
+}
+
+<mark
+    className="c0 c1 ui-kit.Placeholder.ParagraphLine ui-kit.Placeholder.Line custom-placeholder"
+    width="100%"
+  />,
+  .c0 {
+  background: #A5A5A5;
+  border-radius: 16px;
+  display: block;
+  height: 1rem;
+  width: 100%;
+}
+
+.c1 {
+  height: 1rem;
+  margin: 0.7rem 0;
+}
+
+<mark
+    className="c0 c1 ui-kit.Placeholder.ParagraphLine ui-kit.Placeholder.Line custom-placeholder"
+    width="100%"
+  />,
+  .c0 {
+  background: #A5A5A5;
+  border-radius: 16px;
+  display: block;
+  height: 1rem;
+  width: 100%;
+}
+
+.c1 {
+  height: 1rem;
+  margin: 0.7rem 0;
+}
+
+<mark
+    className="c0 c1 ui-kit.Placeholder.ParagraphLine ui-kit.Placeholder.Line custom-placeholder"
+    width="100%"
+  />,
+  .c0 {
+  background: #A5A5A5;
+  border-radius: 16px;
+  display: block;
+  height: 1rem;
+  width: 100%;
+}
+
+.c1 {
+  height: 1rem;
+  margin: 0.7rem 0;
+}
+
+<mark
+    className="c0 c1 ui-kit.Placeholder.ParagraphLine ui-kit.Placeholder.Line custom-placeholder"
+    width="100%"
+  />,
+  .c0 {
+  background: #A5A5A5;
+  border-radius: 16px;
+  display: block;
+  height: 1rem;
+  width: 100%;
+}
+
+.c1 {
+  height: 1rem;
+  margin: 0.7rem 0;
+}
+
+<mark
+    className="c0 c1 ui-kit.Placeholder.ParagraphLine ui-kit.Placeholder.Line custom-placeholder"
+    width="100%"
+  />,
+  .c0 {
+  background: #A5A5A5;
+  border-radius: 16px;
+  display: block;
+  height: 1rem;
+  width: 100%;
+}
+
+.c1 {
+  height: 1rem;
+  margin: 0.7rem 0;
+}
+
+<mark
+    className="c0 c1 ui-kit.Placeholder.ParagraphLine ui-kit.Placeholder.Line custom-placeholder"
+    width="100%"
+  />,
+  .c0 {
+  background: #A5A5A5;
+  border-radius: 16px;
+  display: block;
+  height: 1rem;
+  width: 100%;
+}
+
+.c1 {
+  height: 1rem;
+  margin: 0.7rem 0;
+}
+
+<mark
+    className="c0 c1 ui-kit.Placeholder.ParagraphLine ui-kit.Placeholder.Line custom-placeholder"
+    width="100%"
+  />,
+  .c0 {
+  background: #A5A5A5;
+  border-radius: 16px;
+  display: block;
+  height: 1rem;
+  width: 100%;
+}
+
+.c1 {
+  height: 1rem;
+  margin: 0.7rem 0;
+}
+
+<mark
+    className="c0 c1 ui-kit.Placeholder.ParagraphLine ui-kit.Placeholder.Line custom-placeholder"
+    width="100%"
+  />,
+  .c0 {
+  background: #A5A5A5;
+  border-radius: 16px;
+  display: block;
+  height: 1rem;
+  width: 100%;
+}
+
+.c1 {
+  height: 1rem;
+  margin: 0.7rem 0;
+}
+
+<mark
+    className="c0 c1 ui-kit.Placeholder.ParagraphLine ui-kit.Placeholder.Line custom-placeholder"
+    width="100%"
+  />,
+  .c0 {
+  background: #A5A5A5;
+  border-radius: 16px;
+  display: block;
+  height: 1rem;
+  width: 100%;
+}
+
+.c1 {
+  height: 1rem;
+  margin: 0.7rem 0;
+}
+
+<mark
+    className="c0 c1 ui-kit.Placeholder.ParagraphLine ui-kit.Placeholder.Line custom-placeholder"
+    width="100%"
+  />,
+  .c0 {
+  background: #A5A5A5;
+  border-radius: 16px;
+  display: block;
+  height: 1rem;
+  width: 100%;
+}
+
+.c1 {
+  height: 1rem;
+  margin: 0.7rem 0;
+}
+
+<mark
+    className="c0 c1 ui-kit.Placeholder.ParagraphLine ui-kit.Placeholder.Line custom-placeholder"
+    width="100%"
+  />,
+  .c0 {
+  background: #A5A5A5;
+  border-radius: 16px;
+  display: block;
+  height: 1rem;
+  width: 100%;
+}
+
+.c1 {
+  height: 1rem;
+  margin: 0.7rem 0;
+}
+
+<mark
+    className="c0 c1 ui-kit.Placeholder.ParagraphLine ui-kit.Placeholder.Line custom-placeholder"
+    width="100%"
+  />,
+  .c0 {
+  background: #A5A5A5;
+  border-radius: 16px;
+  display: block;
+  height: 1rem;
+  width: 100%;
+}
+
+.c1 {
+  height: 1rem;
+  margin: 0.7rem 0;
+}
+
+<mark
+    className="c0 c1 ui-kit.Placeholder.ParagraphLine ui-kit.Placeholder.Line custom-placeholder"
+    width="100%"
+  />,
+  .c0 {
+  background: #A5A5A5;
+  border-radius: 16px;
+  display: block;
+  height: 1rem;
+  width: 75%;
+}
+
+.c1 {
+  height: 1rem;
+  margin: 0.7rem 0;
+}
+
+<mark
+    className="c0 c1 ui-kit.Placeholder.ParagraphLine ui-kit.Placeholder.Line custom-placeholder"
+    width="75%"
+  />,
+]
+`;
