@@ -8,5 +8,6 @@ storiesOf('ui-kit/Placeholder/Line', module)
     <div style={{ width: '50vw', height: '50vw' }}>{story()}</div>
   ))
   .add('default', () => <Line />)
+  .add('style', () => <Line style={{ background: 'salmon' }} />)
   .add('width', () => <Line width={'50%'} />)
   .add('showLoadingAnimation', () => <Line showLoadingAnimation />);

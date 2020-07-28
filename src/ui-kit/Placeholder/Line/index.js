@@ -30,9 +30,9 @@ const StyledLine = styled.mark.attrs({
   width: ${({ width }) => width};
 `;
 
-const Line = ({ isLoading, width, ...props }) => (
+const Line = ({ isLoading, style, width, ...props }) => (
   <ReactPlaceholder
-    customPlaceholder={<StyledLine width={width} />}
+    customPlaceholder={<StyledLine style={style} width={width} />}
     ready={!isLoading}
     {...props}
   />
@@ -45,6 +45,7 @@ Line.defaultProps = {
 
 Line.propTypes = {
   isLoading: PropTypes.bool,
+  style: PropTypes.any, // eslint-disable-line
   width: PropTypes.string,
 };
 

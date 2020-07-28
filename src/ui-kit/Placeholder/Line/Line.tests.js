@@ -15,6 +15,15 @@ describe('the Line component', () => {
     );
     expect(tree).toMatchSnapshot();
   });
+  it('should render with a custom style', () => {
+    const tree = renderer.create(
+      <Providers>
+        <Line style={{ background: 'salmon' }} />
+      </Providers>
+    );
+
+    expect(tree).toMatchSnapshot();
+  });
   it('should render with a custom width', () => {
     const tree = renderer.create(
       <Providers>

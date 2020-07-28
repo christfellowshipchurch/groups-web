@@ -30,6 +30,26 @@ exports[`the Line component should render showLoadingAnimation 1`] = `
 />
 `;
 
+exports[`the Line component should render with a custom style 1`] = `
+.c0 {
+  background: #A5A5A5;
+  border-radius: 16px;
+  display: block;
+  height: 1rem;
+  width: 100%;
+}
+
+<mark
+  className="c0 ui-kit.Placeholder.Line custom-placeholder"
+  style={
+    Object {
+      "background": "salmon",
+    }
+  }
+  width="100%"
+/>
+`;
+
 exports[`the Line component should render with a custom width 1`] = `
 .c0 {
   background: #A5A5A5;
