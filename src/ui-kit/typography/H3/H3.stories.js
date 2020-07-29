@@ -4,7 +4,7 @@ import { storiesOf } from '@storybook/react';
 import H3 from '.';
 
 storiesOf('ui-kit/typography/H3', module)
-  .add('Default', () => (
+  .add('default', () => (
     <H3>
       {
         '"God is most glorified in us when we are most satisfied in Him" ― John Piper'
