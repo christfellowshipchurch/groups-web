@@ -6,7 +6,7 @@ import Placeholder from '../../Placeholder';
 
 const h1Style = css`
   h1,
-  .h1 {
+  .H1 {
     color: ${({ theme }) => theme.colors.text.primary};
     font-family: ${({ theme }) => theme.typography.fontFamily};
     font-size: 2.6875rem;
@@ -29,7 +29,7 @@ const H1 = ({ children, isLoading, padded, ...props }) => (
   <Placeholder.Typography
     isLoading={isLoading}
     showLoadingAnimation
-    typographicClassName={'h1'} // needs to match child components className
+    typographicClassName={'H1'} // needs to match child components className
   >
     <StyledH1 padded={padded} {...props}>
       {children}

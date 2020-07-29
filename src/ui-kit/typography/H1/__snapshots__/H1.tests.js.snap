@@ -23,7 +23,7 @@ exports[`the H1 component should render 1`] = `
 
 exports[`the H1 component should render a loading state 1`] = `
 <mark
-  className="ra2rjz-0 gJMToV h1 show-loading-animation ui-kit.Placeholder.Line custom-placeholder"
+  className="ra2rjz-0 gJMToV H1 show-loading-animation ui-kit.Placeholder.Line custom-placeholder"
   width="100%"
 />
 `;

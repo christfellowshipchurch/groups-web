@@ -6,7 +6,7 @@ import Placeholder from '../../Placeholder';
 
 const h2Style = css`
   h2,
-  .h2 {
+  .H2 {
     color: ${({ theme }) => theme.colors.text.primary};
     font-family: ${({ theme }) => theme.typography.fontFamily};
     font-size: 2.25rem;
@@ -33,7 +33,7 @@ const H2 = ({ children, isLoading, padded, ...props }) => (
   <Placeholder.Typography
     isLoading={isLoading}
     showLoadingAnimation
-    typographicClassName={'h2'} // needs to match child components className
+    typographicClassName={'H2'} // needs to match child components className
   >
     <StyledH2 padded={padded} {...props}>
       {children}
