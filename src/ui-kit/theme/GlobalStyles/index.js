@@ -1,10 +1,12 @@
 import { createGlobalStyle } from 'styled-components';
 import { h1Style } from '../../typography/H1';
+import { h2Style } from '../../typography/H2';
 
 const GlobalStyles = createGlobalStyle`
   /* Typography styles are imported to and referenced from the global stylesheet. See individual
      typogrpahy components (/ui-kit/typography) for style definitions */
   ${h1Style}
+  ${h2Style}
 
   /* Copied from https://github.com/buildo/react-placeholder/blob/master/src/reactPlaceholder.scss
   to reduce technical complexity with importing css */
