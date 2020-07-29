@@ -13,19 +13,20 @@ const h1Style = css`
     font-weight: 900;
     line-height: ${({ theme }) => theme.helpers.verticalRhythm(2.6875, 1.15)};
     &.ui-kit-Placeholder-TypographyLine {
-      background: 'blue';
-      height: 2.6875rem;
+      height: 2.6875rem; /* Should match .h1 font-size */
     }
   }
 `;
 
-const StyledH1 = styled.h1`
+const StyledH1 = styled.h1.attrs({
+  className: 'ui-kit-typography-H1-StyledH1',
+})`
   margin: ${({ padded, theme }) =>
     padded ? `${theme.helpers.verticalRhythm(2.015625)} 0` : 'inital'};
 `;
 
 const H1 = ({ children, isLoading, padded }) => (
-  <Placeholder.Typography isLoading={isLoading} style={h1Style}>
+  <Placeholder.Typography isLoading={isLoading}>
     <StyledH1 padded={padded}>{children}</StyledH1>
   </Placeholder.Typography>
 );
@@ -35,7 +36,7 @@ H1.defaultProps = {
 };
 
 H1.propTypes = {
-  children: PropTypes.node,
+  children: PropTypes.node.isRequired,
   isLoading: PropTypes.bool,
   padded: PropTypes.bool,
 };

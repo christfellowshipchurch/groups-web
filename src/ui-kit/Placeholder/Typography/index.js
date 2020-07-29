@@ -14,7 +14,7 @@ import Line from '../Line';
 
 // const TypographyLine = styled.default(Line).attrs({
 //   className: 'h1 ui-kit Placeholder TypographyLine',
-// })``;
+// })` height: ${boom}`;
 
 const Typography = ({ children, isLoading, ...props }) => {
   const ref = useRef(children);
@@ -35,9 +35,11 @@ const Typography = ({ children, isLoading, ...props }) => {
 };
 
 Typography.propTypes = {
-  children: PropTypes.element,
+  children: PropTypes.element.isRequired,
   isLoading: PropTypes.bool,
 };
+
+Typography.defaultProps = { isLoading: true };
 
 Typography.displayName = 'ui-kit.Placeholder.Typography';
 

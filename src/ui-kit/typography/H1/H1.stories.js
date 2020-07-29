@@ -1,8 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import PaddedDiv from '../../PaddedDiv';
-
 import H1 from '.';
 
 storiesOf('ui-kit/typography/H1', module)
