@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`the H3 component should accept and render passed in styles 1`] = `
+<h3
+  className="kg5xj7-0 iBjkJd ui-kit-typography-H3-StyledH3"
+  style={
+    Object {
+      "color": "salmon",
+    }
+  }
+>
+  Salmon text
+</h3>
+`;
+
+exports[`the H3 component should render 1`] = `
+<h3
+  className="kg5xj7-0 iBjkJd ui-kit-typography-H3-StyledH3"
+>
+  Default H3 text
+</h3>
+`;
+
+exports[`the H3 component should render a loading state 1`] = `
+<mark
+  className="ra2rjz-0 gJMToV H3 show-loading-animation ui-kit.Placeholder.Line custom-placeholder"
+  width="100%"
+/>
+`;
+
+exports[`the H3 component should render with vertical rhythm (padded) 1`] = `
+<h3
+  className="kg5xj7-0 fqMGKc ui-kit-typography-H3-StyledH3"
+>
+  H3 text with vertical rhythm styled via margin.
+</h3>
+`;
