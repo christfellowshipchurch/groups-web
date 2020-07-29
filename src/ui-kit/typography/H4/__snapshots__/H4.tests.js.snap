@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`the H4 component should accept and render passed in styles 1`] = `
+<h4
+  className="sc-17mtry8-0 kKFVXo ui-kit-typography-H4-StyledH4"
+  style={
+    Object {
+      "color": "salmon",
+    }
+  }
+>
+  Salmon text
+</h4>
+`;
+
+exports[`the H4 component should render 1`] = `
+<h4
+  className="sc-17mtry8-0 kKFVXo ui-kit-typography-H4-StyledH4"
+>
+  Default H4 text
+</h4>
+`;
+
+exports[`the H4 component should render a loading state 1`] = `
+<mark
+  className="ra2rjz-0 gJMToV H4 show-loading-animation ui-kit.Placeholder.Line custom-placeholder"
+  width="100%"
+/>
+`;
+
+exports[`the H4 component should render with vertical rhythm (padded) 1`] = `
+<h4
+  className="sc-17mtry8-0 ljWsVB ui-kit-typography-H4-StyledH4"
+>
+  H4 text with vertical rhythm styled via margin.
+</h4>
+`;
