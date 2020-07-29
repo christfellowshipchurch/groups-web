@@ -9,7 +9,7 @@ exports[`The Typography placeholder should render 1`] = `
 
 exports[`The Typography placeholder should render children 1`] = `
 <h1
-  className="sc-1dj0tjq-0 fyuxqo ui-kit-typography-H1-StyledH1"
+  className="sc-1dj0tjq-0 eKKMjd ui-kit-typography-H1-StyledH1"
 >
   Boom
 </h1>

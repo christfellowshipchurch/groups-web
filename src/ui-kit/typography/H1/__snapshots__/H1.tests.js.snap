@@ -2,7 +2,7 @@
 
 exports[`the H1 component should accept and render passed in styles 1`] = `
 <h1
-  className="sc-1dj0tjq-0 fyuxqo ui-kit-typography-H1-StyledH1"
+  className="sc-1dj0tjq-0 eKKMjd ui-kit-typography-H1-StyledH1"
   style={
     Object {
       "color": "salmon",
@@ -15,7 +15,7 @@ exports[`the H1 component should accept and render passed in styles 1`] = `
 
 exports[`the H1 component should render 1`] = `
 <h1
-  className="sc-1dj0tjq-0 fyuxqo ui-kit-typography-H1-StyledH1"
+  className="sc-1dj0tjq-0 eKKMjd ui-kit-typography-H1-StyledH1"
 >
   Default H1 text
 </h1>

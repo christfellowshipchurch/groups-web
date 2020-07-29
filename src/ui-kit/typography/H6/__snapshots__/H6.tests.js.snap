@@ -2,7 +2,7 @@
 
 exports[`the H6 component should accept and render passed in styles 1`] = `
 <h6
-  className="toneu3-0 jiUMAT ui-kit-typography-H6-StyledH6"
+  className="toneu3-0 dYtisu ui-kit-typography-H6-StyledH6"
   style={
     Object {
       "color": "salmon",
@@ -15,7 +15,7 @@ exports[`the H6 component should accept and render passed in styles 1`] = `
 
 exports[`the H6 component should render 1`] = `
 <h6
-  className="toneu3-0 jiUMAT ui-kit-typography-H6-StyledH6"
+  className="toneu3-0 dYtisu ui-kit-typography-H6-StyledH6"
 >
   Default H6 text
 </h6>

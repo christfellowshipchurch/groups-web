@@ -2,7 +2,7 @@
 
 exports[`the H2 component should accept and render passed in styles 1`] = `
 <h2
-  className="r3v0jj-0 dfRLMC ui-kit-typography-H2-StyledH2"
+  className="r3v0jj-0 cmysrz ui-kit-typography-H2-StyledH2"
   style={
     Object {
       "color": "salmon",
@@ -15,7 +15,7 @@ exports[`the H2 component should accept and render passed in styles 1`] = `
 
 exports[`the H2 component should render 1`] = `
 <h2
-  className="r3v0jj-0 dfRLMC ui-kit-typography-H2-StyledH2"
+  className="r3v0jj-0 cmysrz ui-kit-typography-H2-StyledH2"
 >
   Default H2 text
 </h2>
