@@ -25,8 +25,11 @@ const StyledH1 = styled.h1.attrs({
     padded ? `${theme.helpers.verticalRhythm(2.015625)} 0` : 'inital'};
 `;
 
-const H1 = ({ children, isLoading, padded }) => (
-  <Placeholder.Typography isLoading={isLoading}>
+const H1 = ({ children, isLoading, padded, showLoadingAnimation }) => (
+  <Placeholder.Typography
+    isLoading={isLoading}
+    showLoadingAnimation={showLoadingAnimation}
+  >
     <StyledH1 padded={padded}>{children}</StyledH1>
   </Placeholder.Typography>
 );
@@ -39,6 +42,7 @@ H1.propTypes = {
   children: PropTypes.node.isRequired,
   isLoading: PropTypes.bool,
   padded: PropTypes.bool,
+  showLoadingAnimation: PropTypes.bool,
 };
 
 H1.displayName = 'ui-kit.typography.H1';
