@@ -22,7 +22,7 @@ const StyledH1 = styled.h1.attrs({
   className: 'ui-kit-typography-H1-StyledH1',
 })`
   margin: ${({ padded, theme }) =>
-    padded ? `${theme.helpers.verticalRhythm(2.015625)} 0` : 'inital'};
+    padded ? `${theme.helpers.verticalRhythm(2.015625)} 0` : 'initial'};
 `;
 
 const H1 = ({ children, isLoading, padded, ...props }) => (

@@ -26,7 +26,7 @@ const StyledH5 = styled.h5.attrs({
       ? `${theme.helpers.verticalRhythm(
           0.5775
         )} 0 ${theme.helpers.verticalRhythm(0.4375)} 0`
-      : 'inital'};
+      : 'initial'};
 `;
 
 const H5 = ({ children, isLoading, padded, ...props }) => (

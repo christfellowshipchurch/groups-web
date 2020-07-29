@@ -7,7 +7,7 @@ import Placeholder from '../../Placeholder';
 const h6Style = css`
   h6,
   .H6 {
-    color: ${({ theme }) => theme.colors.text.primary};
+    color: ${({ theme }) => theme.colors.text.secondary};
     font-family: ${({ theme }) => theme.typography.fontFamily};
     font-size: 0.75rem;
     font-weight: 500;
@@ -22,7 +22,7 @@ const StyledH6 = styled.h6.attrs({
   className: 'ui-kit-typography-H6-StyledH6',
 })`
   margin: ${({ padded, theme }) =>
-    padded ? `0 0 ${theme.helpers.verticalRhythm(0.375)} 0` : 'inital'};
+    padded ? `0 0 ${theme.helpers.verticalRhythm(0.375)} 0` : 'initial'};
 `;
 
 const H6 = ({ children, isLoading, padded, ...props }) => (

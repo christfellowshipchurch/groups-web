@@ -26,7 +26,7 @@ const StyledH3 = styled.h3.attrs({
       ? `${theme.helpers.verticalRhythm(
           1.125
         )} 0 ${theme.helpers.verticalRhythm(0.75)} 0`
-      : 'inital'};
+      : 'initial'};
 `;
 
 const H3 = ({ children, isLoading, padded, ...props }) => (

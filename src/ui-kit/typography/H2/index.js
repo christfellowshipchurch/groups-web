@@ -26,7 +26,7 @@ const StyledH2 = styled.h2.attrs({
       ? `${theme.helpers.verticalRhythm(1)} 0 ${theme.helpers.verticalRhythm(
           0.834
         )} 0`
-      : 'inital'};
+      : 'initial'};
 `;
 
 const H2 = ({ children, isLoading, padded, ...props }) => (
