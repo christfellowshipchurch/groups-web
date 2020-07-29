@@ -12,7 +12,7 @@ const h2Style = css`
     font-size: 2.25rem;
     font-weight: 900;
     line-height: ${({ theme }) => theme.helpers.verticalRhythm(2.25, 1.15)};
-    &.ui-kit-Placeholder-TypographyLine {
+    &.custom-placeholder {
       height: 2.25rem; /* Should match .h2font-size */
     }
   }
@@ -29,12 +29,15 @@ const StyledH2 = styled.h2.attrs({
       : 'inital'};
 `;
 
-const H2 = ({ children, isLoading, padded, showLoadingAnimation }) => (
+const H2 = ({ children, isLoading, padded, ...props }) => (
   <Placeholder.Typography
     isLoading={isLoading}
-    showLoadingAnimation={showLoadingAnimation}
+    showLoadingAnimation
+    typographicClassName={'h2'} // needs to match child components className
   >
-    <StyledH2 padded={padded}>{children}</StyledH2>
+    <StyledH2 padded={padded} {...props}>
+      {children}
+    </StyledH2>
   </Placeholder.Typography>
 );
 
@@ -46,7 +49,6 @@ H2.propTypes = {
   children: PropTypes.node.isRequired,
   isLoading: PropTypes.bool,
   padded: PropTypes.bool,
-  showLoadingAnimation: PropTypes.bool,
 };
 
 H2.displayName = 'ui-kit.typography.H2';

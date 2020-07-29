@@ -12,7 +12,7 @@ const h1Style = css`
     font-size: 2.6875rem;
     font-weight: 900;
     line-height: ${({ theme }) => theme.helpers.verticalRhythm(2.6875, 1.15)};
-    &.ui-kit-Placeholder-TypographyLine {
+    &.custom-placeholder {
       height: 2.6875rem; /* Should match .h1 font-size */
     }
   }
@@ -25,12 +25,15 @@ const StyledH1 = styled.h1.attrs({
     padded ? `${theme.helpers.verticalRhythm(2.015625)} 0` : 'inital'};
 `;
 
-const H1 = ({ children, isLoading, padded, showLoadingAnimation }) => (
+const H1 = ({ children, isLoading, padded, ...props }) => (
   <Placeholder.Typography
     isLoading={isLoading}
-    showLoadingAnimation={showLoadingAnimation}
+    showLoadingAnimation
+    typographicClassName={'h1'} // needs to match child components className
   >
-    <StyledH1 padded={padded}>{children}</StyledH1>
+    <StyledH1 padded={padded} {...props}>
+      {children}
+    </StyledH1>
   </Placeholder.Typography>
 );
 
@@ -42,7 +45,6 @@ H1.propTypes = {
   children: PropTypes.node.isRequired,
   isLoading: PropTypes.bool,
   padded: PropTypes.bool,
-  showLoadingAnimation: PropTypes.bool,
 };
 
 H1.displayName = 'ui-kit.typography.H1';

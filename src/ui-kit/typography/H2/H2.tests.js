@@ -15,15 +15,15 @@ describe('the H2 component', () => {
     expect(tree).toMatchSnapshot();
   });
   it('should accept and render passed in styles', () => {
-    const salmon = { color: 'salmon' };
+    const salmonText = { color: 'salmon' };
     const tree = renderer.create(
       <Providers>
-        <H2 style={salmon}>Salmon text</H2>
+        <H2 style={salmonText}>Salmon text</H2>
       </Providers>
     );
     expect(tree).toMatchSnapshot();
   });
-  it('should render with ', () => {
+  it('should render with vertical rhythm (padded)', () => {
     const tree = renderer.create(
       <Providers>
         <H2 padded>H2 text with vertical rhythm styled via margin.</H2>
