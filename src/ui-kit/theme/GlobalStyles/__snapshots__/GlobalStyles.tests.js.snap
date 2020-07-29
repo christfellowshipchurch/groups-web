@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`the GlobalStyles component should render 1`] = `
+HTMLCollection [
+  <style
+    data-styled="active"
+    data-styled-version="5.1.1"
+  >
+    h1,.H1{color:#303030;font-family:Inter,-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI","Roboto","Helvetica Neue",Arial,sans-serif;font-size:2.6875rem;font-weight:900;line-height:3.0906249999999997rem;}
+    h1.custom-placeholder,.H1.custom-placeholder{height:2.6875rem;}
+    h2,.H2{color:#303030;font-family:Inter,-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI","Roboto","Helvetica Neue",Arial,sans-serif;font-size:2.25rem;font-weight:900;line-height:2.5875rem;}
+    h2.custom-placeholder,.H2.custom-placeholder{height:2.25rem;}
+    h3,.H3{color:#303030;font-family:Inter,-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI","Roboto","Helvetica Neue",Arial,sans-serif;font-size:1.5rem;font-weight:900;line-height:1.7249999999999999rem;}
+    h3.custom-placeholder,.H3.custom-placeholder{height:1.5rem;}
+    h4,.H4{color:#303030;font-family:Inter,-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI","Roboto","Helvetica Neue",Arial,sans-serif;font-size:1rem;font-weight:700;line-height:1.5rem;}
+    h4.custom-placeholder,.H4.custom-placeholder{height:1rem;}
+    h5,.H5{color:#303030;font-family:Inter,-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI","Roboto","Helvetica Neue",Arial,sans-serif;font-size:0.875rem;font-weight:500;line-height:1.3125rem;}
+    h5.custom-placeholder,.H5.custom-placeholder{height:0.875rem;}
+    h6,.H6{color:#303030;font-family:Inter,-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI","Roboto","Helvetica Neue",Arial,sans-serif;font-size:0.75rem;font-weight:500;line-height:1.125rem;}
+    h6.custom-placeholder,.H6.custom-placeholder{height:0.75rem;}
+    .show-loading-animation.rect-shape,.show-loading-animation.round-shape,.show-loading-animation.text-row,.show-loading-animation.custom-placeholder,.show-loading-animation .rect-shape,.show-loading-animation .round-shape,.show-loading-animation .text-row,.show-loading-animation .custom-placeholder{-webkit-animation:react-placeholder-pulse 1.5s infinite;animation:react-placeholder-pulse 1.5s infinite;}
+    @-webkit-keyframes react-placeholder-pulse{0%{opacity:.6;}50%{opacity:1;}100%{opacity:.6;}}
+    @keyframes react-placeholder-pulse{0%{opacity:.6;}50%{opacity:1;}100%{opacity:.6;}}
+    h1,.H1{color:#303030;font-family:Inter,-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI","Roboto","Helvetica Neue",Arial,sans-serif;font-size:2.6875rem;font-weight:900;line-height:3.0906249999999997rem;}
+    h1.custom-placeholder,.H1.custom-placeholder{height:2.6875rem;}
+    h2,.H2{color:#303030;font-family:Inter,-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI","Roboto","Helvetica Neue",Arial,sans-serif;font-size:2.25rem;font-weight:900;line-height:2.5875rem;}
+    h2.custom-placeholder,.H2.custom-placeholder{height:2.25rem;}
+    h3,.H3{color:#303030;font-family:Inter,-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI","Roboto","Helvetica Neue",Arial,sans-serif;font-size:1.5rem;font-weight:900;line-height:1.7249999999999999rem;}
+    h3.custom-placeholder,.H3.custom-placeholder{height:1.5rem;}
+    h4,.H4{color:#303030;font-family:Inter,-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI","Roboto","Helvetica Neue",Arial,sans-serif;font-size:1rem;font-weight:700;line-height:1.5rem;}
+    h4.custom-placeholder,.H4.custom-placeholder{height:1rem;}
+    h5,.H5{color:#303030;font-family:Inter,-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI","Roboto","Helvetica Neue",Arial,sans-serif;font-size:0.875rem;font-weight:500;line-height:1.3125rem;}
+    h5.custom-placeholder,.H5.custom-placeholder{height:0.875rem;}
+    h6,.H6{color:#303030;font-family:Inter,-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI","Roboto","Helvetica Neue",Arial,sans-serif;font-size:0.75rem;font-weight:500;line-height:1.125rem;}
+    h6.custom-placeholder,.H6.custom-placeholder{height:0.75rem;}
+    .show-loading-animation.rect-shape,.show-loading-animation.round-shape,.show-loading-animation.text-row,.show-loading-animation.custom-placeholder,.show-loading-animation .rect-shape,.show-loading-animation .round-shape,.show-loading-animation .text-row,.show-loading-animation .custom-placeholder{-webkit-animation:react-placeholder-pulse 1.5s infinite;animation:react-placeholder-pulse 1.5s infinite;}
+    @-webkit-keyframes react-placeholder-pulse{0%{opacity:.6;}50%{opacity:1;}100%{opacity:.6;}}
+    @keyframes react-placeholder-pulse{0%{opacity:.6;}50%{opacity:1;}100%{opacity:.6;}}
+  </style>,
+]
+`;

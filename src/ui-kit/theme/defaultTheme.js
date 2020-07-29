@@ -3,6 +3,7 @@ const theme = {
     primary: 'salmon',
     text: {
       primary: '#303030',
+      secondary: '#505050',
     },
     background: {
       paper: '#FFFFFF',
