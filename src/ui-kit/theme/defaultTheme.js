@@ -13,7 +13,7 @@ const theme = {
     baseFontSize: 1,
     baseLineHeight: 1.5,
     fontFamily:
-      'Gotham HTF, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif',
+      'Inter, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif',
   },
   sizing: {
     baseUnit: (unit = 1) => `${unit}rem`,

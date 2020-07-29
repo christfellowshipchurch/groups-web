@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`the H6 component should accept and render passed in styles 1`] = `
+<h6
+  className="toneu3-0 jiUMAT ui-kit-typography-H6-StyledH6"
+  style={
+    Object {
+      "color": "salmon",
+    }
+  }
+>
+  Salmon text
+</h6>
+`;
+
+exports[`the H6 component should render 1`] = `
+<h6
+  className="toneu3-0 jiUMAT ui-kit-typography-H6-StyledH6"
+>
+  Default H6 text
+</h6>
+`;
+
+exports[`the H6 component should render a loading state 1`] = `
+<mark
+  className="ra2rjz-0 gJMToV H6 show-loading-animation ui-kit.Placeholder.Line custom-placeholder"
+  width="100%"
+/>
+`;
+
+exports[`the H6 component should render with vertical rhythm (padded) 1`] = `
+<h6
+  className="toneu3-0 gtbQTo ui-kit-typography-H6-StyledH6"
+>
+  H6 text with vertical rhythm styled via margin.
+</h6>
+`;
