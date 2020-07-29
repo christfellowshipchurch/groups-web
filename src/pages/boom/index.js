@@ -2,7 +2,7 @@ import React from 'react';
 import { useQuery } from '@apollo/react-hooks';
 
 import { withApollo } from '../../lib/apollo';
-import { Title } from '../../ui-kit';
+import { H1 } from '../../ui-kit';
 
 import exampleQuery from './exampleQuery';
 
@@ -11,7 +11,7 @@ function Boom() {
 
   return (
     <>
-      <Title>Boom pages</Title>
+      <H1>Boom pages</H1>
       <ul>
         {data?.getBrowseFilters[0]?.childContentItemsConnection?.edges[0]?.node?.childContentItemsConnection?.edges[0]?.node?.childContentItemsConnection?.edges.map(
           ({ node: { id, title } = {} }) => (

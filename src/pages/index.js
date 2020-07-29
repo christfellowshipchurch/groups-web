@@ -1,12 +1,12 @@
 import React from 'react';
 import Link from 'next/link';
 
-import { Title } from '../ui-kit';
+import { H1 } from '../ui-kit';
 
 export default function Home() {
   return (
     <>
-      <Title>My page</Title>
+      <H1>My page</H1>
       <ul>
         <li>
           <Link href="/boom">
