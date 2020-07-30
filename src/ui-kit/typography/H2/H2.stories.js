@@ -18,4 +18,11 @@ storiesOf('ui-kit/typography/H2', module)
         '"God is most glorified in us when we are most satisfied in Him" ― John Piper'
       }
     </H2>
+  ))
+  .add('isLoading + padded', () => (
+    <H2 isLoading padded showLoadingAnimation>
+      {
+        '"God is most glorified in us when we are most satisfied in Him" ― John Piper'
+      }
+    </H2>
   ));

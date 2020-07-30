@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import { Line } from '../../Placeholder';
 
 const verticalRhythm = css`
-  margin: ${({ padded, theme }) =>
+  ${({ padded, theme }) =>
     padded
       ? `${theme.helpers.verticalRhythm(1)} 0 ${theme.helpers.verticalRhythm(
           0.834
@@ -19,16 +19,23 @@ const StyledH2 = styled.h2.attrs({
   font-size: 2.25rem;
   font-weight: 900;
   line-height: ${({ theme }) => theme.helpers.verticalRhythm(2.25, 1.15)};
-
-  ${verticalRhythm}
+  margin: ${verticalRhythm};
 `;
 
 const Placeholder = styled(Line).attrs({
   className: 'ui-kit-H1-Placeholder',
 })`
   height: 2.25rem; /* Should match .h2font-size */
-
-  ${verticalRhythm}
+  margin: ${({ padded, theme }) =>
+    // if padded...
+    padded
+      ? // return rhythm so placeholder matches text position to prevent jitter/jank
+        verticalRhythm
+      : // else default to...
+        `calc(${theme.helpers.verticalRhythm(
+          2.25,
+          1.15
+        )} - 2.25rem) 0`}; /* line-height - font-size = space between lines */
 `;
 
 const H2 = ({ children, isLoading, padded, ...props }) => (
