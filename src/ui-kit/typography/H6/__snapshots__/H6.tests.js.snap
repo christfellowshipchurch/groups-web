@@ -2,7 +2,7 @@
 
 exports[`the H6 component should accept and render passed in styles 1`] = `
 <h6
-  className="toneu3-0 kZtPBb ui-kit-typography-H6-StyledH6"
+  className="toneu3-0 dAuhVA ui-kit-typography-H6-StyledH6"
   style={
     Object {
       "color": "salmon",
@@ -15,7 +15,7 @@ exports[`the H6 component should accept and render passed in styles 1`] = `
 
 exports[`the H6 component should render 1`] = `
 <h6
-  className="toneu3-0 kZtPBb ui-kit-typography-H6-StyledH6"
+  className="toneu3-0 dAuhVA ui-kit-typography-H6-StyledH6"
 >
   Default H6 text
 </h6>
@@ -23,21 +23,21 @@ exports[`the H6 component should render 1`] = `
 
 exports[`the H6 component should render a loading state 1`] = `
 <mark
-  className="ra2rjz-0 gcMOrm show-loading-animation toneu3-1 jfhCls ui-kit-H6-Placeholder ui-kit.Placeholder.Line custom-placeholder"
+  className="ra2rjz-0 gcMOrm show-loading-animation toneu3-1 gjtEPl ui-kit-H6-Placeholder ui-kit.Placeholder.Line custom-placeholder"
   width="100%"
 />
 `;
 
 exports[`the H6 component should render a loading state with vertical rhythm (padded) 1`] = `
 <mark
-  className="ra2rjz-0 gcMOrm show-loading-animation toneu3-1 gobPYO ui-kit-H6-Placeholder ui-kit.Placeholder.Line custom-placeholder"
+  className="ra2rjz-0 gcMOrm show-loading-animation toneu3-1 hiFnWG ui-kit-H6-Placeholder ui-kit.Placeholder.Line custom-placeholder"
   width="100%"
 />
 `;
 
 exports[`the H6 component should render with vertical rhythm (padded) 1`] = `
 <h6
-  className="toneu3-0 gdUyRN ui-kit-typography-H6-StyledH6"
+  className="toneu3-0 bGweoG ui-kit-typography-H6-StyledH6"
 >
   H6 text with vertical rhythm styled via margin.
 </h6>
