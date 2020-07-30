@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`the H5 component should accept and render passed in styles 1`] = `
-<h5
-  className="sc-1hocjyp-0 dhcvWr ui-kit-typography-H5-StyledH5"
+<h4
+  className="sc-1hocjyp-0 bOWGCW ui-kit-typography-H5-StyledH5"
   style={
     Object {
       "color": "salmon",
@@ -10,28 +10,35 @@ exports[`the H5 component should accept and render passed in styles 1`] = `
   }
 >
   Salmon text
-</h5>
+</h4>
 `;
 
 exports[`the H5 component should render 1`] = `
-<h5
-  className="sc-1hocjyp-0 dhcvWr ui-kit-typography-H5-StyledH5"
+<h4
+  className="sc-1hocjyp-0 bOWGCW ui-kit-typography-H5-StyledH5"
 >
   Default H5 text
-</h5>
+</h4>
 `;
 
 exports[`the H5 component should render a loading state 1`] = `
 <mark
-  className="ra2rjz-0 gJMToV H5 show-loading-animation ui-kit.Placeholder.Line custom-placeholder"
+  className="ra2rjz-0 gcMOrm show-loading-animation sc-1hocjyp-1 kcInKt ui-kit-H1-Placeholder ui-kit.Placeholder.Line custom-placeholder"
+  width="100%"
+/>
+`;
+
+exports[`the H5 component should render a loading state with vertical rhythm (padded) 1`] = `
+<mark
+  className="ra2rjz-0 gcMOrm show-loading-animation sc-1hocjyp-1 iWPGLC ui-kit-H1-Placeholder ui-kit.Placeholder.Line custom-placeholder"
   width="100%"
 />
 `;
 
 exports[`the H5 component should render with vertical rhythm (padded) 1`] = `
-<h5
-  className="sc-1hocjyp-0 egaYBw ui-kit-typography-H5-StyledH5"
+<h4
+  className="sc-1hocjyp-0 bnileZ ui-kit-typography-H5-StyledH5"
 >
   H5 text with vertical rhythm styled via margin.
-</h5>
+</h4>
 `;

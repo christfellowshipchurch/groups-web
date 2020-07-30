@@ -39,4 +39,14 @@ describe('the H5 component', () => {
     );
     expect(tree).toMatchSnapshot();
   });
+  it('should render a loading state with vertical rhythm (padded)', () => {
+    const tree = renderer.create(
+      <Providers>
+        <H5 isLoading padded>
+          Default H5 text
+        </H5>
+      </Providers>
+    );
+    expect(tree).toMatchSnapshot();
+  });
 });

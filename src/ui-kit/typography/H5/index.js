@@ -2,25 +2,9 @@ import React from 'react';
 import styled, { css } from 'styled-components';
 import PropTypes from 'prop-types';
 
-import Placeholder from '../../Placeholder';
+import { Line } from '../../Placeholder';
 
-const h5Style = css`
-  h5,
-  .H5 {
-    color: ${({ theme }) => theme.colors.text.primary};
-    font-family: ${({ theme }) => theme.typography.fontFamily};
-    font-size: 0.875rem;
-    font-weight: 500;
-    line-height: ${({ theme }) => theme.helpers.verticalRhythm(0.875)};
-    &.custom-placeholder {
-      height: 0.875rem; /* Should match .h5font-size */
-    }
-  }
-`;
-
-const StyledH5 = styled.h5.attrs({
-  className: 'ui-kit-typography-H5-StyledH5',
-})`
+const verticalRhythm = css`
   margin: ${({ padded, theme }) =>
     padded
       ? `${theme.helpers.verticalRhythm(
@@ -29,16 +13,30 @@ const StyledH5 = styled.h5.attrs({
       : 'initial'};
 `;
 
+const StyledH5 = styled.h4.attrs({
+  className: 'ui-kit-typography-H5-StyledH5',
+})`
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: ${({ theme }) => theme.helpers.verticalRhythm(0.875)};
+
+  ${verticalRhythm}
+`;
+
+const Placeholder = styled(Line).attrs({
+  className: 'ui-kit-H1-Placeholder',
+})`
+  height: 0.875rem; /* Should match H5 font-size */
+
+  ${verticalRhythm}
+`;
+
 const H5 = ({ children, isLoading, padded, ...props }) => (
-  <Placeholder.Typography
-    isLoading={isLoading}
-    showLoadingAnimation
-    typographicClassName={'H5'} // needs to match child components className
-  >
+  <Placeholder isLoading={isLoading} padded={padded} showLoadingAnimation>
     <StyledH5 padded={padded} {...props}>
       {children}
     </StyledH5>
-  </Placeholder.Typography>
+  </Placeholder>
 );
 
 H5.defaultProps = {
@@ -53,4 +51,4 @@ H5.propTypes = {
 
 H5.displayName = 'ui-kit.typography.H5';
 
-export { H5 as default, h5Style };
+export default H5;
