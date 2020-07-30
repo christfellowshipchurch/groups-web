@@ -42,7 +42,7 @@ HTMLCollection [
     [hidden]{display:none;}
     *,*::before,*::after{box-sizing:border-box;}
     html{color:#303030;font-size:100%;font-family:Inter,-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI","Roboto","Helvetica Neue",Arial,sans-serif;}
-    ::selection{background:salmon text-shadow:none;}
+    ::selection{background:salmon;text-shadow:none;}
     .show-loading-animation.rect-shape,.show-loading-animation.round-shape,.show-loading-animation.text-row,.show-loading-animation.custom-placeholder,.show-loading-animation .rect-shape,.show-loading-animation .round-shape,.show-loading-animation .text-row,.show-loading-animation .custom-placeholder{-webkit-animation:react-placeholder-pulse 1.5s infinite;animation:react-placeholder-pulse 1.5s infinite;}
     @-webkit-keyframes react-placeholder-pulse{0%{opacity:.6;}50%{opacity:1;}100%{opacity:.6;}}
     @keyframes react-placeholder-pulse{0%{opacity:.6;}50%{opacity:1;}100%{opacity:.6;}}
@@ -82,7 +82,7 @@ HTMLCollection [
     [hidden]{display:none;}
     *,*::before,*::after{box-sizing:border-box;}
     html{color:#303030;font-size:100%;font-family:Inter,-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI","Roboto","Helvetica Neue",Arial,sans-serif;}
-    ::selection{background:salmon text-shadow:none;}
+    ::selection{background:salmon;text-shadow:none;}
     .show-loading-animation.rect-shape,.show-loading-animation.round-shape,.show-loading-animation.text-row,.show-loading-animation.custom-placeholder,.show-loading-animation .rect-shape,.show-loading-animation .round-shape,.show-loading-animation .text-row,.show-loading-animation .custom-placeholder{-webkit-animation:react-placeholder-pulse 1.5s infinite;animation:react-placeholder-pulse 1.5s infinite;}
     @-webkit-keyframes react-placeholder-pulse{0%{opacity:.6;}50%{opacity:1;}100%{opacity:.6;}}
     @keyframes react-placeholder-pulse{0%{opacity:.6;}50%{opacity:1;}100%{opacity:.6;}}

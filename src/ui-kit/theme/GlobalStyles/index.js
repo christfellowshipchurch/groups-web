@@ -17,7 +17,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   ::selection {
-    background: ${({ theme }) => theme.colors.primary}
+    background: ${({ theme }) => theme.colors.primary};
     text-shadow: none;
   }
 
