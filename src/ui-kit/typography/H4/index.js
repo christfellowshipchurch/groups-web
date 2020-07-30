@@ -5,11 +5,11 @@ import PropTypes from 'prop-types';
 import { Line } from '../../Placeholder';
 
 const verticalRhythm = css`
-  margin: ${({ padded, theme }) =>
+  ${({ padded, theme }) =>
     padded
       ? `${theme.helpers.verticalRhythm(0.66)} 0 ${theme.helpers.verticalRhythm(
           0.5
-        )} 0`
+        )} 0;`
       : 'initial'};
 `;
 
@@ -19,16 +19,22 @@ const StyledH4 = styled.h4.attrs({
   font-size: 1rem;
   font-weight: 700;
   line-height: ${({ theme }) => theme.helpers.verticalRhythm(1)};
-
-  ${verticalRhythm}
+  margin: ${verticalRhythm};
 `;
 
 const Placeholder = styled(Line).attrs({
   className: 'ui-kit-H4-Placeholder',
 })`
   height: 1rem; /* Should match H4 font-size */
-
-  ${verticalRhythm}
+  margin: ${({ padded, theme }) =>
+    // if padded...
+    padded
+      ? // return rhythm so placeholder matches text position to prevent jitter/jank
+        verticalRhythm
+      : // else default to...
+        `calc(${theme.helpers.verticalRhythm(
+          1
+        )} - 1rem) 0`}; /* line-height - font-size = space between lines */
 `;
 
 const H4 = ({ children, isLoading, padded, ...props }) => (
