@@ -3,7 +3,7 @@
 exports[`the home page should render 1`] = `
 Array [
   <h1
-    className="sc-1kmdb0u-0 eyVkGB"
+    className="sc-1dj0tjq-0 GKKOv ui-kit-H1-StyledH1"
   >
     My page
   </h1>,
