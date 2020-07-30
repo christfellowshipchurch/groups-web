@@ -1,8 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 import { normalize } from 'styled-normalize';
 
-import { h6Style } from '../../typography/H6';
-
 const GlobalStyles = createGlobalStyle`
   ${normalize}
 
@@ -22,10 +20,6 @@ const GlobalStyles = createGlobalStyle`
     background: ${({ theme }) => theme.colors.primary}
     text-shadow: none;
   }
-
-  /* Individal typography styles are imported to and referenced from the global stylesheet. See
-     typogrpahy components (/ui-kit/typography) for style definitions */
-  ${h6Style}
 
   /* Copied from https://github.com/buildo/react-placeholder/blob/master/src/reactPlaceholder.scss
   to reduce technical complexity with importing css */
