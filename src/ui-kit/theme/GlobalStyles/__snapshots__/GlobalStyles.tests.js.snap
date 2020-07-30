@@ -43,8 +43,6 @@ HTMLCollection [
     *,*::before,*::after{box-sizing:border-box;}
     html{color:#303030;font-size:100%;font-family:Inter,-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI","Roboto","Helvetica Neue",Arial,sans-serif;}
     ::selection{background:salmon text-shadow:none;}
-    h2,.H2{color:#303030;font-family:Inter,-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI","Roboto","Helvetica Neue",Arial,sans-serif;font-size:2.25rem;font-weight:900;line-height:2.5875rem;}
-    h2.custom-placeholder,.H2.custom-placeholder{height:2.25rem;}
     h3,.H3{color:#303030;font-family:Inter,-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI","Roboto","Helvetica Neue",Arial,sans-serif;font-size:1.5rem;font-weight:900;line-height:1.7249999999999999rem;}
     h3.custom-placeholder,.H3.custom-placeholder{height:1.5rem;}
     h4,.H4{color:#303030;font-family:Inter,-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI","Roboto","Helvetica Neue",Arial,sans-serif;font-size:1rem;font-weight:700;line-height:1.5rem;}
@@ -93,8 +91,6 @@ HTMLCollection [
     *,*::before,*::after{box-sizing:border-box;}
     html{color:#303030;font-size:100%;font-family:Inter,-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI","Roboto","Helvetica Neue",Arial,sans-serif;}
     ::selection{background:salmon text-shadow:none;}
-    h2,.H2{color:#303030;font-family:Inter,-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI","Roboto","Helvetica Neue",Arial,sans-serif;font-size:2.25rem;font-weight:900;line-height:2.5875rem;}
-    h2.custom-placeholder,.H2.custom-placeholder{height:2.25rem;}
     h3,.H3{color:#303030;font-family:Inter,-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI","Roboto","Helvetica Neue",Arial,sans-serif;font-size:1.5rem;font-weight:900;line-height:1.7249999999999999rem;}
     h3.custom-placeholder,.H3.custom-placeholder{height:1.5rem;}
     h4,.H4{color:#303030;font-family:Inter,-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI","Roboto","Helvetica Neue",Arial,sans-serif;font-size:1rem;font-weight:700;line-height:1.5rem;}

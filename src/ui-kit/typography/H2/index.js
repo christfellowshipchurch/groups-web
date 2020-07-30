@@ -2,43 +2,41 @@ import React from 'react';
 import styled, { css } from 'styled-components';
 import PropTypes from 'prop-types';
 
-import Placeholder from '../../Placeholder';
+import { Line } from '../../Placeholder';
 
-const h2Style = css`
-  h2,
-  .H2 {
-    color: ${({ theme }) => theme.colors.text.primary};
-    font-family: ${({ theme }) => theme.typography.fontFamily};
-    font-size: 2.25rem;
-    font-weight: 900;
-    line-height: ${({ theme }) => theme.helpers.verticalRhythm(2.25, 1.15)};
-    &.custom-placeholder {
-      height: 2.25rem; /* Should match .h2font-size */
-    }
-  }
+const verticalRhythm = css`
+  margin: ${({ padded, theme }) =>
+    padded
+      ? `${theme.helpers.verticalRhythm(1)} 0 ${theme.helpers.verticalRhythm(
+          0.834
+        )}`
+      : 'initial'};
 `;
 
 const StyledH2 = styled.h2.attrs({
   className: 'ui-kit-typography-H2-StyledH2',
 })`
-  margin: ${({ padded, theme }) =>
-    padded
-      ? `${theme.helpers.verticalRhythm(1)} 0 ${theme.helpers.verticalRhythm(
-          0.834
-        )} 0`
-      : 'initial'};
+  font-size: 2.25rem;
+  font-weight: 900;
+  line-height: ${({ theme }) => theme.helpers.verticalRhythm(2.25, 1.15)};
+
+  ${verticalRhythm}
+`;
+
+const Placeholder = styled(Line).attrs({
+  className: 'ui-kit-H1-Placeholder',
+})`
+  height: 2.25rem; /* Should match .h2font-size */
+
+  ${verticalRhythm}
 `;
 
 const H2 = ({ children, isLoading, padded, ...props }) => (
-  <Placeholder.Typography
-    isLoading={isLoading}
-    showLoadingAnimation
-    typographicClassName={'H2'} // needs to match child components className
-  >
+  <Placeholder isLoading={isLoading} padded={padded} showLoadingAnimation>
     <StyledH2 padded={padded} {...props}>
       {children}
     </StyledH2>
-  </Placeholder.Typography>
+  </Placeholder>
 );
 
 H2.defaultProps = {
@@ -53,4 +51,4 @@ H2.propTypes = {
 
 H2.displayName = 'ui-kit.typography.H2';
 
-export { H2 as default, h2Style };
+export default H2;
