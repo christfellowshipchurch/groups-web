@@ -28,11 +28,13 @@ const StyledLine = styled.mark.attrs({
   display: block;
   height: 1rem;
   width: ${({ width }) => width};
+
+  ${({ customStyle }) => customStyle}
 `;
 
 const Line = ({ isLoading, style, width, ...props }) => (
   <ReactPlaceholder
-    customPlaceholder={<StyledLine style={style} width={width} />}
+    customPlaceholder={<StyledLine customStyle={style} width={width} />}
     ready={!isLoading}
     {...props}
   />

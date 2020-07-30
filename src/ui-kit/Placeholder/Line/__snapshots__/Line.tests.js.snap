@@ -37,15 +37,11 @@ exports[`the Line component should render with a custom style 1`] = `
   display: block;
   height: 1rem;
   width: 100%;
+  background: salmon;
 }
 
 <mark
   className="c0 ui-kit.Placeholder.Line custom-placeholder"
-  style={
-    Object {
-      "background": "salmon",
-    }
-  }
   width="100%"
 />
 `;
