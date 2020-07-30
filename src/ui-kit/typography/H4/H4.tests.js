@@ -39,4 +39,14 @@ describe('the H4 component', () => {
     );
     expect(tree).toMatchSnapshot();
   });
+  it('should render a loading state with vertical rhythm (padded)', () => {
+    const tree = renderer.create(
+      <Providers>
+        <H4 isLoading padded>
+          Default H4 text
+        </H4>
+      </Providers>
+    );
+    expect(tree).toMatchSnapshot();
+  });
 });
