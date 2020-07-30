@@ -1,7 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 import { normalize } from 'styled-normalize';
 
-import { h1Style } from '../../typography/H1';
 import { h2Style } from '../../typography/H2';
 import { h3Style } from '../../typography/H3';
 import { h4Style } from '../../typography/H4';
@@ -11,9 +10,25 @@ import { h6Style } from '../../typography/H6';
 const GlobalStyles = createGlobalStyle`
   ${normalize}
 
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    color: ${({ theme }) => theme.colors.text.primary};
+    font-size: 100%;
+    font-family: ${({ theme }) => theme.typography.fontFamily};
+  }
+
+  ::selection {
+    background: ${({ theme }) => theme.colors.primary}
+    text-shadow: none;
+  }
+
   /* Individal typography styles are imported to and referenced from the global stylesheet. See
      typogrpahy components (/ui-kit/typography) for style definitions */
-  ${h1Style}
   ${h2Style}
   ${h3Style}
   ${h4Style}
