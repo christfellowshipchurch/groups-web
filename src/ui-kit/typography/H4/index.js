@@ -24,7 +24,7 @@ const StyledH4 = styled.h4.attrs({
 `;
 
 const Placeholder = styled(Line).attrs({
-  className: 'ui-kit-H1-Placeholder',
+  className: 'ui-kit-H4-Placeholder',
 })`
   height: 1rem; /* Should match H4 font-size */
 

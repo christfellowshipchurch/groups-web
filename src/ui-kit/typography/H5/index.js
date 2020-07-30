@@ -13,7 +13,7 @@ const verticalRhythm = css`
       : 'initial'};
 `;
 
-const StyledH5 = styled.h4.attrs({
+const StyledH5 = styled.h5.attrs({
   className: 'ui-kit-typography-H5-StyledH5',
 })`
   font-size: 0.875rem;
@@ -24,7 +24,7 @@ const StyledH5 = styled.h4.attrs({
 `;
 
 const Placeholder = styled(Line).attrs({
-  className: 'ui-kit-H1-Placeholder',
+  className: 'ui-kit-H5-Placeholder',
 })`
   height: 0.875rem; /* Should match H5 font-size */
 
