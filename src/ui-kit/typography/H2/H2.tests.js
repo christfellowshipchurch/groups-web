@@ -43,7 +43,7 @@ describe('the H2 component', () => {
     const tree = renderer.create(
       <Providers>
         <H2 isLoading padded>
-          Default H1 text
+          Default H2 text
         </H2>
       </Providers>
     );
