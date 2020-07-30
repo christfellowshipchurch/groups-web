@@ -23,14 +23,14 @@ exports[`the H4 component should render 1`] = `
 
 exports[`the H4 component should render a loading state 1`] = `
 <mark
-  className="ra2rjz-0 gcMOrm show-loading-animation sc-17mtry8-1 iYUdmN ui-kit-H1-Placeholder ui-kit.Placeholder.Line custom-placeholder"
+  className="ra2rjz-0 gcMOrm show-loading-animation sc-17mtry8-1 bLvqeS ui-kit-H1-Placeholder ui-kit.Placeholder.Line custom-placeholder"
   width="100%"
 />
 `;
 
 exports[`the H4 component should render a loading state with vertical rhythm (padded) 1`] = `
 <mark
-  className="ra2rjz-0 gcMOrm show-loading-animation sc-17mtry8-1 fZvOUJ ui-kit-H1-Placeholder ui-kit.Placeholder.Line custom-placeholder"
+  className="ra2rjz-0 gcMOrm show-loading-animation sc-17mtry8-1 eDUsSW ui-kit-H1-Placeholder ui-kit.Placeholder.Line custom-placeholder"
   width="100%"
 />
 `;

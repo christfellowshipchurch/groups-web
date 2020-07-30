@@ -26,7 +26,7 @@ const StyledH4 = styled.h4.attrs({
 const Placeholder = styled(Line).attrs({
   className: 'ui-kit-H1-Placeholder',
 })`
-  height: 1.5rem; /* Should match H4 font-size */
+  height: 1rem; /* Should match H4 font-size */
 
   ${verticalRhythm}
 `;
