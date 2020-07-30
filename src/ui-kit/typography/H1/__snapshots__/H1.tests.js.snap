@@ -2,7 +2,7 @@
 
 exports[`the H1 component should accept and render passed in styles 1`] = `
 <h1
-  className="sc-1dj0tjq-0 gsDoeE ui-kit-H1-StyledH1"
+  className="sc-1dj0tjq-0 GKKOv ui-kit-H1-StyledH1"
   style={
     Object {
       "color": "salmon",
@@ -15,7 +15,7 @@ exports[`the H1 component should accept and render passed in styles 1`] = `
 
 exports[`the H1 component should render 1`] = `
 <h1
-  className="sc-1dj0tjq-0 gsDoeE ui-kit-H1-StyledH1"
+  className="sc-1dj0tjq-0 GKKOv ui-kit-H1-StyledH1"
 >
   Default H1 text
 </h1>
@@ -23,21 +23,21 @@ exports[`the H1 component should render 1`] = `
 
 exports[`the H1 component should render a loading state 1`] = `
 <mark
-  className="ra2rjz-0 gcMOrm show-loading-animation sc-1dj0tjq-1 daSplf ui-kit-H1-Placeholder ui-kit.Placeholder.Line custom-placeholder"
+  className="ra2rjz-0 gcMOrm show-loading-animation sc-1dj0tjq-1 iNwbUF ui-kit-H1-Placeholder ui-kit.Placeholder.Line custom-placeholder"
   width="100%"
 />
 `;
 
 exports[`the H1 component should render a loading state with vertical rhythm (padded) 1`] = `
 <mark
-  className="ra2rjz-0 gcMOrm show-loading-animation sc-1dj0tjq-1 jdeEGS ui-kit-H1-Placeholder ui-kit.Placeholder.Line custom-placeholder"
+  className="ra2rjz-0 gcMOrm show-loading-animation sc-1dj0tjq-1 eiRSIC ui-kit-H1-Placeholder ui-kit.Placeholder.Line custom-placeholder"
   width="100%"
 />
 `;
 
 exports[`the H1 component should render with vertical rhythm (padded) 1`] = `
 <h1
-  className="sc-1dj0tjq-0 jTXkCd ui-kit-H1-StyledH1"
+  className="sc-1dj0tjq-0 hiTwwq ui-kit-H1-StyledH1"
 >
   H1 text with vertical rhythm styled via margin.
 </h1>
