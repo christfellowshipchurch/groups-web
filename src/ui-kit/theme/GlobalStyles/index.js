@@ -1,7 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 import { normalize } from 'styled-normalize';
 
-import { h3Style } from '../../typography/H3';
 import { h4Style } from '../../typography/H4';
 import { h5Style } from '../../typography/H5';
 import { h6Style } from '../../typography/H6';
@@ -28,7 +27,6 @@ const GlobalStyles = createGlobalStyle`
 
   /* Individal typography styles are imported to and referenced from the global stylesheet. See
      typogrpahy components (/ui-kit/typography) for style definitions */
-  ${h3Style}
   ${h4Style}
   ${h5Style}
   ${h6Style}

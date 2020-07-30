@@ -2,25 +2,9 @@ import React from 'react';
 import styled, { css } from 'styled-components';
 import PropTypes from 'prop-types';
 
-import Placeholder from '../../Placeholder';
+import { Line } from '../../Placeholder';
 
-const h3Style = css`
-  h3,
-  .H3 {
-    color: ${({ theme }) => theme.colors.text.primary};
-    font-family: ${({ theme }) => theme.typography.fontFamily};
-    font-size: 1.5rem;
-    font-weight: 900;
-    line-height: ${({ theme }) => theme.helpers.verticalRhythm(1.5, 1.15)};
-    &.custom-placeholder {
-      height: 1.5rem; /* Should match .h3font-size */
-    }
-  }
-`;
-
-const StyledH3 = styled.h3.attrs({
-  className: 'ui-kit-typography-H3-StyledH3',
-})`
+const verticalRhythm = css`
   margin: ${({ padded, theme }) =>
     padded
       ? `${theme.helpers.verticalRhythm(
@@ -29,16 +13,30 @@ const StyledH3 = styled.h3.attrs({
       : 'initial'};
 `;
 
+const StyledH3 = styled.h3.attrs({
+  className: 'ui-kit-typography-H3-StyledH3',
+})`
+  font-size: 1.5rem;
+  font-weight: 900;
+  line-height: ${({ theme }) => theme.helpers.verticalRhythm(1.5, 1.15)};
+
+  ${verticalRhythm}
+`;
+
+const Placeholder = styled(Line).attrs({
+  className: 'ui-kit-H1-Placeholder',
+})`
+  height: 1.5rem; /* Should match H3 font-size */
+
+  ${verticalRhythm}
+`;
+
 const H3 = ({ children, isLoading, padded, ...props }) => (
-  <Placeholder.Typography
-    isLoading={isLoading}
-    showLoadingAnimation
-    typographicClassName={'H3'} // needs to match child components className
-  >
+  <Placeholder isLoading={isLoading} padded={padded} showLoadingAnimation>
     <StyledH3 padded={padded} {...props}>
       {children}
     </StyledH3>
-  </Placeholder.Typography>
+  </Placeholder>
 );
 
 H3.defaultProps = {
@@ -53,4 +51,4 @@ H3.propTypes = {
 
 H3.displayName = 'ui-kit.typography.H3';
 
-export { H3 as default, h3Style };
+export default H3;

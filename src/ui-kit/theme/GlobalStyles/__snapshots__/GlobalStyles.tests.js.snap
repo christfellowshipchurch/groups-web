@@ -43,8 +43,6 @@ HTMLCollection [
     *,*::before,*::after{box-sizing:border-box;}
     html{color:#303030;font-size:100%;font-family:Inter,-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI","Roboto","Helvetica Neue",Arial,sans-serif;}
     ::selection{background:salmon text-shadow:none;}
-    h3,.H3{color:#303030;font-family:Inter,-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI","Roboto","Helvetica Neue",Arial,sans-serif;font-size:1.5rem;font-weight:900;line-height:1.7249999999999999rem;}
-    h3.custom-placeholder,.H3.custom-placeholder{height:1.5rem;}
     h4,.H4{color:#303030;font-family:Inter,-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI","Roboto","Helvetica Neue",Arial,sans-serif;font-size:1rem;font-weight:700;line-height:1.5rem;}
     h4.custom-placeholder,.H4.custom-placeholder{height:1rem;}
     h5,.H5{color:#303030;font-family:Inter,-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI","Roboto","Helvetica Neue",Arial,sans-serif;font-size:0.875rem;font-weight:500;line-height:1.3125rem;}
@@ -91,8 +89,6 @@ HTMLCollection [
     *,*::before,*::after{box-sizing:border-box;}
     html{color:#303030;font-size:100%;font-family:Inter,-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI","Roboto","Helvetica Neue",Arial,sans-serif;}
     ::selection{background:salmon text-shadow:none;}
-    h3,.H3{color:#303030;font-family:Inter,-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI","Roboto","Helvetica Neue",Arial,sans-serif;font-size:1.5rem;font-weight:900;line-height:1.7249999999999999rem;}
-    h3.custom-placeholder,.H3.custom-placeholder{height:1.5rem;}
     h4,.H4{color:#303030;font-family:Inter,-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI","Roboto","Helvetica Neue",Arial,sans-serif;font-size:1rem;font-weight:700;line-height:1.5rem;}
     h4.custom-placeholder,.H4.custom-placeholder{height:1rem;}
     h5,.H5{color:#303030;font-family:Inter,-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI","Roboto","Helvetica Neue",Arial,sans-serif;font-size:0.875rem;font-weight:500;line-height:1.3125rem;}
