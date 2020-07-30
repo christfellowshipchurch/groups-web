@@ -10,7 +10,7 @@ const ParagraphLine = styled(Line).attrs({
   className: 'ui-kit.Placeholder.ParagraphLine',
 })`
   height: 1rem;
-  margin: 0.7rem 0;
+  margin: calc(${({ theme }) => theme.helpers.verticalRhythm(1)} - 1rem) 0;
 `;
 
 const Paragraph = ({
