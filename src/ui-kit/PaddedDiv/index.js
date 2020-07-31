@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
 const PaddedDiv = styled.div.attrs({
-  className: 'ui-kit.PaddedDiv',
+  className: 'ui-kit-PaddedDiv',
 })`
   padding: ${({ horizontal, theme, vertical }) => {
     const verticalValue = vertical ? theme.sizing.baseUnit(1) : 0;

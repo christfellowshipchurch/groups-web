@@ -6,7 +6,7 @@ exports[`the PaddedDiv component should render 1`] = `
 }
 
 <div
-  className="c0 ui-kit.PaddedDiv"
+  className="c0 ui-kit-PaddedDiv"
 />
 `;
 
@@ -16,7 +16,7 @@ exports[`the PaddedDiv component should render without horizontal padding 1`] = 
 }
 
 <div
-  className="c0 ui-kit.PaddedDiv"
+  className="c0 ui-kit-PaddedDiv"
 />
 `;
 
@@ -26,6 +26,6 @@ exports[`the PaddedDiv component should render without vertical padding 1`] = `
 }
 
 <div
-  className="c0 ui-kit.PaddedDiv"
+  className="c0 ui-kit-PaddedDiv"
 />
 `;

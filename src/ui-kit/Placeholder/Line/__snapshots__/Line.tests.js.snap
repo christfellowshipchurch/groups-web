@@ -10,7 +10,7 @@ exports[`the Line component should render 1`] = `
 }
 
 <mark
-  className="c0 ui-kit.Placeholder.Line custom-placeholder"
+  className="c0 ui-kit-Placeholder-Line custom-placeholder"
 />
 `;
 
@@ -24,7 +24,7 @@ exports[`the Line component should render showLoadingAnimation 1`] = `
 }
 
 <mark
-  className="c0 show-loading-animation ui-kit.Placeholder.Line custom-placeholder"
+  className="c0 show-loading-animation ui-kit-Placeholder-Line custom-placeholder"
 />
 `;
 
@@ -39,7 +39,7 @@ exports[`the Line component should render with a custom style 1`] = `
 }
 
 <mark
-  className="c0 ui-kit.Placeholder.Line custom-placeholder"
+  className="c0 ui-kit-Placeholder-Line custom-placeholder"
 />
 `;
 
@@ -53,6 +53,6 @@ exports[`the Line component should render with a custom width 1`] = `
 }
 
 <mark
-  className="c0 ui-kit.Placeholder.Line custom-placeholder"
+  className="c0 ui-kit-Placeholder-Line custom-placeholder"
 />
 `;

@@ -11,7 +11,7 @@ exports[`The Media placeholder accepts custom styles 1`] = `
 }
 
 <mark
-  className="c0 ui-kit.Placeholder.Media custom-placeholder"
+  className="c0 ui-kit-Placeholder-Media custom-placeholder"
   size="100%"
 />
 `;
@@ -26,7 +26,7 @@ exports[`The Media placeholder should render 1`] = `
 }
 
 <mark
-  className="c0 ui-kit.Placeholder.Media custom-placeholder"
+  className="c0 ui-kit-Placeholder-Media custom-placeholder"
   size="100%"
 />
 `;
@@ -41,7 +41,7 @@ exports[`The Media placeholder should render a custom size 1`] = `
 }
 
 <mark
-  className="c0 ui-kit.Placeholder.Media custom-placeholder"
+  className="c0 ui-kit-Placeholder-Media custom-placeholder"
   size="50%"
 />
 `;
@@ -56,7 +56,7 @@ exports[`The Media placeholder should render showLoadingAnimation 1`] = `
 }
 
 <mark
-  className="c0 show-loading-animation ui-kit.Placeholder.Media custom-placeholder"
+  className="c0 show-loading-animation ui-kit-Placeholder-Media custom-placeholder"
   size="100%"
 />
 `;

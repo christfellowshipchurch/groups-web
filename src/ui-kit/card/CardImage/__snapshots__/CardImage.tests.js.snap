@@ -6,7 +6,7 @@ exports[`the CardImage component should render 1`] = `
 }
 
 <img
-  className="c0 ui-kit.card.CardImage"
+  className="c0 ui-kit-card-CardImage"
   src="https://picsum.photos/300/200"
 />
 `;

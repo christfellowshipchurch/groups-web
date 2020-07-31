@@ -7,9 +7,10 @@ import { times } from 'lodash';
 import Line from '../Line';
 
 const ParagraphLine = styled(Line).attrs({
-  className: 'ui-kit.Placeholder.ParagraphLine',
+  className: 'ui-kit-Placeholder-ParagraphLine',
 })`
   height: 1rem;
+  /* matches P component styles. line-height - font-size */
   margin: calc(${({ theme }) => theme.helpers.verticalRhythm(1)} - 1rem) 0;
 `;
 

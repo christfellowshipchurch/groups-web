@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 
 const StyledMedia = styled.mark.attrs({
   // `rect-shape` comes from ReactPlaceholder and enables it's `showLoadingAnimation` to work
-  className: 'ui-kit.Placeholder.Media custom-placeholder',
+  className: 'ui-kit-Placeholder-Media custom-placeholder',
 })`
   background: ${({ theme }) => theme.colors.background.inactive};
   border-radius: ${({ borderRadius, theme }) =>

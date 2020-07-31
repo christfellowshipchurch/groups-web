@@ -3,7 +3,7 @@ import styled from 'styled-components';
 // import { getIsLoading } from '../isLoading';
 
 const CardImage = styled.img.attrs({
-  className: 'ui-kit.card.CardImage',
+  className: 'ui-kit-card-CardImage',
 })`
   width: '100%';
 `;

@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 // import { withIsLoading } from '../../isLoading';
 
 const CardWrapper = styled.div.attrs({
-  className: 'ui-kit.card.CardWrapper',
+  className: 'ui-kit-card-CardWrapper',
 })`
   /* card styles */
   background: ${({ cardColor, theme }) =>

@@ -7,7 +7,7 @@ exports[`the CardContent component should render 1`] = `
 }
 
 <div
-  className="sc-9taxng-0 c0 ui-kit.PaddedDiv ui-kit.card.CardContent"
+  className="sc-9taxng-0 c0 ui-kit-PaddedDiv ui-kit-card-CardContent"
 >
   Boom!
 </div>
