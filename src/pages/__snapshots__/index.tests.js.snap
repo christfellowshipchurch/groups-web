@@ -2,8 +2,15 @@
 
 exports[`the home page should render 1`] = `
 Array [
-  <h1
-    className="sc-1dj0tjq-0 jxTIiJ ui-kit-H1-StyledH1"
+  .c0 {
+  font-size: 2.6875rem;
+  font-weight: 900;
+  line-height: 3.0906249999999997rem;
+  margin: initial;
+}
+
+<h1
+    className="c0 ui-kit-H1-StyledH1"
   >
     My page
   </h1>,
