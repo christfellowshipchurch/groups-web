@@ -24,7 +24,7 @@ const StyledH1 = styled.h1.attrs({
 const Placeholder = styled(Line).attrs({
   className: 'ui-kit-H1-Placeholder',
 })`
-  height: 2.6875rem; /*  hould match .h1 font-size */
+  height: 2.6875rem; /* Should match .h1 font-size */
   margin: ${({ padded, theme }) =>
     // if padded...
     padded

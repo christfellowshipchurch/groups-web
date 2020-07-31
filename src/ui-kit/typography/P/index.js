@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-import { Paragraph } from '../../Placeholder';
+import { Paragraph as Placeholder } from '../../Placeholder';
 
 const StyledP = styled.p`
   font-size: 1rem;
@@ -12,11 +12,11 @@ const StyledP = styled.p`
 `;
 
 const P = ({ children, isLoading, style, ...props }) => (
-  <Paragraph isLoading={isLoading} showLoadingAnimation>
+  <Placeholder isLoading={isLoading} showLoadingAnimation>
     <StyledP customStyle={style} {...props}>
       {children}
     </StyledP>
-  </Paragraph>
+  </Placeholder>
 );
 
 P.defaultProps = {
