@@ -1,43 +1,86 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`the H5 component should accept and render passed in styles 1`] = `
+.c0 {
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.3125rem;
+  margin: initial;
+  color: salmon;
+}
+
 <h5
-  className="sc-1hocjyp-0 ijlmgJ ui-kit-typography-H5-StyledH5"
-  style={
-    Object {
-      "color": "salmon",
-    }
-  }
+  className="c0 ui-kit-typography-H5-StyledH5"
 >
   Salmon text
 </h5>
 `;
 
 exports[`the H5 component should render 1`] = `
+.c0 {
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.3125rem;
+  margin: initial;
+}
+
 <h5
-  className="sc-1hocjyp-0 ijlmgJ ui-kit-typography-H5-StyledH5"
+  className="c0 ui-kit-typography-H5-StyledH5"
 >
   Default H5 text
 </h5>
 `;
 
 exports[`the H5 component should render a loading state 1`] = `
+.c0 {
+  background: #A5A5A5;
+  border-radius: 16px;
+  display: block;
+  height: 1rem;
+  width: 100%;
+}
+
+.c1 {
+  height: 0.875rem;
+  margin: calc(1.3125rem - 0.875rem) 0;
+}
+
 <mark
-  className="ra2rjz-0 gcMOrm show-loading-animation sc-1hocjyp-1 felbvD ui-kit-H5-Placeholder ui-kit.Placeholder.Line custom-placeholder"
+  className="c0 show-loading-animation c1 ui-kit-H5-Placeholder ui-kit.Placeholder.Line custom-placeholder"
   width="100%"
 />
 `;
 
 exports[`the H5 component should render a loading state with vertical rhythm (padded) 1`] = `
+.c0 {
+  background: #A5A5A5;
+  border-radius: 16px;
+  display: block;
+  height: 1rem;
+  width: 100%;
+}
+
+.c1 {
+  height: 0.875rem;
+  margin: 0.86625rem 0 0.65625rem 0;
+}
+
 <mark
-  className="ra2rjz-0 gcMOrm show-loading-animation sc-1hocjyp-1 griVUa ui-kit-H5-Placeholder ui-kit.Placeholder.Line custom-placeholder"
+  className="c0 show-loading-animation c1 ui-kit-H5-Placeholder ui-kit.Placeholder.Line custom-placeholder"
   width="100%"
 />
 `;
 
 exports[`the H5 component should render with vertical rhythm (padded) 1`] = `
+.c0 {
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.3125rem;
+  margin: 0.86625rem 0 0.65625rem 0;
+}
+
 <h5
-  className="sc-1hocjyp-0 geeTkW ui-kit-typography-H5-StyledH5"
+  className="c0 ui-kit-typography-H5-StyledH5"
 >
   H5 text with vertical rhythm styled via margin.
 </h5>

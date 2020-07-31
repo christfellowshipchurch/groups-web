@@ -1,43 +1,86 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`the H2 component should accept and render passed in styles 1`] = `
+.c0 {
+  font-size: 2.25rem;
+  font-weight: 900;
+  line-height: 2.5875rem;
+  margin: initial;
+  color: salmon;
+}
+
 <h2
-  className="r3v0jj-0 kBuEhb ui-kit-typography-H2-StyledH2"
-  style={
-    Object {
-      "color": "salmon",
-    }
-  }
+  className="c0 ui-kit-typography-H2-StyledH2"
 >
   Salmon text
 </h2>
 `;
 
 exports[`the H2 component should render 1`] = `
+.c0 {
+  font-size: 2.25rem;
+  font-weight: 900;
+  line-height: 2.5875rem;
+  margin: initial;
+}
+
 <h2
-  className="r3v0jj-0 kBuEhb ui-kit-typography-H2-StyledH2"
+  className="c0 ui-kit-typography-H2-StyledH2"
 >
   Default H2 text
 </h2>
 `;
 
 exports[`the H2 component should render a loading state 1`] = `
+.c0 {
+  background: #A5A5A5;
+  border-radius: 16px;
+  display: block;
+  height: 1rem;
+  width: 100%;
+}
+
+.c1 {
+  height: 2.25rem;
+  margin: calc(2.5875rem - 2.25rem) 0;
+}
+
 <mark
-  className="ra2rjz-0 gcMOrm show-loading-animation r3v0jj-1 jvVPJO ui-kit-H1-Placeholder ui-kit.Placeholder.Line custom-placeholder"
+  className="c0 show-loading-animation c1 ui-kit-H1-Placeholder ui-kit.Placeholder.Line custom-placeholder"
   width="100%"
 />
 `;
 
 exports[`the H2 component should render a loading state with vertical rhythm (padded) 1`] = `
+.c0 {
+  background: #A5A5A5;
+  border-radius: 16px;
+  display: block;
+  height: 1rem;
+  width: 100%;
+}
+
+.c1 {
+  height: 2.25rem;
+  margin: 1.5rem 0 1.251rem;
+}
+
 <mark
-  className="ra2rjz-0 gcMOrm show-loading-animation r3v0jj-1 ikEWon ui-kit-H1-Placeholder ui-kit.Placeholder.Line custom-placeholder"
+  className="c0 show-loading-animation c1 ui-kit-H1-Placeholder ui-kit.Placeholder.Line custom-placeholder"
   width="100%"
 />
 `;
 
 exports[`the H2 component should render with vertical rhythm (padded) 1`] = `
+.c0 {
+  font-size: 2.25rem;
+  font-weight: 900;
+  line-height: 2.5875rem;
+  margin: 1.5rem 0 1.251rem;
+}
+
 <h2
-  className="r3v0jj-0 cGjIoO ui-kit-typography-H2-StyledH2"
+  className="c0 ui-kit-typography-H2-StyledH2"
 >
   H2 text with vertical rhythm styled via margin.
 </h2>

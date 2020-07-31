@@ -17,6 +17,7 @@ const StyledH6 = styled.h6.attrs({
   font-weight: 500;
   line-height: ${({ theme }) => theme.helpers.verticalRhythm(0.75)};
   margin: ${verticalRhythm};
+  ${({ customStyles }) => customStyles};
 `;
 
 const Placeholder = styled(Line).attrs({
@@ -34,9 +35,10 @@ const Placeholder = styled(Line).attrs({
         )} - 0.75rem) 0`}; /* line-height - font-size = space between lines */
 `;
 
-const H6 = ({ children, isLoading, padded, ...props }) => (
+// We pass `style` as a prop to `StyledH6` so that custom styles are handled by styled components and not react (inline style)
+const H6 = ({ children, isLoading, padded, style, ...props }) => (
   <Placeholder isLoading={isLoading} padded={padded} showLoadingAnimation>
-    <StyledH6 padded={padded} {...props}>
+    <StyledH6 padded={padded} customStyles={style} {...props}>
       {children}
     </StyledH6>
   </Placeholder>
@@ -50,6 +52,7 @@ H6.propTypes = {
   children: PropTypes.node.isRequired,
   isLoading: PropTypes.bool,
   padded: PropTypes.bool,
+  style: PropTypes.any, // eslint-disable-line
 };
 
 H6.displayName = 'ui-kit.typography.H6';

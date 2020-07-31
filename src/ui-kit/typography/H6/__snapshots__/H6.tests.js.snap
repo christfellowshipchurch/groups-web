@@ -1,43 +1,89 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`the H6 component should accept and render passed in styles 1`] = `
+.c0 {
+  color: #505050;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1.125rem;
+  margin: initial;
+  color: salmon;
+}
+
 <h6
-  className="toneu3-0 dAuhVA ui-kit-typography-H6-StyledH6"
-  style={
-    Object {
-      "color": "salmon",
-    }
-  }
+  className="c0 ui-kit-typography-H6-StyledH6"
 >
   Salmon text
 </h6>
 `;
 
 exports[`the H6 component should render 1`] = `
+.c0 {
+  color: #505050;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1.125rem;
+  margin: initial;
+}
+
 <h6
-  className="toneu3-0 dAuhVA ui-kit-typography-H6-StyledH6"
+  className="c0 ui-kit-typography-H6-StyledH6"
 >
   Default H6 text
 </h6>
 `;
 
 exports[`the H6 component should render a loading state 1`] = `
+.c0 {
+  background: #A5A5A5;
+  border-radius: 16px;
+  display: block;
+  height: 1rem;
+  width: 100%;
+}
+
+.c1 {
+  height: 0.75rem;
+  margin: 0 0 calc(1.125rem - 0.75rem) 0;
+}
+
 <mark
-  className="ra2rjz-0 gcMOrm show-loading-animation toneu3-1 gjtEPl ui-kit-H6-Placeholder ui-kit.Placeholder.Line custom-placeholder"
+  className="c0 show-loading-animation c1 ui-kit-H6-Placeholder ui-kit.Placeholder.Line custom-placeholder"
   width="100%"
 />
 `;
 
 exports[`the H6 component should render a loading state with vertical rhythm (padded) 1`] = `
+.c0 {
+  background: #A5A5A5;
+  border-radius: 16px;
+  display: block;
+  height: 1rem;
+  width: 100%;
+}
+
+.c1 {
+  height: 0.75rem;
+  margin: 0 0 0.5625rem 0;
+}
+
 <mark
-  className="ra2rjz-0 gcMOrm show-loading-animation toneu3-1 hiFnWG ui-kit-H6-Placeholder ui-kit.Placeholder.Line custom-placeholder"
+  className="c0 show-loading-animation c1 ui-kit-H6-Placeholder ui-kit.Placeholder.Line custom-placeholder"
   width="100%"
 />
 `;
 
 exports[`the H6 component should render with vertical rhythm (padded) 1`] = `
+.c0 {
+  color: #505050;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1.125rem;
+  margin: 0 0 0.5625rem 0;
+}
+
 <h6
-  className="toneu3-0 bGweoG ui-kit-typography-H6-StyledH6"
+  className="c0 ui-kit-typography-H6-StyledH6"
 >
   H6 text with vertical rhythm styled via margin.
 </h6>

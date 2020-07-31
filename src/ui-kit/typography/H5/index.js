@@ -20,6 +20,9 @@ const StyledH5 = styled.h5.attrs({
   font-weight: 500;
   line-height: ${({ theme }) => theme.helpers.verticalRhythm(0.875)};
   margin: ${verticalRhythm};
+
+  /* Styles passed via the style prop */
+  ${({ customStyles }) => customStyles}
 `;
 
 const Placeholder = styled(Line).attrs({
@@ -37,9 +40,10 @@ const Placeholder = styled(Line).attrs({
         )} - 0.875rem) 0`}; /* line-height - font-size = space between lines */
 `;
 
-const H5 = ({ children, isLoading, padded, ...props }) => (
+// We pass `style` as a prop to `StyledH5` so that custom styles are handled by styled components and not react (inline style)
+const H5 = ({ children, isLoading, padded, style, ...props }) => (
   <Placeholder isLoading={isLoading} padded={padded} showLoadingAnimation>
-    <StyledH5 padded={padded} {...props}>
+    <StyledH5 padded={padded} customStyles={style} {...props}>
       {children}
     </StyledH5>
   </Placeholder>
@@ -53,6 +57,7 @@ H5.propTypes = {
   children: PropTypes.node.isRequired,
   isLoading: PropTypes.bool,
   padded: PropTypes.bool,
+  style: PropTypes.any, // eslint-disable-line
 };
 
 H5.displayName = 'ui-kit.typography.H5';

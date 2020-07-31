@@ -20,6 +20,9 @@ const StyledH2 = styled.h2.attrs({
   font-weight: 900;
   line-height: ${({ theme }) => theme.helpers.verticalRhythm(2.25, 1.15)};
   margin: ${verticalRhythm};
+
+  /* Styles passed via the style prop */
+  ${({ customStyles }) => customStyles}
 `;
 
 const Placeholder = styled(Line).attrs({
@@ -38,9 +41,10 @@ const Placeholder = styled(Line).attrs({
         )} - 2.25rem) 0`}; /* line-height - font-size = space between lines */
 `;
 
-const H2 = ({ children, isLoading, padded, ...props }) => (
+// We pass `style` as a prop to `StyledH2` so that custom styles are handled by styled components and not react (inline style)
+const H2 = ({ children, isLoading, padded, style, ...props }) => (
   <Placeholder isLoading={isLoading} padded={padded} showLoadingAnimation>
-    <StyledH2 padded={padded} {...props}>
+    <StyledH2 padded={padded} customStyles={style} {...props}>
       {children}
     </StyledH2>
   </Placeholder>
@@ -54,6 +58,7 @@ H2.propTypes = {
   children: PropTypes.node.isRequired,
   isLoading: PropTypes.bool,
   padded: PropTypes.bool,
+  style: PropTypes.any, // eslint-disable-line
 };
 
 H2.displayName = 'ui-kit.typography.H2';

@@ -1,43 +1,86 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`the H4 component should accept and render passed in styles 1`] = `
+.c0 {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  margin: initial;
+  color: salmon;
+}
+
 <h4
-  className="sc-17mtry8-0 NCfQU ui-kit-typography-H4-StyledH4"
-  style={
-    Object {
-      "color": "salmon",
-    }
-  }
+  className="c0 ui-kit-typography-H4-StyledH4"
 >
   Salmon text
 </h4>
 `;
 
 exports[`the H4 component should render 1`] = `
+.c0 {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  margin: initial;
+}
+
 <h4
-  className="sc-17mtry8-0 NCfQU ui-kit-typography-H4-StyledH4"
+  className="c0 ui-kit-typography-H4-StyledH4"
 >
   Default H4 text
 </h4>
 `;
 
 exports[`the H4 component should render a loading state 1`] = `
+.c0 {
+  background: #A5A5A5;
+  border-radius: 16px;
+  display: block;
+  height: 1rem;
+  width: 100%;
+}
+
+.c1 {
+  height: 1rem;
+  margin: calc(1.5rem - 1rem) 0;
+}
+
 <mark
-  className="ra2rjz-0 gcMOrm show-loading-animation sc-17mtry8-1 vtVqR ui-kit-H4-Placeholder ui-kit.Placeholder.Line custom-placeholder"
+  className="c0 show-loading-animation c1 ui-kit-H4-Placeholder ui-kit.Placeholder.Line custom-placeholder"
   width="100%"
 />
 `;
 
 exports[`the H4 component should render a loading state with vertical rhythm (padded) 1`] = `
+.c0 {
+  background: #A5A5A5;
+  border-radius: 16px;
+  display: block;
+  height: 1rem;
+  width: 100%;
+}
+
+.c1 {
+  height: 1rem;
+  margin: 0.99rem 0 0.75rem 0;
+}
+
 <mark
-  className="ra2rjz-0 gcMOrm show-loading-animation sc-17mtry8-1 bHQnGJ ui-kit-H4-Placeholder ui-kit.Placeholder.Line custom-placeholder"
+  className="c0 show-loading-animation c1 ui-kit-H4-Placeholder ui-kit.Placeholder.Line custom-placeholder"
   width="100%"
 />
 `;
 
 exports[`the H4 component should render with vertical rhythm (padded) 1`] = `
+.c0 {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  margin: 0.99rem 0 0.75rem 0;
+}
+
 <h4
-  className="sc-17mtry8-0 hdYAer ui-kit-typography-H4-StyledH4"
+  className="c0 ui-kit-typography-H4-StyledH4"
 >
   H4 text with vertical rhythm styled via margin.
 </h4>

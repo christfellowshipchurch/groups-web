@@ -1,43 +1,86 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`the H1 component should accept and render passed in styles 1`] = `
+.c0 {
+  font-size: 2.6875rem;
+  font-weight: 900;
+  line-height: 3.0906249999999997rem;
+  margin: initial;
+  color: salmon;
+}
+
 <h1
-  className="sc-1dj0tjq-0 GKKOv ui-kit-H1-StyledH1"
-  style={
-    Object {
-      "color": "salmon",
-    }
-  }
+  className="c0 ui-kit-H1-StyledH1"
 >
   Salmon text
 </h1>
 `;
 
 exports[`the H1 component should render 1`] = `
+.c0 {
+  font-size: 2.6875rem;
+  font-weight: 900;
+  line-height: 3.0906249999999997rem;
+  margin: initial;
+}
+
 <h1
-  className="sc-1dj0tjq-0 GKKOv ui-kit-H1-StyledH1"
+  className="c0 ui-kit-H1-StyledH1"
 >
   Default H1 text
 </h1>
 `;
 
 exports[`the H1 component should render a loading state 1`] = `
+.c0 {
+  background: #A5A5A5;
+  border-radius: 16px;
+  display: block;
+  height: 1rem;
+  width: 100%;
+}
+
+.c1 {
+  height: 2.6875rem;
+  margin: calc(3.0906249999999997rem - 2.6875rem) 0;
+}
+
 <mark
-  className="ra2rjz-0 gcMOrm show-loading-animation sc-1dj0tjq-1 iNwbUF ui-kit-H1-Placeholder ui-kit.Placeholder.Line custom-placeholder"
+  className="c0 show-loading-animation c1 ui-kit-H1-Placeholder ui-kit.Placeholder.Line custom-placeholder"
   width="100%"
 />
 `;
 
 exports[`the H1 component should render a loading state with vertical rhythm (padded) 1`] = `
+.c0 {
+  background: #A5A5A5;
+  border-radius: 16px;
+  display: block;
+  height: 1rem;
+  width: 100%;
+}
+
+.c1 {
+  height: 2.6875rem;
+  margin: 3.0234375rem 0;
+}
+
 <mark
-  className="ra2rjz-0 gcMOrm show-loading-animation sc-1dj0tjq-1 eiRSIC ui-kit-H1-Placeholder ui-kit.Placeholder.Line custom-placeholder"
+  className="c0 show-loading-animation c1 ui-kit-H1-Placeholder ui-kit.Placeholder.Line custom-placeholder"
   width="100%"
 />
 `;
 
 exports[`the H1 component should render with vertical rhythm (padded) 1`] = `
+.c0 {
+  font-size: 2.6875rem;
+  font-weight: 900;
+  line-height: 3.0906249999999997rem;
+  margin: 3.0234375rem 0;
+}
+
 <h1
-  className="sc-1dj0tjq-0 hiTwwq ui-kit-H1-StyledH1"
+  className="c0 ui-kit-H1-StyledH1"
 >
   H1 text with vertical rhythm styled via margin.
 </h1>

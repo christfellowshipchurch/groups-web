@@ -1,16 +1,29 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`the P component should accept and render passed in styles 1`] = `
+.c0 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin: 0 0 1.5rem 0;
+  color: salmon;
+}
+
 <p
-  className="sc-1ec6ydc-0 gyeIME"
+  className="c0"
 >
   But I, brothers, could not address you as spiritual people, but as people of the flesh, as infants in Christ. I fed you with milk, not solid food, for you were not ready for it. And even now you are not yet ready, for you are still of the flesh. For while there is jealousy and strife among you, are you not of the flesh and behaving only in a human way? For when one says, "I follow Paul," and another, "I follow Apollos," are you not being merely human?
 </p>
 `;
 
 exports[`the P component should render 1`] = `
+.c0 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin: 0 0 1.5rem 0;
+}
+
 <p
-  className="sc-1ec6ydc-0 fCPYIq"
+  className="c0"
 >
   But I, brothers, could not address you as spiritual people, but as people of the flesh, as infants in Christ. I fed you with milk, not solid food, for you were not ready for it. And even now you are not yet ready, for you are still of the flesh. For while there is jealousy and strife among you, are you not of the flesh and behaving only in a human way? For when one says, "I follow Paul," and another, "I follow Apollos," are you not being merely human?
 </p>
@@ -18,16 +31,55 @@ exports[`the P component should render 1`] = `
 
 exports[`the P component should render a loading state 1`] = `
 Array [
-  <mark
-    className="ra2rjz-0 gKAxvi show-loading-animation uz4va7-0 kuWJia ui-kit.Placeholder.ParagraphLine ui-kit.Placeholder.Line custom-placeholder"
+  .c0 {
+  background: #A5A5A5;
+  border-radius: 16px;
+  display: block;
+  height: 1rem;
+  width: 85%;
+}
+
+.c1 {
+  height: 1rem;
+  margin: calc(1.5rem - 1rem) 0;
+}
+
+<mark
+    className="c0 show-loading-animation c1 ui-kit.Placeholder.ParagraphLine ui-kit.Placeholder.Line custom-placeholder"
     width="85%"
   />,
-  <mark
-    className="ra2rjz-0 gcMOrm show-loading-animation uz4va7-0 kuWJia ui-kit.Placeholder.ParagraphLine ui-kit.Placeholder.Line custom-placeholder"
+  .c0 {
+  background: #A5A5A5;
+  border-radius: 16px;
+  display: block;
+  height: 1rem;
+  width: 100%;
+}
+
+.c1 {
+  height: 1rem;
+  margin: calc(1.5rem - 1rem) 0;
+}
+
+<mark
+    className="c0 show-loading-animation c1 ui-kit.Placeholder.ParagraphLine ui-kit.Placeholder.Line custom-placeholder"
     width="100%"
   />,
-  <mark
-    className="ra2rjz-0 gKBPER show-loading-animation uz4va7-0 kuWJia ui-kit.Placeholder.ParagraphLine ui-kit.Placeholder.Line custom-placeholder"
+  .c0 {
+  background: #A5A5A5;
+  border-radius: 16px;
+  display: block;
+  height: 1rem;
+  width: 75%;
+}
+
+.c1 {
+  height: 1rem;
+  margin: calc(1.5rem - 1rem) 0;
+}
+
+<mark
+    className="c0 show-loading-animation c1 ui-kit.Placeholder.ParagraphLine ui-kit.Placeholder.Line custom-placeholder"
     width="75%"
   />,
 ]
