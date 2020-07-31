@@ -13,11 +13,13 @@ const StyledMedia = styled.mark.attrs({
   display: block;
   height: ${({ size }) => size};
   width: ${({ size }) => size};
+
+  ${({ customStyle }) => customStyle}
 `;
 
 const Media = ({ isLoading, size, style, ...props }) => (
   <ReactPlaceholder
-    customPlaceholder={<StyledMedia size={size} style={style} />}
+    customPlaceholder={<StyledMedia size={size} customStyle={style} />}
     ready={!isLoading}
     {...props}
   />

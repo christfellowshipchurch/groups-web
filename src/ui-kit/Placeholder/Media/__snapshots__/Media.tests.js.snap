@@ -7,16 +7,12 @@ exports[`The Media placeholder accepts custom styles 1`] = `
   display: block;
   height: 100%;
   width: 100%;
+  background: salmon;
 }
 
 <mark
   className="c0 ui-kit.Placeholder.Media custom-placeholder"
   size="100%"
-  style={
-    Object {
-      "background": "salmon",
-    }
-  }
 />
 `;
 

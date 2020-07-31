@@ -44,7 +44,7 @@ describe('The Paragraph placeholder', () => {
 
     const tree = renderer.create(
       <Providers>
-        <Paragraph lineStyle={customStyle} />
+        <Paragraph style={customStyle} />
       </Providers>
     );
     expect(tree).toMatchSnapshot();

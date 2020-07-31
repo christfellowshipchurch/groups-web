@@ -18,8 +18,8 @@ const Paragraph = ({
   firstLineWidth,
   lastLineWidth,
   lineNumber,
-  lineStyle,
   showLoadingAnimation,
+  style,
   width,
   ...props
 }) => (
@@ -33,7 +33,7 @@ const Paragraph = ({
           key={i}
           width={lineWidth}
           showLoadingAnimation={showLoadingAnimation}
-          style={lineStyle}
+          style={style}
         />
       );
     })}
@@ -55,8 +55,8 @@ Paragraph.propTypes = {
   lastLineWidth: PropTypes.string,
   isLoading: PropTypes.bool,
   lineNumber: PropTypes.number,
-  lineStyle: PropTypes.any, // eslint-disable-line
   showLoadingAnimation: PropTypes.bool,
+  style: PropTypes.any, // eslint-disable-line
   width: PropTypes.string,
 };
 

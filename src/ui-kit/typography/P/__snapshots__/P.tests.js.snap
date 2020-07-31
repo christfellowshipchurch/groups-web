@@ -46,7 +46,6 @@ Array [
 
 <mark
     className="c0 show-loading-animation c1 ui-kit.Placeholder.ParagraphLine ui-kit.Placeholder.Line custom-placeholder"
-    width="85%"
   />,
   .c0 {
   background: #A5A5A5;
@@ -63,7 +62,6 @@ Array [
 
 <mark
     className="c0 show-loading-animation c1 ui-kit.Placeholder.ParagraphLine ui-kit.Placeholder.Line custom-placeholder"
-    width="100%"
   />,
   .c0 {
   background: #A5A5A5;
@@ -80,7 +78,6 @@ Array [
 
 <mark
     className="c0 show-loading-animation c1 ui-kit.Placeholder.ParagraphLine ui-kit.Placeholder.Line custom-placeholder"
-    width="75%"
   />,
 ]
 `;

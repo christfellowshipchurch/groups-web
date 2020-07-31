@@ -49,7 +49,6 @@ exports[`the H6 component should render a loading state 1`] = `
 
 <mark
   className="c0 show-loading-animation c1 ui-kit-H6-Placeholder ui-kit.Placeholder.Line custom-placeholder"
-  width="100%"
 />
 `;
 
@@ -69,7 +68,6 @@ exports[`the H6 component should render a loading state with vertical rhythm (pa
 
 <mark
   className="c0 show-loading-animation c1 ui-kit-H6-Placeholder ui-kit.Placeholder.Line custom-placeholder"
-  width="100%"
 />
 `;
 
