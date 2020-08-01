@@ -45,7 +45,7 @@ describe('the H2 component', () => {
     const tree = renderer.create(
       <Providers>
         <IsLoadingContext.Provider value>
-          <H2 isLoading>Default H2 text</H2>
+          <H2>Default H2 text</H2>
         </IsLoadingContext.Provider>
       </Providers>
     );
