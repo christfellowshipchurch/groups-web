@@ -3,6 +3,7 @@ import renderer from 'react-test-renderer';
 import 'jest-styled-components';
 
 import Providers from '../../../Providers';
+import { IsLoadingContext } from '../../isLoading';
 
 import H4 from '.';
 
@@ -36,6 +37,16 @@ describe('the H4 component', () => {
     const tree = renderer.create(
       <Providers>
         <H4 isLoading>Default H4 text</H4>
+      </Providers>
+    );
+    expect(tree).toMatchSnapshot();
+  });
+  it('should render a loading state via context', () => {
+    const tree = renderer.create(
+      <Providers>
+        <IsLoadingContext.Provider value>
+          <H4>Default H4 text</H4>
+        </IsLoadingContext.Provider>
       </Providers>
     );
     expect(tree).toMatchSnapshot();
