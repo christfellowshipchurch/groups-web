@@ -25,10 +25,10 @@ describe('the H4 component', () => {
     );
     expect(tree).toMatchSnapshot();
   });
-  it('should render with vertical rhythm (padded)', () => {
+  it('should render with vertical rhythm (withMargins)', () => {
     const tree = renderer.create(
       <Providers>
-        <H4 padded>H4 text with vertical rhythm styled via margin.</H4>
+        <H4 withMargins>H4 text with vertical rhythm styled via margin.</H4>
       </Providers>
     );
     expect(tree).toMatchSnapshot();
@@ -51,10 +51,10 @@ describe('the H4 component', () => {
     );
     expect(tree).toMatchSnapshot();
   });
-  it('should render a loading state with vertical rhythm (padded)', () => {
+  it('should render a loading state with vertical rhythm (withMargins)', () => {
     const tree = renderer.create(
       <Providers>
-        <H4 isLoading padded>
+        <H4 isLoading withMargins>
           Default H4 text
         </H4>
       </Providers>

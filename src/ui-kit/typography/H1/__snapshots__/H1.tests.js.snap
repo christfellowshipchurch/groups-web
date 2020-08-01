@@ -69,7 +69,7 @@ exports[`the H1 component should render a loading state via context 1`] = `
 />
 `;
 
-exports[`the H1 component should render a loading state with vertical rhythm (padded) 1`] = `
+exports[`the H1 component should render a loading state with vertical rhythm (withMargins) 1`] = `
 .c0 {
   background: #A5A5A5;
   border-radius: 16px;
@@ -88,7 +88,7 @@ exports[`the H1 component should render a loading state with vertical rhythm (pa
 />
 `;
 
-exports[`the H1 component should render with vertical rhythm (padded) 1`] = `
+exports[`the H1 component should render with vertical rhythm (withMargins) 1`] = `
 .c0 {
   font-size: 2.6875rem;
   font-weight: 900;

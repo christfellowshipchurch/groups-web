@@ -18,9 +18,9 @@ storiesOf('ui-kit/typography/H2', module)
       }
     </H2>
   ))
-  .add('padded', () => <H2 padded>Padded Heading Big and Long</H2>)
-  .add('padded + isLoading', () => (
-    <H2 isLoading padded showLoadingAnimation>
+  .add('withMargins', () => <H2 withMargins>Padded Heading Big and Long</H2>)
+  .add('withMargins + isLoading', () => (
+    <H2 isLoading withMargins showLoadingAnimation>
       {
         '"God is most glorified in us when we are most satisfied in Him" ― John Piper'
       }

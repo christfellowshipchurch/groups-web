@@ -6,8 +6,8 @@ import { getIsLoading } from '../../isLoading';
 import { Line } from '../../Placeholder';
 
 const verticalRhythm = css`
-  ${({ padded, theme }) =>
-    padded
+  ${({ withMargins, theme }) =>
+    withMargins
       ? `${theme.helpers.verticalRhythm(1)} 0 ${theme.helpers.verticalRhythm(
           0.834
         )}`
@@ -30,9 +30,9 @@ const Placeholder = styled(Line).attrs({
   className: 'ui-kit-H1-Placeholder',
 })`
   height: 2.25rem; /* Should match .h2font-size */
-  margin: ${({ padded, theme }) =>
-    // if padded...
-    padded
+  margin: ${({ withMargins, theme }) =>
+    // if withMargins...
+    withMargins
       ? // return rhythm so placeholder matches text position to prevent jitter/jank
         verticalRhythm
       : // else default to...
@@ -43,9 +43,9 @@ const Placeholder = styled(Line).attrs({
 `;
 
 // We pass `style` as a prop to `StyledH2` so that custom styles are handled by styled components and not react (inline style)
-const H2 = getIsLoading(({ children, isLoading, padded, style, ...props }) => (
-  <Placeholder isLoading={isLoading} padded={padded} showLoadingAnimation>
-    <StyledH2 padded={padded} customStyles={style} {...props}>
+const H2 = getIsLoading(({ children, isLoading, withMargins, style, ...props }) => (
+  <Placeholder isLoading={isLoading} withMargins={withMargins} showLoadingAnimation>
+    <StyledH2 withMargins={withMargins} customStyles={style} {...props}>
       {children}
     </StyledH2>
   </Placeholder>
@@ -54,7 +54,7 @@ const H2 = getIsLoading(({ children, isLoading, padded, style, ...props }) => (
 H2.propTypes = {
   children: PropTypes.node.isRequired,
   isLoading: PropTypes.bool,
-  padded: PropTypes.bool,
+  withMargins: PropTypes.bool,
   style: PropTypes.any, // eslint-disable-line
 };
 
