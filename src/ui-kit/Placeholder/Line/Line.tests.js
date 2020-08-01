@@ -15,6 +15,14 @@ describe('the Line component', () => {
     );
     expect(tree).toMatchSnapshot();
   });
+  it('should render children when isLoading is false', () => {
+    const tree = renderer.create(
+      <Providers>
+        <Line isLoading={false}>Rendered Child</Line>
+      </Providers>
+    );
+    expect(tree).toMatchSnapshot();
+  });
   it('should render with a custom style', () => {
     const tree = renderer.create(
       <Providers>

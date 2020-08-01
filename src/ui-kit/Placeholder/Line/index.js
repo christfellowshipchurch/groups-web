@@ -4,7 +4,7 @@ import ReactPlaceholder from 'react-placeholder';
 import PropTypes from 'prop-types';
 
 const StyledLine = styled.mark.attrs({
-  // `rect-shape` comes from ReactPlaceholder and enables it's `showLoadingAnimation` to work
+  // `custom-placeholder` class enables the `showLoadingAnimation` prop to work
   className: 'ui-kit-Placeholder-Line custom-placeholder',
 })`
   background: ${({ theme }) => theme.colors.background.inactive};
