@@ -15,6 +15,14 @@ describe('The Media placeholder', () => {
     );
     expect(tree).toMatchSnapshot();
   });
+  it('should render children when isLoading = false', () => {
+    const tree = renderer.create(
+      <Providers>
+        <Media isLoading={false}>Rendered child</Media>
+      </Providers>
+    );
+    expect(tree).toMatchSnapshot();
+  });
   it('should render a custom size', () => {
     const tree = renderer.create(
       <Providers>

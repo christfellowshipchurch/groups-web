@@ -46,6 +46,8 @@ exports[`The Media placeholder should render a custom size 1`] = `
 />
 `;
 
+exports[`The Media placeholder should render children when isLoading = false 1`] = `"Rendered child"`;
+
 exports[`The Media placeholder should render showLoadingAnimation 1`] = `
 .c0 {
   background: #A5A5A5;
