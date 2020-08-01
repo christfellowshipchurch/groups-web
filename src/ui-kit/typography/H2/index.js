@@ -2,6 +2,7 @@ import React from 'react';
 import styled, { css } from 'styled-components';
 import PropTypes from 'prop-types';
 
+import { getIsLoading } from '../../isLoading';
 import { Line } from '../../Placeholder';
 
 const verticalRhythm = css`
@@ -42,17 +43,13 @@ const Placeholder = styled(Line).attrs({
 `;
 
 // We pass `style` as a prop to `StyledH2` so that custom styles are handled by styled components and not react (inline style)
-const H2 = ({ children, isLoading, padded, style, ...props }) => (
+const H2 = getIsLoading(({ children, isLoading, padded, style, ...props }) => (
   <Placeholder isLoading={isLoading} padded={padded} showLoadingAnimation>
     <StyledH2 padded={padded} customStyles={style} {...props}>
       {children}
     </StyledH2>
   </Placeholder>
-);
-
-H2.defaultProps = {
-  isLoading: false,
-};
+));
 
 H2.propTypes = {
   children: PropTypes.node.isRequired,
