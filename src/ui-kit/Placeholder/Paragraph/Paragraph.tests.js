@@ -15,6 +15,14 @@ describe('The Paragraph placeholder', () => {
     );
     expect(tree).toMatchSnapshot();
   });
+  it('should render children when isLoading is false', () => {
+    const tree = renderer.create(
+      <Providers>
+        <Paragraph isLoading={false}>Rendered child</Paragraph>
+      </Providers>
+    );
+    expect(tree).toMatchSnapshot();
+  });
   it('should render with a custom lineNumber', () => {
     const tree = renderer.create(
       <Providers>

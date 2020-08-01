@@ -109,6 +109,8 @@ Array [
 ]
 `;
 
+exports[`The Paragraph placeholder should render children when isLoading is false 1`] = `"Rendered child"`;
+
 exports[`The Paragraph placeholder should render showLoadingAnimation 1`] = `
 Array [
   .c0 {
