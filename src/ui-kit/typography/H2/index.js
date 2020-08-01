@@ -43,13 +43,19 @@ const Placeholder = styled(Line).attrs({
 `;
 
 // We pass `style` as a prop to `StyledH2` so that custom styles are handled by styled components and not react (inline style)
-const H2 = getIsLoading(({ children, isLoading, withMargins, style, ...props }) => (
-  <Placeholder isLoading={isLoading} withMargins={withMargins} showLoadingAnimation>
-    <StyledH2 withMargins={withMargins} customStyles={style} {...props}>
-      {children}
-    </StyledH2>
-  </Placeholder>
-));
+const H2 = getIsLoading(
+  ({ children, isLoading, withMargins, style, ...props }) => (
+    <Placeholder
+      isLoading={isLoading}
+      withMargins={withMargins}
+      showLoadingAnimation
+    >
+      <StyledH2 withMargins={withMargins} customStyles={style} {...props}>
+        {children}
+      </StyledH2>
+    </Placeholder>
+  )
+);
 
 H2.propTypes = {
   children: PropTypes.node.isRequired,
