@@ -50,6 +50,25 @@ exports[`the H5 component should render a loading state 1`] = `
 />
 `;
 
+exports[`the H5 component should render a loading state via context 1`] = `
+.c0 {
+  background: #A5A5A5;
+  border-radius: 16px;
+  display: block;
+  height: 1rem;
+  width: 100%;
+}
+
+.c1 {
+  height: 0.875rem;
+  margin: calc(1.3125rem - 0.875rem) 0;
+}
+
+<mark
+  className="c0 show-loading-animation c1 ui-kit-H5-Placeholder ui-kit-Placeholder-Line custom-placeholder"
+/>
+`;
+
 exports[`the H5 component should render a loading state with vertical rhythm (padded) 1`] = `
 .c0 {
   background: #A5A5A5;

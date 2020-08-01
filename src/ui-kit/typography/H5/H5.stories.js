@@ -11,7 +11,6 @@ storiesOf('ui-kit/typography/H5', module)
       }
     </H5>
   ))
-  .add('padded', () => <H5 padded>Padded Heading Big and Long</H5>)
   .add('isLoading', () => (
     <H5 isLoading showLoadingAnimation>
       {
@@ -19,7 +18,8 @@ storiesOf('ui-kit/typography/H5', module)
       }
     </H5>
   ))
-  .add('isLoading + padded', () => (
+  .add('padded', () => <H5 padded>Padded Heading Big and Long</H5>)
+  .add('padded + isLoading', () => (
     <H5 isLoading padded showLoadingAnimation>
       {
         '"God is most glorified in us when we are most satisfied in Him" ― John Piper'
