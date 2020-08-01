@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
 import { Paragraph as Placeholder } from '../../Placeholder';
+import { getIsLoading } from '../../isLoading';
 
 const StyledP = styled.p`
   font-size: 1rem;
@@ -11,13 +12,13 @@ const StyledP = styled.p`
   ${({ customStyle }) => customStyle}
 `;
 
-const P = ({ children, isLoading, style, ...props }) => (
+const P = getIsLoading(({ children, isLoading, style, ...props }) => (
   <Placeholder isLoading={isLoading} showLoadingAnimation>
     <StyledP customStyle={style} {...props}>
       {children}
     </StyledP>
   </Placeholder>
-);
+));
 
 P.defaultProps = {
   isLoading: false,

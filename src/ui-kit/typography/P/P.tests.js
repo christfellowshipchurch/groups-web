@@ -3,6 +3,7 @@ import renderer from 'react-test-renderer';
 import 'jest-styled-components';
 
 import Providers from '../../../Providers';
+import { IsLoadingContext } from '../../isLoading';
 
 import P from '.';
 
@@ -32,6 +33,16 @@ describe('the P component', () => {
     const tree = renderer.create(
       <Providers>
         <P isLoading>Loading state</P>
+      </Providers>
+    );
+    expect(tree).toMatchSnapshot();
+  });
+  it('should render a loading state via context', () => {
+    const tree = renderer.create(
+      <Providers>
+        <IsLoadingContext.Provider value>
+          <P isLoading>Loading state</P>
+        </IsLoadingContext.Provider>
       </Providers>
     );
     expect(tree).toMatchSnapshot();
