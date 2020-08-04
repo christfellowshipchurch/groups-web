@@ -72,7 +72,6 @@ function Boom() {
   };
 
   const boom = loading ? loadingStateData : data;
-  console.log(JSON.stringify(data));
   return (
     <>
       <H1>Boom pages</H1>
