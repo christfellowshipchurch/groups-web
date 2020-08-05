@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-const PaddedDiv = styled.div.attrs({
-  className: 'ui-kit-PaddedDiv',
-})`
+import { withOverrides } from '../theme';
+
+const PaddedDiv = styled.div.attrs(withOverrides('ui-kit-PaddedDiv'))`
   padding: ${({ horizontal, theme, vertical }) => {
     const verticalValue = vertical ? theme.sizing.baseUnit(1) : 0;
     const horizontalValue = horizontal ? theme.sizing.baseUnit(1) : 0;
