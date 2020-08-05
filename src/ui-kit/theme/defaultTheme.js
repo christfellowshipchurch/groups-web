@@ -1,3 +1,5 @@
+import { css } from 'styled-components';
+
 const theme = {
   colors: {
     primary: 'salmon',
@@ -43,6 +45,20 @@ const theme = {
         customRatio ||
         theme.typography.baseLineHeight / theme.typography.baseFontSize;
       return `${verticalRatio * units}rem`;
+    },
+  },
+  overrides: {
+    'uiKit.typography.H1.StyledH1': {
+      $style: {
+        background: 'salmon',
+      },
+      love: 'Jesus',
+    },
+    'uiKit.typography.H2.StyledH2': {
+      $style: css`
+        background: goldenrod;
+      `,
+      love: 'God',
     },
   },
 };

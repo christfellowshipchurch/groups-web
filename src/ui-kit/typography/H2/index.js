@@ -2,6 +2,7 @@ import React from 'react';
 import styled, { css } from 'styled-components';
 import PropTypes from 'prop-types';
 
+import { withOverrides } from '../../theme';
 import { getIsLoading } from '../../isLoading';
 import { Line } from '../../Placeholder';
 
@@ -14,16 +15,16 @@ const verticalRhythm = css`
       : 'initial'};
 `;
 
-const StyledH2 = styled.h2.attrs({
-  className: 'ui-kit-typography-H2-StyledH2',
-})`
+const StyledH2 = styled.h2.attrs(({ theme, ...props }) => ({
+  ...withOverrides(theme?.overrides['uiKit.typography.H2.StyledH2'], props),
+}))`
   font-size: 2.25rem;
   font-weight: 900;
   line-height: ${({ theme }) => theme.helpers.verticalRhythm(2.25, 1.15)};
   margin: ${verticalRhythm};
 
   /* Styles passed via the style prop */
-  ${({ customStyles }) => customStyles}
+  ${({ $style }) => $style}
 `;
 
 const Placeholder = styled(Line).attrs({
@@ -50,7 +51,7 @@ const H2 = getIsLoading(
       withMargins={withMargins}
       showLoadingAnimation
     >
-      <StyledH2 withMargins={withMargins} customStyles={style} {...props}>
+      <StyledH2 withMargins={withMargins} $style={style} {...props}>
         {children}
       </StyledH2>
     </Placeholder>
