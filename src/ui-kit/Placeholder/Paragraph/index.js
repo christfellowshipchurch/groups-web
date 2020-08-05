@@ -5,13 +5,17 @@ import PropTypes from 'prop-types';
 import { times } from 'lodash';
 
 import Line from '../Line';
+import { withOverrides } from '../../theme';
 
-const ParagraphLine = styled(Line).attrs({
-  className: 'ui-kit-Placeholder-ParagraphLine',
-})`
+const ParagraphLine = styled(Line).attrs(
+  withOverrides('uiKit.Placeholder.Paragraph.ParagraphLine')
+)`
   height: 1rem;
   /* matches P component styles. line-height - font-size */
   margin: calc(${({ theme }) => theme.helpers.verticalRhythm(1)} - 1rem) 0;
+
+  /* Styles passed via the style prop and/or overrides */
+  ${({ $style }) => $style}
 `;
 
 const Paragraph = ({
@@ -34,7 +38,7 @@ const Paragraph = ({
           key={i}
           width={lineWidth}
           showLoadingAnimation={showLoadingAnimation}
-          style={style}
+          $style={style}
         />
       );
     })}
@@ -61,4 +65,6 @@ Paragraph.propTypes = {
   width: PropTypes.string,
 };
 
-export default Paragraph;
+export default styled(Paragraph).attrs(
+  withOverrides('uiKit.Placeholder.Paragraph')
+)``;

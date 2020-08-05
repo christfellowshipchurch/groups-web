@@ -1,4 +1,4 @@
-// import { css } from 'styled-components';
+import { css } from 'styled-components';
 
 const theme = {
   colors: {
@@ -59,6 +59,16 @@ const theme = {
     //     background: goldenrod;
     //   `,
     //   love: 'God',
+    // },
+    // 'uiKit.Placeholder.Line': {
+    //   $style: css`
+    //     background: salmon;
+    //   `,
+    // },
+    // 'uiKit.Placeholder.Line.StyledLine': {
+    //   $style: css`
+    //     background: goldenrod;
+    //   `,
     // },
   },
 };

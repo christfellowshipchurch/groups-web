@@ -37,7 +37,6 @@ exports[`the H2 component should render a loading state 1`] = `
   border-radius: 16px;
   display: block;
   height: 1rem;
-  width: 100%;
 }
 
 .c1 {
@@ -46,7 +45,7 @@ exports[`the H2 component should render a loading state 1`] = `
 }
 
 <mark
-  className="c0 show-loading-animation c1 ui-kit-Placeholder-Line custom-placeholder"
+  className="c0 show-loading-animation ra2rjz-1 c1 custom-placeholder"
 />
 `;
 
@@ -56,7 +55,6 @@ exports[`the H2 component should render a loading state via context 1`] = `
   border-radius: 16px;
   display: block;
   height: 1rem;
-  width: 100%;
 }
 
 .c1 {
@@ -65,7 +63,7 @@ exports[`the H2 component should render a loading state via context 1`] = `
 }
 
 <mark
-  className="c0 show-loading-animation c1 ui-kit-Placeholder-Line custom-placeholder"
+  className="c0 show-loading-animation ra2rjz-1 c1 custom-placeholder"
 />
 `;
 
@@ -75,7 +73,6 @@ exports[`the H2 component should render a loading state with vertical rhythm (wi
   border-radius: 16px;
   display: block;
   height: 1rem;
-  width: 100%;
 }
 
 .c1 {
@@ -84,7 +81,7 @@ exports[`the H2 component should render a loading state with vertical rhythm (wi
 }
 
 <mark
-  className="c0 show-loading-animation c1 ui-kit-Placeholder-Line custom-placeholder"
+  className="c0 show-loading-animation ra2rjz-1 c1 custom-placeholder"
 />
 `;
 

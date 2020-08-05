@@ -3,22 +3,27 @@ import styled from 'styled-components';
 import ReactPlaceholder from 'react-placeholder';
 import PropTypes from 'prop-types';
 
-const StyledLine = styled.mark.attrs({
-  // `custom-placeholder` class enables the `showLoadingAnimation` prop to work
-  className: 'ui-kit-Placeholder-Line custom-placeholder',
-})`
+import { withOverrides } from '../../theme';
+
+const StyledLine = styled.mark.attrs(
+  withOverrides('uiKit.Placeholder.Line.StyledLine', () => ({
+    // `custom-placeholder` class enables the `showLoadingAnimation` prop to work
+    className: 'custom-placeholder',
+  }))
+)`
   background: ${({ theme }) => theme.colors.background.inactive};
   border-radius: ${({ theme }) => theme.sizing.baseBorderRadius};
   display: block;
   height: 1rem;
-  width: ${({ customWidth }) => customWidth};
+  width: ${({ $width }) => $width};
 
-  ${({ customStyles }) => customStyles}
+  /* Styles passed via the style prop and/or overrides */
+  ${({ $styles }) => $styles}
 `;
 
 const Line = ({ isLoading, style, width, ...props }) => (
   <ReactPlaceholder
-    customPlaceholder={<StyledLine customStyles={style} customWidth={width} />}
+    customPlaceholder={<StyledLine $styles={style} $width={width} />}
     ready={!isLoading}
     {...props}
   />
@@ -26,7 +31,6 @@ const Line = ({ isLoading, style, width, ...props }) => (
 
 Line.defaultProps = {
   isLoading: true,
-  width: '100%',
 };
 
 Line.propTypes = {
@@ -37,4 +41,4 @@ Line.propTypes = {
 
 Line.displayName = 'ui-kit.Placeholder.Line';
 
-export default Line;
+export default styled(Line).attrs(withOverrides('uiKit.Placeholder.Line'))``;

@@ -3,10 +3,14 @@ import styled from 'styled-components';
 import ReactPlaceholder from 'react-placeholder';
 import PropTypes from 'prop-types';
 
-const StyledMedia = styled.mark.attrs({
-  // `custom-placeholder` class enables the `showLoadingAnimation` prop to work
-  className: 'ui-kit-Placeholder-Media custom-placeholder',
-})`
+import { withOverrides } from '../../theme';
+
+const StyledMedia = styled.mark.attrs(
+  withOverrides('uiKit.Placeholder.Media.StyledMedia', () => ({
+    // `custom-placeholder` class enables the `showLoadingAnimation` prop to work
+    className: 'custom-placeholder',
+  }))
+)`
   background: ${({ theme }) => theme.colors.background.inactive};
   border-radius: ${({ borderRadius, theme }) =>
     borderRadius || theme.sizing.baseBorderRadius};
@@ -14,12 +18,13 @@ const StyledMedia = styled.mark.attrs({
   height: ${({ size }) => size};
   width: ${({ size }) => size};
 
-  ${({ customStyle }) => customStyle}
+  /* Styles passed via the style prop and/or overrides */
+  ${({ $style }) => $style}
 `;
 
 const Media = ({ isLoading, size, style, ...props }) => (
   <ReactPlaceholder
-    customPlaceholder={<StyledMedia size={size} customStyle={style} />}
+    customPlaceholder={<StyledMedia size={size} $style={style} />}
     ready={!isLoading}
     {...props}
   />
@@ -38,4 +43,6 @@ Media.propTypes = {
 
 Media.displayName = 'ui-kit.Placeholder.Media';
 
-export default Media;
+export default styled(Media).attrs(
+  withOverrides('uiKit.Placeholder.StyledMedia')
+)``;
