@@ -2,6 +2,7 @@ import React from 'react';
 import styled, { css } from 'styled-components';
 import PropTypes from 'prop-types';
 
+import { withOverrides } from '../../theme';
 import { Line } from '../../Placeholder';
 import { getIsLoading } from '../../isLoading';
 
@@ -14,21 +15,19 @@ const verticalRhythm = css`
       : 'initial'};
 `;
 
-const StyledH3 = styled.h3.attrs({
-  className: 'ui-kit-typography-H3-StyledH3',
-})`
+const StyledH3 = styled.h3.attrs(withOverrides('uiKit.typography.H3.StyledH3'))`
   font-size: 1.5rem;
   font-weight: 900;
   line-height: ${({ theme }) => theme.helpers.verticalRhythm(1.5, 1.15)};
   margin: ${verticalRhythm};
 
-  /* Styles passed via the style prop */
-  ${({ customStyles }) => customStyles}
+  /* Styles passed via the style prop and/or overrides */
+  ${({ $style }) => $style}
 `;
 
-const Placeholder = styled(Line).attrs({
-  className: 'ui-kit-H1-Placeholder',
-})`
+const Placeholder = styled(Line).attrs(
+  withOverrides('uiKit.typography.H3.Placeholder')
+)`
   height: 1.5rem; /* Should match H3 font-size */
   margin: ${({ withMargins, theme }) =>
     // if withMargins...
@@ -40,6 +39,9 @@ const Placeholder = styled(Line).attrs({
           1.5,
           1.15
         )} - 1.5rem) 0`}; /* line-height - font-size = space between lines */
+
+  /* Styles passed via overrides */
+  ${({ $style }) => $style}
 `;
 
 // We pass `style` as a prop to `StyledH3` so that custom styles are handled by styled components and not react (inline style)
@@ -50,7 +52,7 @@ const H3 = getIsLoading(
       withMargins={withMargins}
       showLoadingAnimation
     >
-      <StyledH3 withMargins={withMargins} customStyles={style} {...props}>
+      <StyledH3 withMargins={withMargins} $style={style} {...props}>
         {children}
       </StyledH3>
     </Placeholder>
@@ -66,4 +68,4 @@ H3.propTypes = {
 
 H3.displayName = 'ui-kit.typography.H3';
 
-export default H3;
+export default styled(H3).attrs(withOverrides('uiKit.typography.H3'))``;
