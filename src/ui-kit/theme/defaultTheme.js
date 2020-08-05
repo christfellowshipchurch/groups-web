@@ -48,18 +48,18 @@ const theme = {
     },
   },
   overrides: {
-    'uiKit.typography.H1.StyledH1': {
-      $style: {
-        background: 'salmon',
-      },
-      love: 'Jesus',
-    },
-    'uiKit.typography.H2.StyledH2': {
-      $style: css`
-        background: goldenrod;
-      `,
-      love: 'God',
-    },
+    // 'uiKit.typography.H1.StyledH1': {
+    //   $style: {
+    //     background: 'salmon',
+    //   },
+    //   love: 'Jesus',
+    // },
+    // 'uiKit.typography.H2.StyledH2': {
+    //   $style: css`
+    //     background: goldenrod;
+    //   `,
+    //   love: 'God',
+    // },
   },
 };
 
