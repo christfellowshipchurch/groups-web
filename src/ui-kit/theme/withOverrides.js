@@ -1,6 +1,12 @@
 import { css } from 'styled-components';
 
-const withOverrides = (themeOverrides, componentProps) => {
+const DEFAULT_MAPPER_FN = (theme, componentProps) => ({});
+
+const withOverrides = (
+  overrideId,
+  withOverridesMapper = DEFAULT_MAPPER_FN
+) => ({ theme, ...componentProps }) => {
+  const themeOverrides = theme?.overrides[overrideId];
   // Handle theme override values (styles/props). These have higher precedence.
   let mergedStyles = {};
   if (themeOverrides?.style || componentProps?.$style) {
@@ -18,6 +24,7 @@ const withOverrides = (themeOverrides, componentProps) => {
 
   return {
     ...componentProps, // These go first. Order matters. Lower presedence.
+    ...withOverridesMapper(theme, componentProps),
     ...themeOverrides, // These are second and add or override any previousely set values from the line above.
     ...mergedStyles,
   };
