@@ -10,7 +10,7 @@ const withOverrides = (themeOverrides, componentProps) => {
         /* If a component using withOverrides is mapping it's style prop to a transient $style
          * to avoid inline styles we want to assign it first. These have lower presedence. */
         ${componentProps?.$style};
-        /* If the themeOverrides includes style it goes second added to or replaced the line above. */
+        /* If themeOverrides includes a style property we assign it second adding to or replacing the line above. */
         ${themeOverrides?.style};
       `,
     };
