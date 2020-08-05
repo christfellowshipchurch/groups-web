@@ -2,6 +2,7 @@ import React from 'react';
 import styled, { css } from 'styled-components';
 import PropTypes from 'prop-types';
 
+import { withOverrides } from '../../theme';
 import { Line } from '../../Placeholder';
 import { getIsLoading } from '../../isLoading';
 
@@ -14,21 +15,19 @@ const verticalRhythm = css`
       : 'initial'};
 `;
 
-const StyledH5 = styled.h5.attrs({
-  className: 'ui-kit-typography-H5-StyledH5',
-})`
+const StyledH5 = styled.h5.attrs(withOverrides('uiKit.typography.H5.StyledH5'))`
   font-size: 0.875rem;
   font-weight: 500;
   line-height: ${({ theme }) => theme.helpers.verticalRhythm(0.875)};
   margin: ${verticalRhythm};
 
-  /* Styles passed via the style prop */
-  ${({ customStyles }) => customStyles}
+  /* Styles passed via the style prop and/or overrides */
+  ${({ $style }) => $style}
 `;
 
-const Placeholder = styled(Line).attrs({
-  className: 'ui-kit-H5-Placeholder',
-})`
+const Placeholder = styled(Line).attrs(
+  withOverrides('uiKit.typography.H5.Placeholder')
+)`
   height: 0.875rem; /* Should match H5 font-size */
   margin: ${({ withMargins, theme }) =>
     // if withMargins...
@@ -39,6 +38,9 @@ const Placeholder = styled(Line).attrs({
         `calc(${theme.helpers.verticalRhythm(
           0.875
         )} - 0.875rem) 0`}; /* line-height - font-size = space between lines */
+
+  /* Styles passed via overrides */
+  ${({ $style }) => $style}
 `;
 
 // We pass `style` as a prop to `StyledH5` so that custom styles are handled by styled components and not react (inline style)
@@ -49,7 +51,7 @@ const H5 = getIsLoading(
       withMargins={withMargins}
       showLoadingAnimation
     >
-      <StyledH5 withMargins={withMargins} customStyles={style} {...props}>
+      <StyledH5 withMargins={withMargins} $styles={style} {...props}>
         {children}
       </StyledH5>
     </Placeholder>
@@ -65,4 +67,4 @@ H5.propTypes = {
 
 H5.displayName = 'ui-kit.typography.H5';
 
-export default H5;
+export default styled(H5).attrs(withOverrides('uiKit.typography.H5'))``;

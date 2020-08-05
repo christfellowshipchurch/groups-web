@@ -6,11 +6,10 @@ exports[`the H5 component should accept and render passed in styles 1`] = `
   font-weight: 500;
   line-height: 1.3125rem;
   margin: initial;
-  color: salmon;
 }
 
 <h5
-  className="c0 ui-kit-typography-H5-StyledH5"
+  className="c0 sc-1hocjyp-2 bDZEWb"
 >
   Salmon text
 </h5>
@@ -25,7 +24,7 @@ exports[`the H5 component should render 1`] = `
 }
 
 <h5
-  className="c0 ui-kit-typography-H5-StyledH5"
+  className="c0 sc-1hocjyp-2 bDZEWb"
 >
   Default H5 text
 </h5>
@@ -46,7 +45,7 @@ exports[`the H5 component should render a loading state 1`] = `
 }
 
 <mark
-  className="c0 show-loading-animation c1 ui-kit-H5-Placeholder ui-kit-Placeholder-Line custom-placeholder"
+  className="c0 show-loading-animation c1 ui-kit-Placeholder-Line custom-placeholder"
 />
 `;
 
@@ -65,7 +64,7 @@ exports[`the H5 component should render a loading state via context 1`] = `
 }
 
 <mark
-  className="c0 show-loading-animation c1 ui-kit-H5-Placeholder ui-kit-Placeholder-Line custom-placeholder"
+  className="c0 show-loading-animation c1 ui-kit-Placeholder-Line custom-placeholder"
 />
 `;
 
@@ -84,7 +83,7 @@ exports[`the H5 component should render a loading state with vertical rhythm (wi
 }
 
 <mark
-  className="c0 show-loading-animation c1 ui-kit-H5-Placeholder ui-kit-Placeholder-Line custom-placeholder"
+  className="c0 show-loading-animation c1 ui-kit-Placeholder-Line custom-placeholder"
 />
 `;
 
@@ -97,7 +96,7 @@ exports[`the H5 component should render with vertical rhythm (withMargins) 1`] =
 }
 
 <h5
-  className="c0 ui-kit-typography-H5-StyledH5"
+  className="c0 sc-1hocjyp-2 bDZEWb"
 >
   H5 text with vertical rhythm styled via margin.
 </h5>
