@@ -2,19 +2,22 @@ import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
+import { withOverrides } from '../../theme';
 import { Paragraph as Placeholder } from '../../Placeholder';
 import { getIsLoading } from '../../isLoading';
 
-const StyledP = styled.p`
+const StyledP = styled.p.attrs(withOverrides('uiKit.typography.P.StyledP'))`
   font-size: 1rem;
   line-height: ${({ theme }) => theme.helpers.verticalRhythm(1)};
   margin: 0 0 ${({ theme }) => theme.helpers.verticalRhythm(1)} 0;
-  ${({ customStyle }) => customStyle}
+
+  /* Styles passed via the style prop and/or overrides */
+  ${({ $style }) => $style}
 `;
 
 const P = getIsLoading(({ children, isLoading, style, ...props }) => (
   <Placeholder isLoading={isLoading} showLoadingAnimation>
-    <StyledP customStyle={style} {...props}>
+    <StyledP $style={style} {...props}>
       {children}
     </StyledP>
   </Placeholder>
@@ -32,4 +35,4 @@ P.propTypes = {
 
 P.displayName = 'ui-kit.typography.P';
 
-export default P;
+export default styled(P).attrs(withOverrides('uiKit.typography.P'))``;
