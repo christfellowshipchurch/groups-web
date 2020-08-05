@@ -10,7 +10,7 @@ exports[`the H2 component should accept and render passed in styles 1`] = `
 }
 
 <h2
-  className="c0 ui-kit-typography-H2-StyledH2"
+  className="c0 r3v0jj-2 kevIkf"
 >
   Salmon text
 </h2>
@@ -25,7 +25,7 @@ exports[`the H2 component should render 1`] = `
 }
 
 <h2
-  className="c0 ui-kit-typography-H2-StyledH2"
+  className="c0 r3v0jj-2 kevIkf"
 >
   Default H2 text
 </h2>
@@ -46,7 +46,7 @@ exports[`the H2 component should render a loading state 1`] = `
 }
 
 <mark
-  className="c0 show-loading-animation c1 ui-kit-H1-Placeholder ui-kit-Placeholder-Line custom-placeholder"
+  className="c0 show-loading-animation c1 ui-kit-Placeholder-Line custom-placeholder"
 />
 `;
 
@@ -65,7 +65,7 @@ exports[`the H2 component should render a loading state via context 1`] = `
 }
 
 <mark
-  className="c0 show-loading-animation c1 ui-kit-H1-Placeholder ui-kit-Placeholder-Line custom-placeholder"
+  className="c0 show-loading-animation c1 ui-kit-Placeholder-Line custom-placeholder"
 />
 `;
 
@@ -84,7 +84,7 @@ exports[`the H2 component should render a loading state with vertical rhythm (wi
 }
 
 <mark
-  className="c0 show-loading-animation c1 ui-kit-H1-Placeholder ui-kit-Placeholder-Line custom-placeholder"
+  className="c0 show-loading-animation c1 ui-kit-Placeholder-Line custom-placeholder"
 />
 `;
 
@@ -97,7 +97,7 @@ exports[`the H2 component should render with vertical rhythm (withMargins) 1`] =
 }
 
 <h2
-  className="c0 ui-kit-typography-H2-StyledH2"
+  className="c0 r3v0jj-2 kevIkf"
 >
   H2 text with vertical rhythm styled via margin.
 </h2>

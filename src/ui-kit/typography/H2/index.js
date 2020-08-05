@@ -15,21 +15,19 @@ const verticalRhythm = css`
       : 'initial'};
 `;
 
-const StyledH2 = styled.h2.attrs(({ theme, ...props }) => ({
-  ...withOverrides(theme?.overrides['uiKit.typography.H2.StyledH2'], props),
-}))`
+const StyledH2 = styled.h2.attrs(withOverrides('uiKit.typography.H2.StyledH2'))`
   font-size: 2.25rem;
   font-weight: 900;
   line-height: ${({ theme }) => theme.helpers.verticalRhythm(2.25, 1.15)};
   margin: ${verticalRhythm};
 
-  /* Styles passed via the style prop */
+  /* Styles passed via the style prop and/or overrides */
   ${({ $style }) => $style}
 `;
 
-const Placeholder = styled(Line).attrs({
-  className: 'ui-kit-H1-Placeholder',
-})`
+const Placeholder = styled(Line).attrs(
+  withOverrides('uiKit.typography.H2.Placeholder')
+)`
   height: 2.25rem; /* Should match .h2font-size */
   margin: ${({ withMargins, theme }) =>
     // if withMargins...
@@ -41,6 +39,9 @@ const Placeholder = styled(Line).attrs({
           2.25,
           1.15
         )} - 2.25rem) 0`}; /* line-height - font-size = space between lines */
+
+  /* Styles passed via overrides */
+  ${({ $style }) => $style}
 `;
 
 // We pass `style` as a prop to `StyledH2` so that custom styles are handled by styled components and not react (inline style)
@@ -67,4 +68,4 @@ H2.propTypes = {
 
 H2.displayName = 'ui-kit.typography.H2';
 
-export default H2;
+export default styled(H2).attrs(withOverrides('uiKit.typography.H2'))``;
