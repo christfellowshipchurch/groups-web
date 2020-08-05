@@ -6,11 +6,10 @@ exports[`the H4 component should accept and render passed in styles 1`] = `
   font-weight: 700;
   line-height: 1.5rem;
   margin: initial;
-  color: salmon;
 }
 
 <h4
-  className="c0 ui-kit-typography-H4-StyledH4"
+  className="c0 sc-17mtry8-2 bKsXwZ"
 >
   Salmon text
 </h4>
@@ -25,7 +24,7 @@ exports[`the H4 component should render 1`] = `
 }
 
 <h4
-  className="c0 ui-kit-typography-H4-StyledH4"
+  className="c0 sc-17mtry8-2 bKsXwZ"
 >
   Default H4 text
 </h4>
@@ -46,7 +45,7 @@ exports[`the H4 component should render a loading state 1`] = `
 }
 
 <mark
-  className="c0 show-loading-animation c1 ui-kit-H4-Placeholder ui-kit-Placeholder-Line custom-placeholder"
+  className="c0 show-loading-animation c1 ui-kit-Placeholder-Line custom-placeholder"
 />
 `;
 
@@ -65,7 +64,7 @@ exports[`the H4 component should render a loading state via context 1`] = `
 }
 
 <mark
-  className="c0 show-loading-animation c1 ui-kit-H4-Placeholder ui-kit-Placeholder-Line custom-placeholder"
+  className="c0 show-loading-animation c1 ui-kit-Placeholder-Line custom-placeholder"
 />
 `;
 
@@ -84,7 +83,7 @@ exports[`the H4 component should render a loading state with vertical rhythm (wi
 }
 
 <mark
-  className="c0 show-loading-animation c1 ui-kit-H4-Placeholder ui-kit-Placeholder-Line custom-placeholder"
+  className="c0 show-loading-animation c1 ui-kit-Placeholder-Line custom-placeholder"
 />
 `;
 
@@ -97,7 +96,7 @@ exports[`the H4 component should render with vertical rhythm (withMargins) 1`] =
 }
 
 <h4
-  className="c0 ui-kit-typography-H4-StyledH4"
+  className="c0 sc-17mtry8-2 bKsXwZ"
 >
   H4 text with vertical rhythm styled via margin.
 </h4>
