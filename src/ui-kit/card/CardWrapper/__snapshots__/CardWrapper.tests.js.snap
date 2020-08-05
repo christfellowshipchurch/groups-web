@@ -9,7 +9,7 @@ exports[`the CardWrapper component should accept a backgroundColor 1`] = `
 }
 
 <div
-  className="c0 ui-kit-card-CardWrapper"
+  className="c0"
 >
   Boom!
 </div>
@@ -24,7 +24,7 @@ exports[`the CardWrapper component should accept additional props 1`] = `
 }
 
 <div
-  className="c0 ui-kit-card-CardWrapper"
+  className="c0"
   role="article listitem"
 >
   Boom!
@@ -40,7 +40,7 @@ exports[`the CardWrapper component should accept and render passed in styles 1`]
 }
 
 <div
-  className="c0 ui-kit-card-CardWrapper"
+  className="c0"
   style={
     Object {
       "paddingTop": "56.25%",
@@ -61,7 +61,7 @@ exports[`the CardWrapper component should render 1`] = `
 }
 
 <div
-  className="c0 ui-kit-card-CardWrapper"
+  className="c0"
 >
   Boom!
 </div>

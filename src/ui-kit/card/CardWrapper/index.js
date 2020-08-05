@@ -1,11 +1,9 @@
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-// import { withIsLoading } from '../../isLoading';
+import { withOverrides } from '../../theme';
 
-const CardWrapper = styled.div.attrs({
-  className: 'ui-kit-card-CardWrapper',
-})`
+const CardWrapper = styled.div.attrs(withOverrides('ui-kit.card.CardWrapper'))`
   /* card styles */
   background: ${({ cardColor, theme }) =>
     cardColor ||
