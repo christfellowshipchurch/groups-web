@@ -13,6 +13,11 @@ export default function Home() {
             <a>Boom</a>
           </Link>
         </li>
+        <li>
+          <Link href="/my-groups">
+            <a>My Groups</a>
+          </Link>
+        </li>
       </ul>
     </>
   );
