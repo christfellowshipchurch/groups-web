@@ -33,6 +33,7 @@
     "@babel/plugin-proposal-optional-chaining": "^7.11.0",
     "@storybook/addons": "^5.3.19",
     "@storybook/react": "^5.3.19",
+    "@svgr/webpack": "^5.4.0",
     "apollo": "^2.28.3",
     "babel-eslint": "^10.1.0",
     "babel-jest": "^26.1.0",
