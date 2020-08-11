@@ -47,32 +47,28 @@ const GroupSizeIcon = styled(Groups)`
   ${iconStyles}
 `;
 
-function GroupCard({ image, label, location, groupName, groupSize }) {
-  return (
-    <>
-      <Card>
-        <img src={image} width="100%" height="auto" alt="Default Card Text" />
-        <CardContent style={{ position: 'relative' }}>
-          <CardLabel>{label}</CardLabel>
-          <H4>{groupName}</H4>
-          <GroupDetails>
-            <LocationIcon />
-            <H6>{location}</H6>
-            <GroupSizeIcon />
-            <H6>{groupSize}</H6>
-          </GroupDetails>
-        </CardContent>
-      </Card>
-    </>
-  );
-}
+const GroupCard = ({ image, label, location, groupName, groupSize }) => (
+  <Card>
+    <img src={image} width="100%" height="auto" alt="Default Card Text" />
+    <CardContent style={{ position: 'relative' }}>
+      <CardLabel>{label}</CardLabel>
+      <H4>{groupName}</H4>
+      <GroupDetails>
+        <LocationIcon />
+        <H6>{location}</H6>
+        <GroupSizeIcon />
+        <H6>{groupSize}</H6>
+      </GroupDetails>
+    </CardContent>
+  </Card>
+);
 
-GroupCard.proptypes = {
+GroupCard.propTypes = {
   image: PropTypes.string,
   label: PropTypes.string,
   location: PropTypes.string,
-  name: PropTypes.string,
-  size: PropTypes.string,
+  groupName: PropTypes.string,
+  groupSize: PropTypes.string,
 };
 
 export default GroupCard;
