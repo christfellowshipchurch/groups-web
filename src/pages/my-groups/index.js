@@ -12,6 +12,15 @@ const Card = styled(CardWrapper)`
   overflow: hidden;
 `;
 
+const CardLabel = styled(H4)`
+  position: absolute;
+  top: -37px;
+  left: 0;
+  background: ${({ theme }) => theme.colors.text.primary};
+  color: white;
+  padding: 5px 1.25rem;
+`;
+
 const GroupDetails = styled.hgroup`
   display: flex;
   flex-direction: row;
@@ -48,7 +57,8 @@ function MyGroups() {
           height="auto"
           alt="Default Card Text"
         />
-        <CardContent>
+        <CardContent style={{ position: 'relative' }}>
+          <CardLabel>Day of the week</CardLabel>
           <H4>Group Name</H4>
           <GroupDetails>
             <LocationIcon />
