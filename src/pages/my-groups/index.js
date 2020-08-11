@@ -1,8 +1,7 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
 
-import Pin from '../../ui-kit/theme/icons/Pin.svg';
-import Groups from '../../ui-kit/theme/icons/Groups.svg';
+import { Groups, Pin } from '../../ui-kit/theme/icons';
 
 import { CardContent, CardWrapper, H1, H4, H6 } from '../../ui-kit';
 
@@ -14,11 +13,12 @@ const Card = styled(CardWrapper)`
 
 const CardLabel = styled(H4)`
   position: absolute;
-  top: -37px;
+  top: ${({ theme }) => theme.sizing.baseUnit(-2.3125)};
   left: 0;
   background: ${({ theme }) => theme.colors.text.primary};
   color: white;
-  padding: 5px 1.25rem;
+  padding: ${({ theme }) =>
+    `${theme.sizing.baseUnit(0.3125)} ${theme.sizing.baseUnit(1.25)}`};
 `;
 
 const GroupDetails = styled.hgroup`
@@ -27,14 +27,15 @@ const GroupDetails = styled.hgroup`
   align-items: center;
 
   & > h6 {
-    margin: 0 5px 0 0;
+    margin: ${({ theme }) => `0 ${theme.sizing.baseUnit(0.3125)} 0 0`};
   }
 `;
 
 const iconStyles = css`
   fill: ${({ theme }) => theme.colors.primary};
   height: 11px;
-  margin: 0 0 2px 0;
+  margin: ${({ theme }) =>
+    `0 ${theme.sizing.baseUnit(0.125)} ${theme.sizing.baseUnit(0.125)} 0`};
   width: auto;
 `;
 
