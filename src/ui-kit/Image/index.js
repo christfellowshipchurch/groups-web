@@ -6,7 +6,7 @@ import { getIsLoading } from '../isLoading';
 import Placeholder from '../Placeholder';
 
 const StyledImage = styled.img.attrs(withOverrides('ui-kit.Image.StyledImage'))`
-  width: '100%';
+  width: 100%;
   height: auto;
 `;
 
