@@ -4,6 +4,7 @@ import ReactPlaceholder from 'react-placeholder';
 import PropTypes from 'prop-types';
 
 import { withOverrides } from '../../theme';
+import { getIsLoading } from '../../isLoading';
 
 const StyledMedia = styled.mark.attrs(
   withOverrides('uiKit.Placeholder.Media.StyledMedia', () => ({
@@ -15,20 +16,20 @@ const StyledMedia = styled.mark.attrs(
   border-radius: ${({ borderRadius, theme }) =>
     borderRadius || theme.sizing.baseBorderRadius};
   display: block;
-  height: ${({ size }) => size};
   width: ${({ size }) => size};
+  padding: ${({ size }) => `${size} 0 0 0`};
 
   /* Styles passed via the style prop and/or overrides */
   ${({ $style }) => $style}
 `;
 
-const Media = ({ isLoading, size, style, ...props }) => (
+const Media = getIsLoading(({ isLoading, size, style, ...props }) => (
   <ReactPlaceholder
     customPlaceholder={<StyledMedia size={size} $style={style} />}
     ready={!isLoading}
     {...props}
   />
-);
+));
 
 Media.defaultProps = {
   isLoading: true,
