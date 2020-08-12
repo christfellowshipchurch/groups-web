@@ -1,3 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`the withIsLoading HOC should pass the isLoading prop (true) to context for children to consume 1`] = `"true"`;
+
+exports[`the withIsLoading HOC should render 1`] = `
+<h1>
+  Boom
+</h1>
+`;
