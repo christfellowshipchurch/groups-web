@@ -16,6 +16,8 @@ const GlobalStyles = createGlobalStyle`
     font-family: ${({ theme }) => theme.typography.fontFamily};
   }
 
+  img { display: block; }
+
   ::selection {
     background: ${({ theme }) => theme.colors.primary};
     text-shadow: none;
