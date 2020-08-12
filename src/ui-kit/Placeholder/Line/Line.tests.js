@@ -10,7 +10,7 @@ describe('the Line component', () => {
   it('should render', () => {
     const tree = renderer.create(
       <Providers>
-        <Line />
+        <Line isLoading />
       </Providers>
     );
     expect(tree).toMatchSnapshot();
@@ -18,7 +18,7 @@ describe('the Line component', () => {
   it('should render children when isLoading is false', () => {
     const tree = renderer.create(
       <Providers>
-        <Line isLoading={false}>Rendered Child</Line>
+        <Line>Rendered Child</Line>
       </Providers>
     );
     expect(tree).toMatchSnapshot();
@@ -26,7 +26,7 @@ describe('the Line component', () => {
   it('should render with a custom style', () => {
     const tree = renderer.create(
       <Providers>
-        <Line style={{ background: 'salmon' }} />
+        <Line isLoading style={{ background: 'salmon' }} />
       </Providers>
     );
 
@@ -35,7 +35,7 @@ describe('the Line component', () => {
   it('should render with a custom width', () => {
     const tree = renderer.create(
       <Providers>
-        <Line width={'50%'} />
+        <Line isLoading width={'50%'} />
       </Providers>
     );
     expect(tree).toMatchSnapshot();
@@ -43,7 +43,7 @@ describe('the Line component', () => {
   it('should render showLoadingAnimation', () => {
     const tree = renderer.create(
       <Providers>
-        <Line showLoadingAnimation />
+        <Line isLoading showLoadingAnimation />
       </Providers>
     );
     expect(tree).toMatchSnapshot();

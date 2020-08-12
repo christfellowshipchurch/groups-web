@@ -10,7 +10,7 @@ describe('The Paragraph placeholder', () => {
   it('should render', () => {
     const tree = renderer.create(
       <Providers>
-        <Paragraph />
+        <Paragraph isLoading />
       </Providers>
     );
     expect(tree).toMatchSnapshot();
@@ -18,7 +18,7 @@ describe('The Paragraph placeholder', () => {
   it('should render children when isLoading is false', () => {
     const tree = renderer.create(
       <Providers>
-        <Paragraph isLoading={false}>Rendered child</Paragraph>
+        <Paragraph>Rendered child</Paragraph>
       </Providers>
     );
     expect(tree).toMatchSnapshot();
@@ -26,7 +26,7 @@ describe('The Paragraph placeholder', () => {
   it('should render with a custom lineNumber', () => {
     const tree = renderer.create(
       <Providers>
-        <Paragraph lineNumber={50} />
+        <Paragraph isLoading lineNumber={50} />
       </Providers>
     );
     expect(tree).toMatchSnapshot();
@@ -34,7 +34,7 @@ describe('The Paragraph placeholder', () => {
   it('should render with a custom firstLineWidth', () => {
     const tree = renderer.create(
       <Providers>
-        <Paragraph firstLineWidth={'23%'} />
+        <Paragraph firstLineWidth={'23%'} isLoading />
       </Providers>
     );
     expect(tree).toMatchSnapshot();
@@ -42,7 +42,7 @@ describe('The Paragraph placeholder', () => {
   it('should render with a custom lastLineWidth', () => {
     const tree = renderer.create(
       <Providers>
-        <Paragraph lastLineWidth={'33%'} />
+        <Paragraph isLoading lastLineWidth={'33%'} />
       </Providers>
     );
     expect(tree).toMatchSnapshot();
@@ -52,7 +52,7 @@ describe('The Paragraph placeholder', () => {
 
     const tree = renderer.create(
       <Providers>
-        <Paragraph style={customStyle} />
+        <Paragraph isLoading style={customStyle} />
       </Providers>
     );
     expect(tree).toMatchSnapshot();
@@ -60,7 +60,7 @@ describe('The Paragraph placeholder', () => {
   it('should render showLoadingAnimation', () => {
     const tree = renderer.create(
       <Providers>
-        <Paragraph showLoadingAnimation />
+        <Paragraph isLoading showLoadingAnimation />
       </Providers>
     );
     expect(tree).toMatchSnapshot();

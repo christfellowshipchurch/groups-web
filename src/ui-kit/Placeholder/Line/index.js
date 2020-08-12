@@ -30,7 +30,7 @@ const Line = ({ isLoading, style, width, ...props }) => (
 );
 
 Line.defaultProps = {
-  isLoading: true,
+  isLoading: false,
 };
 
 Line.propTypes = {

@@ -32,7 +32,7 @@ const Media = getIsLoading(({ isLoading, size, style, ...props }) => (
 ));
 
 Media.defaultProps = {
-  isLoading: true,
+  isLoading: false,
   size: '100%',
 };
 

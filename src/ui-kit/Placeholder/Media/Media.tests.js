@@ -10,7 +10,7 @@ describe('The Media placeholder', () => {
   it('should render', () => {
     const tree = renderer.create(
       <Providers>
-        <Media />
+        <Media isLoading />
       </Providers>
     );
     expect(tree).toMatchSnapshot();
@@ -18,7 +18,7 @@ describe('The Media placeholder', () => {
   it('should render children when isLoading = false', () => {
     const tree = renderer.create(
       <Providers>
-        <Media isLoading={false}>Rendered child</Media>
+        <Media>Rendered child</Media>
       </Providers>
     );
     expect(tree).toMatchSnapshot();
@@ -26,7 +26,7 @@ describe('The Media placeholder', () => {
   it('should render a custom size', () => {
     const tree = renderer.create(
       <Providers>
-        <Media size="50%" />
+        <Media isLoading size="50%" />
       </Providers>
     );
     expect(tree).toMatchSnapshot();
@@ -36,7 +36,7 @@ describe('The Media placeholder', () => {
 
     const tree = renderer.create(
       <Providers>
-        <Media style={customStyle} />
+        <Media isLoading style={customStyle} />
       </Providers>
     );
     expect(tree).toMatchSnapshot();
@@ -44,7 +44,7 @@ describe('The Media placeholder', () => {
   it('should render showLoadingAnimation', () => {
     const tree = renderer.create(
       <Providers>
-        <Media showLoadingAnimation />
+        <Media isLoading showLoadingAnimation />
       </Providers>
     );
     expect(tree).toMatchSnapshot();

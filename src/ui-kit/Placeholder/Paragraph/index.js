@@ -35,6 +35,7 @@ const Paragraph = ({
       if (i === lineNumber - 1 && lastLineWidth) lineWidth = lastLineWidth;
       return (
         <ParagraphLine
+          isLoading // we default this to true because this state is handled by `Paragraph`
           key={i}
           width={lineWidth}
           showLoadingAnimation={showLoadingAnimation}
@@ -48,7 +49,7 @@ const Paragraph = ({
 );
 
 Paragraph.defaultProps = {
-  isLoading: true,
+  isLoading: false,
   lineNumber: 3,
   width: '100%',
   lastLineWidth: '75%',
