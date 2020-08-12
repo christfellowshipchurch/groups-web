@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`the Image component should render 1`] = `
+.c0 {
+  width: '100%';
+  height: auto;
+}
+
+<img
+  className="c0"
+  src="https://picsum.photos/300/200"
+/>
+`;
+
+exports[`the Image component should render a loading state (isLoading) 1`] = `
+.c0 {
+  background: #A5A5A5;
+  border-radius: 5px;
+  display: block;
+  width: 100%;
+  padding: 100% 0 0 0;
+}
+
+<mark
+  className="c0 custom-placeholder"
+  size="100%"
+/>
+`;
