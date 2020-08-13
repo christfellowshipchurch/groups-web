@@ -1,4 +1,5 @@
 export { CardContent, CardImage, CardWrapper } from './card';
+export Icon, { IconContext, IconProvider } from './Icon';
 export Image from './Image';
 export { getIsLoading, IsLoadingContext, withIsLoading } from './isLoading';
 export PaddedDiv from './PaddedDiv';
