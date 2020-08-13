@@ -1,4 +1,4 @@
-export { CardWrapper, CardContent } from './card';
+export { CardContent, CardImage, CardWrapper } from './card';
 export Image from './Image';
 export { getIsLoading, IsLoadingContext, withIsLoading } from './isLoading';
 export PaddedDiv from './PaddedDiv';

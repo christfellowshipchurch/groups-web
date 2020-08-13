@@ -1,2 +1,3 @@
-export CardWrapper from './CardWrapper';
 export CardContent from './CardContent';
+export CardImage from './CardImage';
+export CardWrapper from './CardWrapper';
