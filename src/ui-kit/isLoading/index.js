@@ -20,7 +20,7 @@ const getIsLoading = (Component) => (props) => {
 // Allows a component to accept an `isLoading` prop to pass down into context for it's children.
 const withIsLoading = (Component) => ({ isLoading, ...props }) => (
   <IsLoadingContext.Provider value={isLoading}>
-    <Component {...props} />
+    <Component isLoading={isLoading} {...props} />
   </IsLoadingContext.Provider>
 );
 
