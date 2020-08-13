@@ -1,4 +1,5 @@
 module.exports = {
+  addons: ['@storybook/addon-essentials'],
   stories: ["../src/**/*.stories.[tj]s"],
   webpackFinal: async (config, { configType }) => {
     const fileLoaderRule = config.module.rules.find(
