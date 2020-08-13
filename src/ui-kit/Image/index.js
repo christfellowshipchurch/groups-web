@@ -11,7 +11,7 @@ const StyledImage = styled.img.attrs(withOverrides('ui-kit.Image.StyledImage'))`
 `;
 
 const Image = getIsLoading(({ isLoading, ...props }) => (
-  <Placeholder.Media isLoading={isLoading}>
+  <Placeholder.Media isLoading={isLoading} showLoadingAnimation>
     <StyledImage {...props} />
   </Placeholder.Media>
 ));

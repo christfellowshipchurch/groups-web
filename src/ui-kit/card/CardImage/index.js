@@ -17,7 +17,7 @@ const StyledImage = styled(Image).attrs(
 )``;
 
 const CardImage = getIsLoading(({ isLoading, ...props }) => (
-  <Placeholder isLoading={isLoading}>
+  <Placeholder isLoading={isLoading} showLoadingAnimation>
     <StyledImage {...props} />
   </Placeholder>
 ));
