@@ -8,7 +8,7 @@ import { withOverrides } from '../../theme';
 const StyledLine = styled.mark.attrs(
   withOverrides('uiKit.Placeholder.Line.StyledLine', () => ({
     // `custom-placeholder` class enables the `showLoadingAnimation` prop to work
-    className: 'custom-placeholder',
+    className: 'line custom-placeholder',
   }))
 )`
   background: ${({ theme }) => theme.colors.background.inactive};

@@ -16,7 +16,7 @@ const sizeUnitConverter = css`
 const StyledMedia = styled.mark.attrs(
   withOverrides('uiKit.Placeholder.Media.StyledMedia', () => ({
     // `custom-placeholder` class enables the `showLoadingAnimation` prop to work
-    className: 'custom-placeholder',
+    className: 'media custom-placeholder',
   }))
 )`
   background: ${({ theme }) => theme.colors.background.inactive};
