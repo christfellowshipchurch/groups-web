@@ -1,0 +1,458 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`the GroupCard component should render 1`] = `
+.c0 {
+  background: #FFFFFF;
+  border-radius: 5px;
+  box-shadow: 0 10px 9px -4px rgba(0,0,0,.07);
+  margin: 0.75rem 1rem;
+}
+
+.c3 {
+  padding: 1rem 1rem;
+  padding: 1.25rem;
+}
+
+.c2 {
+  width: 100%;
+  height: auto;
+}
+
+.c4 {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  margin: initial;
+}
+
+.c1 {
+  min-width: calc(320px - 2rem);
+  max-width: 420px;
+  overflow: hidden;
+}
+
+<div
+  className="c0 c1 o4tkys-0 c1"
+>
+  <img
+    alt="Group Name"
+    className="c2"
+    src="https://picsum.photos/840/472"
+  />
+  <div
+    className="sc-9taxng-0 c3"
+    style={
+      Object {
+        "position": "relative",
+      }
+    }
+  >
+    <h4
+      className="c4 sc-17mtry8-2 bKsXwZ"
+    >
+      Group Name
+    </h4>
+  </div>
+</div>
+`;
+
+exports[`the GroupCard component should render a loading state  1`] = `
+.c0 {
+  background: #FFFFFF;
+  border-radius: 5px;
+  box-shadow: 0 10px 9px -4px rgba(0,0,0,.07);
+  margin: 0.75rem 1rem;
+}
+
+.c3 {
+  padding: 1rem 1rem;
+  padding: 1.25rem;
+}
+
+.c4 {
+  background: #A5A5A5;
+  border-radius: 5px;
+  display: block;
+  height: 1rem;
+}
+
+.c2 {
+  background: #A5A5A5;
+  border-radius: 5px;
+  display: block;
+  width: 100%;
+  padding: 100% 0 0 0;
+}
+
+.c5 {
+  height: 1rem;
+  margin: calc(1.5rem - 1rem) 0;
+}
+
+.c8 {
+  height: 0.75rem;
+  margin: 0 0 calc(1.125rem - 0.75rem) 0;
+}
+
+.c1 {
+  min-width: calc(320px - 2rem);
+  max-width: 420px;
+  overflow: hidden;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c6 > h6 {
+  margin: 0 0.3125rem 0 0;
+}
+
+.c6 > .custom-placeholder {
+  width: 15%;
+}
+
+.c7 {
+  fill: salmon;
+  height: 11px;
+  margin: 0 0.125rem 0.125rem 0;
+  width: auto;
+}
+
+.c9 {
+  fill: salmon;
+  height: 11px;
+  margin: 0 0.125rem 0.125rem 0;
+  width: auto;
+}
+
+<div
+  className="c0 c1 o4tkys-0 c1"
+>
+  <mark
+    className="c2 custom-placeholder"
+    size="100%"
+  />
+  <div
+    className="sc-9taxng-0 c3"
+    style={
+      Object {
+        "position": "relative",
+      }
+    }
+  >
+    <mark
+      className="c4 show-loading-animation ra2rjz-1 c5 custom-placeholder"
+    />
+    <mark
+      className="c4 show-loading-animation ra2rjz-1 c5 custom-placeholder"
+    />
+    <hgroup
+      className="c6"
+    >
+      <Svgr
+        className="c7"
+      />
+      <mark
+        className="c4 show-loading-animation ra2rjz-1 c8 custom-placeholder"
+      />
+      <Svgr
+        className="c9"
+      />
+      <mark
+        className="c4 show-loading-animation ra2rjz-1 c8 custom-placeholder"
+      />
+    </hgroup>
+  </div>
+</div>
+`;
+
+exports[`the GroupCard component should render with a groupSize 1`] = `
+.c0 {
+  background: #FFFFFF;
+  border-radius: 5px;
+  box-shadow: 0 10px 9px -4px rgba(0,0,0,.07);
+  margin: 0.75rem 1rem;
+}
+
+.c3 {
+  padding: 1rem 1rem;
+  padding: 1.25rem;
+}
+
+.c2 {
+  width: 100%;
+  height: auto;
+}
+
+.c4 {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  margin: initial;
+}
+
+.c7 {
+  color: #505050;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1.125rem;
+  margin: initial;
+}
+
+.c1 {
+  min-width: calc(320px - 2rem);
+  max-width: 420px;
+  overflow: hidden;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c5 > h6 {
+  margin: 0 0.3125rem 0 0;
+}
+
+.c5 > .custom-placeholder {
+  width: 15%;
+}
+
+.c6 {
+  fill: salmon;
+  height: 11px;
+  margin: 0 0.125rem 0.125rem 0;
+  width: auto;
+}
+
+<div
+  className="c0 c1 o4tkys-0 c1"
+>
+  <img
+    alt="Group Name"
+    className="c2"
+    src="https://picsum.photos/840/472"
+  />
+  <div
+    className="sc-9taxng-0 c3"
+    style={
+      Object {
+        "position": "relative",
+      }
+    }
+  >
+    <h4
+      className="c4 sc-17mtry8-2 bKsXwZ"
+    >
+      Group Name
+    </h4>
+    <hgroup
+      className="c5"
+    >
+      <Svgr
+        className="c6"
+      />
+      <h6
+        className="c7 toneu3-2 ctXJce"
+      >
+        11
+      </h6>
+    </hgroup>
+  </div>
+</div>
+`;
+
+exports[`the GroupCard component should render with a label 1`] = `
+.c0 {
+  background: #FFFFFF;
+  border-radius: 5px;
+  box-shadow: 0 10px 9px -4px rgba(0,0,0,.07);
+  margin: 0.75rem 1rem;
+}
+
+.c3 {
+  padding: 1rem 1rem;
+  padding: 1.25rem;
+}
+
+.c2 {
+  width: 100%;
+  height: auto;
+}
+
+.c4 {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  margin: initial;
+}
+
+.c1 {
+  min-width: calc(320px - 2rem);
+  max-width: 420px;
+  overflow: hidden;
+}
+
+.c5 {
+  position: absolute;
+  top: -2.125rem;
+  left: 0;
+  background: #303030;
+  color: white;
+  padding: 0.3125rem 1.25rem;
+}
+
+<div
+  className="c0 c1 o4tkys-0 c1"
+>
+  <img
+    alt="Group Name"
+    className="c2"
+    src="https://picsum.photos/840/472"
+  />
+  <div
+    className="sc-9taxng-0 c3"
+    style={
+      Object {
+        "position": "relative",
+      }
+    }
+  >
+    <h4
+      className="c4 c5 sc-17mtry8-2 o4tkys-1 c5"
+    >
+      Label Name
+    </h4>
+    <h4
+      className="c4 sc-17mtry8-2 bKsXwZ"
+    >
+      Group Name
+    </h4>
+  </div>
+</div>
+`;
+
+exports[`the GroupCard component should render with a location 1`] = `
+.c0 {
+  background: #FFFFFF;
+  border-radius: 5px;
+  box-shadow: 0 10px 9px -4px rgba(0,0,0,.07);
+  margin: 0.75rem 1rem;
+}
+
+.c3 {
+  padding: 1rem 1rem;
+  padding: 1.25rem;
+}
+
+.c2 {
+  width: 100%;
+  height: auto;
+}
+
+.c4 {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  margin: initial;
+}
+
+.c7 {
+  color: #505050;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1.125rem;
+  margin: initial;
+}
+
+.c1 {
+  min-width: calc(320px - 2rem);
+  max-width: 420px;
+  overflow: hidden;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c5 > h6 {
+  margin: 0 0.3125rem 0 0;
+}
+
+.c5 > .custom-placeholder {
+  width: 15%;
+}
+
+.c6 {
+  fill: salmon;
+  height: 11px;
+  margin: 0 0.125rem 0.125rem 0;
+  width: auto;
+}
+
+<div
+  className="c0 c1 o4tkys-0 c1"
+>
+  <img
+    alt="Group Name"
+    className="c2"
+    src="https://picsum.photos/840/472"
+  />
+  <div
+    className="sc-9taxng-0 c3"
+    style={
+      Object {
+        "position": "relative",
+      }
+    }
+  >
+    <h4
+      className="c4 sc-17mtry8-2 bKsXwZ"
+    >
+      Group Name
+    </h4>
+    <hgroup
+      className="c5"
+    >
+      <Svgr
+        className="c6"
+      />
+      <h6
+        className="c7 toneu3-2 ctXJce"
+      >
+        Location Name
+      </h6>
+    </hgroup>
+  </div>
+</div>
+`;
