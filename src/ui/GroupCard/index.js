@@ -3,17 +3,9 @@ import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 
 import { Groups, Pin } from '../../ui-kit/theme/icons';
-import {
-  CardContent,
-  CardWrapper,
-  H4,
-  H6,
-  Image,
-  withIsLoading,
-} from '../../ui-kit';
+import { CardContent, CardImage, CardWrapper, H4, H6 } from '../../ui-kit';
 
 const Card = styled(CardWrapper)`
-  /* min-width: calc(320px - ${({ theme }) => theme.sizing.baseUnit(2)}); */
   max-width: 420px;
   overflow: hidden;
 `;
@@ -67,7 +59,7 @@ const GroupCard = ({
   title,
 }) => (
   <Card isLoading={isLoading}>
-    {coverImage ? <Image src={coverImage} alt={title} /> : null}
+    {coverImage ? <CardImage src={coverImage} alt={title} /> : null}
     <CardContent style={{ position: 'relative' }}>
       {label ? <CardLabel>{label}</CardLabel> : null}
 
