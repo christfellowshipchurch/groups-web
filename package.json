@@ -19,6 +19,7 @@
     "apollo-client": "^2.6.10",
     "apollo-link-http": "^1.5.17",
     "graphql-tag": "^2.10.3",
+    "lodash": "^4.17.20",
     "next": "^9.5.2",
     "prettier": "^2.0.5",
     "react": "^16.8.0",
