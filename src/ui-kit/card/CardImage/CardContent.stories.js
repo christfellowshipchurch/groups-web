@@ -1,8 +1,22 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 
 import CardImage from '.';
 
-storiesOf('ui-kit/card/CardImage', module).add('default', () => (
-  <CardImage src={'https://picsum.photos/300/200'} />
-));
+const Template = (args) => <CardImage {...args} />;
+
+const Story = {
+  component: CardImage,
+  title: 'ui-kit/card/CardImage',
+};
+
+const example = Template.bind({});
+example.args = {
+  src: 'https://picsum.photos/840/472',
+};
+
+const isLoading = Template.bind({});
+isLoading.args = {
+  isLoading: true,
+};
+
+export { Story as default, example, isLoading };

@@ -15,4 +15,12 @@ describe('the CardImage component', () => {
     );
     expect(tree).toMatchSnapshot();
   });
+  it('should render a loading state (isLoading)', () => {
+    const tree = renderer.create(
+      <Providers>
+        <CardImage src={'https://picsum.photos/300/200'} isLoading />
+      </Providers>
+    );
+    expect(tree).toMatchSnapshot();
+  });
 });

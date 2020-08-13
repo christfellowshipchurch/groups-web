@@ -2,11 +2,31 @@
 
 exports[`the CardImage component should render 1`] = `
 .c0 {
-  width: '100%';
+  width: 100%;
+  height: auto;
 }
 
 <img
-  className="c0 ui-kit-card-CardImage"
+  className="c0 sc-1shebyi-1 kaSgGP"
   src="https://picsum.photos/300/200"
+/>
+`;
+
+exports[`the CardImage component should render a loading state (isLoading) 1`] = `
+.c0 {
+  background: #A5A5A5;
+  border-radius: 5px;
+  display: block;
+  width: 100%;
+  padding: 100% 0 0 0;
+}
+
+.c1 {
+  border-radius: 5px 5px 0 0;
+}
+
+<mark
+  className="c0 j5u57d-1 c1 custom-placeholder"
+  size="100%"
 />
 `;
