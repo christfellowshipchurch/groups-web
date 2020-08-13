@@ -23,10 +23,18 @@ describe('The Media placeholder', () => {
     );
     expect(tree).toMatchSnapshot();
   });
-  it('should render a custom size', () => {
+  it('should render a custom size string', () => {
     const tree = renderer.create(
       <Providers>
-        <Media isLoading size="50%" />
+        <Media isLoading size={'50%'} />
+      </Providers>
+    );
+    expect(tree).toMatchSnapshot();
+  });
+  it('should render a custom size number', () => {
+    const tree = renderer.create(
+      <Providers>
+        <Media isLoading size={10} />
       </Providers>
     );
     expect(tree).toMatchSnapshot();

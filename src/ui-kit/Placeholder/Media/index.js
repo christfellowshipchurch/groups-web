@@ -1,10 +1,17 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import ReactPlaceholder from 'react-placeholder';
 import PropTypes from 'prop-types';
 
 import { withOverrides } from '../../theme';
 import { getIsLoading } from '../../isLoading';
+
+const sizeUnitConverter = css`
+  ${({ size, theme }) =>
+    typeof size === 'string' // this allows size to be a percent if necessary
+      ? size
+      : theme.sizing.baseUnit(size)};
+`;
 
 const StyledMedia = styled.mark.attrs(
   withOverrides('uiKit.Placeholder.Media.StyledMedia', () => ({
@@ -16,8 +23,8 @@ const StyledMedia = styled.mark.attrs(
   border-radius: ${({ borderRadius, theme }) =>
     borderRadius || theme.sizing.baseBorderRadius};
   display: block;
-  width: ${({ size }) => size};
-  padding: ${({ size }) => `${size} 0 0 0`};
+  width: ${sizeUnitConverter};
+  padding-top: ${sizeUnitConverter};
 
   /* Styles passed via the style prop and/or overrides */
   ${({ $style }) => $style}
@@ -38,7 +45,7 @@ Media.defaultProps = {
 
 Media.propTypes = {
   isLoading: PropTypes.bool,
-  size: PropTypes.string,
+  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   style: PropTypes.any, // eslint-disable-line react/forbid-prop-types
 };
 

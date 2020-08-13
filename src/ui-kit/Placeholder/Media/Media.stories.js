@@ -9,6 +9,7 @@ storiesOf('ui-kit/Placeholder/Media', module)
   ))
   .add('default', () => <Media>Rendered Child</Media>)
   .add('isLoading', () => <Media isLoading />)
-  .add('size', () => <Media isLoading size={'50%'} />)
+  .add('size (50%)', () => <Media isLoading size={'50%'} />)
+  .add('size (10)', () => <Media isLoading size={10} />)
   .add('style', () => <Media isLoading style={{ background: 'salmon' }} />)
   .add('showLoadingAnimation', () => <Media isLoading showLoadingAnimation />);
