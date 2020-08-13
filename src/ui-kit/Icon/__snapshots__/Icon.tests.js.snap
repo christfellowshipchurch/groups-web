@@ -1,0 +1,781 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The ArrowBack icon should render 1`] = `
+.c0 {
+  fill: #303030;
+  height: auto;
+  width: 2rem;
+}
+
+<Svgr
+  className="c0"
+/>
+`;
+
+exports[`The ArrowDown icon should render 1`] = `
+.c0 {
+  fill: #303030;
+  height: auto;
+  width: 2rem;
+}
+
+<Svgr
+  className="c0"
+/>
+`;
+
+exports[`The ArrowNext icon should render 1`] = `
+.c0 {
+  fill: #303030;
+  height: auto;
+  width: 2rem;
+}
+
+<Svgr
+  className="c0"
+/>
+`;
+
+exports[`The ArrowUp icon should render 1`] = `
+.c0 {
+  fill: #303030;
+  height: auto;
+  width: 2rem;
+}
+
+<Svgr
+  className="c0"
+/>
+`;
+
+exports[`The Audio icon should render 1`] = `
+.c0 {
+  fill: #303030;
+  height: auto;
+  width: 2rem;
+}
+
+<Svgr
+  className="c0"
+/>
+`;
+
+exports[`The Avatar icon should render 1`] = `
+.c0 {
+  fill: #303030;
+  height: auto;
+  width: 2rem;
+}
+
+<Svgr
+  className="c0"
+/>
+`;
+
+exports[`The Bank icon should render 1`] = `
+.c0 {
+  fill: #303030;
+  height: auto;
+  width: 2rem;
+}
+
+<Svgr
+  className="c0"
+/>
+`;
+
+exports[`The BrandIcon icon should render 1`] = `
+.c0 {
+  fill: #303030;
+  height: auto;
+  width: 2rem;
+}
+
+<Svgr
+  className="c0"
+/>
+`;
+
+exports[`The Building icon should render 1`] = `
+.c0 {
+  fill: #303030;
+  height: auto;
+  width: 2rem;
+}
+
+<Svgr
+  className="c0"
+/>
+`;
+
+exports[`The Calendar icon should render 1`] = `
+.c0 {
+  fill: #303030;
+  height: auto;
+  width: 2rem;
+}
+
+<Svgr
+  className="c0"
+/>
+`;
+
+exports[`The Camera icon should render 1`] = `
+.c0 {
+  fill: #303030;
+  height: auto;
+  width: 2rem;
+}
+
+<Svgr
+  className="c0"
+/>
+`;
+
+exports[`The Check icon should render 1`] = `
+.c0 {
+  fill: #303030;
+  height: auto;
+  width: 2rem;
+}
+
+<Svgr
+  className="c0"
+/>
+`;
+
+exports[`The CheckboxChecked icon should render 1`] = `
+.c0 {
+  fill: #303030;
+  height: auto;
+  width: 2rem;
+}
+
+<Svgr
+  className="c0"
+/>
+`;
+
+exports[`The CheckboxUnchecked icon should render 1`] = `
+.c0 {
+  fill: #303030;
+  height: auto;
+  width: 2rem;
+}
+
+<Svgr
+  className="c0"
+/>
+`;
+
+exports[`The Chromecast icon should render 1`] = `
+.c0 {
+  fill: #303030;
+  height: auto;
+  width: 2rem;
+}
+
+<Svgr
+  className="c0"
+/>
+`;
+
+exports[`The CircleOutlineCheckMark icon should render 1`] = `
+.c0 {
+  fill: #303030;
+  height: auto;
+  width: 2rem;
+}
+
+<Svgr
+  className="c0"
+/>
+`;
+
+exports[`The CircleOutlinePlus icon should render 1`] = `
+.c0 {
+  fill: #303030;
+  height: auto;
+  width: 2rem;
+}
+
+<Svgr
+  className="c0"
+/>
+`;
+
+exports[`The CircleOutlineXMark icon should render 1`] = `
+.c0 {
+  fill: #303030;
+  height: auto;
+  width: 2rem;
+}
+
+<Svgr
+  className="c0"
+/>
+`;
+
+exports[`The Close icon should render 1`] = `
+.c0 {
+  fill: #303030;
+  height: auto;
+  width: 2rem;
+}
+
+<Svgr
+  className="c0"
+/>
+`;
+
+exports[`The Credit icon should render 1`] = `
+.c0 {
+  fill: #303030;
+  height: auto;
+  width: 2rem;
+}
+
+<Svgr
+  className="c0"
+/>
+`;
+
+exports[`The Download icon should render 1`] = `
+.c0 {
+  fill: #303030;
+  height: auto;
+  width: 2rem;
+}
+
+<Svgr
+  className="c0"
+/>
+`;
+
+exports[`The Dropdown icon should render 1`] = `
+.c0 {
+  fill: #303030;
+  height: auto;
+  width: 2rem;
+}
+
+<Svgr
+  className="c0"
+/>
+`;
+
+exports[`The Empty icon should render 1`] = `
+.c0 {
+  fill: #303030;
+  height: auto;
+  width: 2rem;
+}
+
+<Svgr
+  className="c0"
+/>
+`;
+
+exports[`The Failed icon should render 1`] = `
+.c0 {
+  fill: #303030;
+  height: auto;
+  width: 2rem;
+}
+
+<Svgr
+  className="c0"
+/>
+`;
+
+exports[`The Filter icon should render 1`] = `
+.c0 {
+  fill: #303030;
+  height: auto;
+  width: 2rem;
+}
+
+<Svgr
+  className="c0"
+/>
+`;
+
+exports[`The Fullscreen icon should render 1`] = `
+.c0 {
+  fill: #303030;
+  height: auto;
+  width: 2rem;
+}
+
+<Svgr
+  className="c0"
+/>
+`;
+
+exports[`The Groups icon should render 1`] = `
+.c0 {
+  fill: #303030;
+  height: auto;
+  width: 2rem;
+}
+
+<Svgr
+  className="c0"
+/>
+`;
+
+exports[`The Home icon should render 1`] = `
+.c0 {
+  fill: #303030;
+  height: auto;
+  width: 2rem;
+}
+
+<Svgr
+  className="c0"
+/>
+`;
+
+exports[`The Information icon should render 1`] = `
+.c0 {
+  fill: #303030;
+  height: auto;
+  width: 2rem;
+}
+
+<Svgr
+  className="c0"
+/>
+`;
+
+exports[`The Like icon should render 1`] = `
+.c0 {
+  fill: #303030;
+  height: auto;
+  width: 2rem;
+}
+
+<Svgr
+  className="c0"
+/>
+`;
+
+exports[`The LikeSolid icon should render 1`] = `
+.c0 {
+  fill: #303030;
+  height: auto;
+  width: 2rem;
+}
+
+<Svgr
+  className="c0"
+/>
+`;
+
+exports[`The LiveDot icon should render 1`] = `
+.c0 {
+  fill: #303030;
+  height: auto;
+  width: 2rem;
+}
+
+<Svgr
+  className="c0"
+/>
+`;
+
+exports[`The Locate icon should render 1`] = `
+.c0 {
+  fill: #303030;
+  height: auto;
+  width: 2rem;
+}
+
+<Svgr
+  className="c0"
+/>
+`;
+
+exports[`The Lock icon should render 1`] = `
+.c0 {
+  fill: #303030;
+  height: auto;
+  width: 2rem;
+}
+
+<Svgr
+  className="c0"
+/>
+`;
+
+exports[`The Mute icon should render 1`] = `
+.c0 {
+  fill: #303030;
+  height: auto;
+  width: 2rem;
+}
+
+<Svgr
+  className="c0"
+/>
+`;
+
+exports[`The Pause icon should render 1`] = `
+.c0 {
+  fill: #303030;
+  height: auto;
+  width: 2rem;
+}
+
+<Svgr
+  className="c0"
+/>
+`;
+
+exports[`The Pin icon should render 1`] = `
+.c0 {
+  fill: #303030;
+  height: auto;
+  width: 2rem;
+}
+
+<Svgr
+  className="c0"
+/>
+`;
+
+exports[`The Play icon should render 1`] = `
+.c0 {
+  fill: #303030;
+  height: auto;
+  width: 2rem;
+}
+
+<Svgr
+  className="c0"
+/>
+`;
+
+exports[`The PlayOpaque icon should render 1`] = `
+.c0 {
+  fill: #303030;
+  height: auto;
+  width: 2rem;
+}
+
+<Svgr
+  className="c0"
+/>
+`;
+
+exports[`The PlaySolid icon should render 1`] = `
+.c0 {
+  fill: #303030;
+  height: auto;
+  width: 2rem;
+}
+
+<Svgr
+  className="c0"
+/>
+`;
+
+exports[`The Plus icon should render 1`] = `
+.c0 {
+  fill: #303030;
+  height: auto;
+  width: 2rem;
+}
+
+<Svgr
+  className="c0"
+/>
+`;
+
+exports[`The Pray icon should render 1`] = `
+.c0 {
+  fill: #303030;
+  height: auto;
+  width: 2rem;
+}
+
+<Svgr
+  className="c0"
+/>
+`;
+
+exports[`The Print icon should render 1`] = `
+.c0 {
+  fill: #303030;
+  height: auto;
+  width: 2rem;
+}
+
+<Svgr
+  className="c0"
+/>
+`;
+
+exports[`The Profile icon should render 1`] = `
+.c0 {
+  fill: #303030;
+  height: auto;
+  width: 2rem;
+}
+
+<Svgr
+  className="c0"
+/>
+`;
+
+exports[`The RadioChecked icon should render 1`] = `
+.c0 {
+  fill: #303030;
+  height: auto;
+  width: 2rem;
+}
+
+<Svgr
+  className="c0"
+/>
+`;
+
+exports[`The RadioUnchecked icon should render 1`] = `
+.c0 {
+  fill: #303030;
+  height: auto;
+  width: 2rem;
+}
+
+<Svgr
+  className="c0"
+/>
+`;
+
+exports[`The Repeat icon should render 1`] = `
+.c0 {
+  fill: #303030;
+  height: auto;
+  width: 2rem;
+}
+
+<Svgr
+  className="c0"
+/>
+`;
+
+exports[`The RepeatAll icon should render 1`] = `
+.c0 {
+  fill: #303030;
+  height: auto;
+  width: 2rem;
+}
+
+<Svgr
+  className="c0"
+/>
+`;
+
+exports[`The RepeatOne icon should render 1`] = `
+.c0 {
+  fill: #303030;
+  height: auto;
+  width: 2rem;
+}
+
+<Svgr
+  className="c0"
+/>
+`;
+
+exports[`The Search icon should render 1`] = `
+.c0 {
+  fill: #303030;
+  height: auto;
+  width: 2rem;
+}
+
+<Svgr
+  className="c0"
+/>
+`;
+
+exports[`The Sections icon should render 1`] = `
+.c0 {
+  fill: #303030;
+  height: auto;
+  width: 2rem;
+}
+
+<Svgr
+  className="c0"
+/>
+`;
+
+exports[`The Settings icon should render 1`] = `
+.c0 {
+  fill: #303030;
+  height: auto;
+  width: 2rem;
+}
+
+<Svgr
+  className="c0"
+/>
+`;
+
+exports[`The Share icon should render 1`] = `
+.c0 {
+  fill: #303030;
+  height: auto;
+  width: 2rem;
+}
+
+<Svgr
+  className="c0"
+/>
+`;
+
+exports[`The Shuffle icon should render 1`] = `
+.c0 {
+  fill: #303030;
+  height: auto;
+  width: 2rem;
+}
+
+<Svgr
+  className="c0"
+/>
+`;
+
+exports[`The SkipBackThirty icon should render 1`] = `
+.c0 {
+  fill: #303030;
+  height: auto;
+  width: 2rem;
+}
+
+<Svgr
+  className="c0"
+/>
+`;
+
+exports[`The SkipForwardThirty icon should render 1`] = `
+.c0 {
+  fill: #303030;
+  height: auto;
+  width: 2rem;
+}
+
+<Svgr
+  className="c0"
+/>
+`;
+
+exports[`The SkipNext icon should render 1`] = `
+.c0 {
+  fill: #303030;
+  height: auto;
+  width: 2rem;
+}
+
+<Svgr
+  className="c0"
+/>
+`;
+
+exports[`The SkipPrevious icon should render 1`] = `
+.c0 {
+  fill: #303030;
+  height: auto;
+  width: 2rem;
+}
+
+<Svgr
+  className="c0"
+/>
+`;
+
+exports[`The Text icon should render 1`] = `
+.c0 {
+  fill: #303030;
+  height: auto;
+  width: 2rem;
+}
+
+<Svgr
+  className="c0"
+/>
+`;
+
+exports[`The Time icon should render 1`] = `
+.c0 {
+  fill: #303030;
+  height: auto;
+  width: 2rem;
+}
+
+<Svgr
+  className="c0"
+/>
+`;
+
+exports[`The Umbrella icon should render 1`] = `
+.c0 {
+  fill: #303030;
+  height: auto;
+  width: 2rem;
+}
+
+<Svgr
+  className="c0"
+/>
+`;
+
+exports[`The Video icon should render 1`] = `
+.c0 {
+  fill: #303030;
+  height: auto;
+  width: 2rem;
+}
+
+<Svgr
+  className="c0"
+/>
+`;
+
+exports[`The VideoOff icon should render 1`] = `
+.c0 {
+  fill: #303030;
+  height: auto;
+  width: 2rem;
+}
+
+<Svgr
+  className="c0"
+/>
+`;
+
+exports[`The Volume icon should render 1`] = `
+.c0 {
+  fill: #303030;
+  height: auto;
+  width: 2rem;
+}
+
+<Svgr
+  className="c0"
+/>
+`;
+
+exports[`The Warning icon should render 1`] = `
+.c0 {
+  fill: #303030;
+  height: auto;
+  width: 2rem;
+}
+
+<Svgr
+  className="c0"
+/>
+`;
