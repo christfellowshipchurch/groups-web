@@ -2,8 +2,15 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 
-import { Groups, Pin } from '../../ui-kit/theme/icons';
-import { CardContent, CardImage, CardWrapper, H4, H6 } from '../../ui-kit';
+import {
+  CardContent,
+  CardImage,
+  CardWrapper,
+  H4,
+  H6,
+  Icon,
+} from '../../ui-kit';
+import { withOverrides } from '../../ui-kit/theme';
 
 const Card = styled(CardWrapper)`
   max-width: 420px;
@@ -30,23 +37,36 @@ const GroupDetails = styled.hgroup`
   }
 
   & > .custom-placeholder {
-    width: 15%;
+    margin: ${({ theme }) => `0 ${theme.sizing.baseUnit(0.3125)} 0 0`};
+
+    &.line {
+      width: 15%;
+      margin-bottom: 0;
+    }
   }
 `;
 
 const iconStyles = css`
   fill: ${({ theme }) => theme.colors.primary};
-  height: 11px;
   margin: ${({ theme }) =>
     `0 ${theme.sizing.baseUnit(0.125)} ${theme.sizing.baseUnit(0.125)} 0`};
-  width: auto;
 `;
 
-const LocationIcon = styled(Pin)`
+const LocationIcon = styled(Icon).attrs(
+  withOverrides('ui-kit.card.CardContent', () => ({
+    name: 'pin',
+    size: 0.6875,
+  }))
+)`
   ${iconStyles}
 `;
 
-const GroupSizeIcon = styled(Groups)`
+const GroupSizeIcon = styled(Icon).attrs(
+  withOverrides('ui-kit.card.CardContent', () => ({
+    name: 'groups',
+    size: 0.6875,
+  }))
+)`
   ${iconStyles}
 `;
 
