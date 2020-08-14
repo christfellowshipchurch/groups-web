@@ -3,9 +3,9 @@
 exports[`the CardWrapper component should accept a backgroundColor 1`] = `
 .c0 {
   background: salmon;
-  border-radius: 16px;
+  border-radius: 5px;
+  box-shadow: 0 10px 9px -4px rgba(0,0,0,.07);
   margin: 0.75rem 1rem;
-  box-shadow: 0px 5px 18px rgba(0,0,0,0.1);
 }
 
 <div
@@ -18,9 +18,9 @@ exports[`the CardWrapper component should accept a backgroundColor 1`] = `
 exports[`the CardWrapper component should accept additional props 1`] = `
 .c0 {
   background: #FFFFFF;
-  border-radius: 16px;
+  border-radius: 5px;
+  box-shadow: 0 10px 9px -4px rgba(0,0,0,.07);
   margin: 0.75rem 1rem;
-  box-shadow: 0px 5px 18px rgba(0,0,0,0.1);
 }
 
 <div
@@ -34,9 +34,9 @@ exports[`the CardWrapper component should accept additional props 1`] = `
 exports[`the CardWrapper component should accept and render passed in styles 1`] = `
 .c0 {
   background: #FFFFFF;
-  border-radius: 16px;
+  border-radius: 5px;
+  box-shadow: 0 10px 9px -4px rgba(0,0,0,.07);
   margin: 0.75rem 1rem;
-  box-shadow: 0px 5px 18px rgba(0,0,0,0.1);
 }
 
 <div
@@ -55,9 +55,9 @@ exports[`the CardWrapper component should accept and render passed in styles 1`]
 exports[`the CardWrapper component should render 1`] = `
 .c0 {
   background: #FFFFFF;
-  border-radius: 16px;
+  border-radius: 5px;
+  box-shadow: 0 10px 9px -4px rgba(0,0,0,.07);
   margin: 0.75rem 1rem;
-  box-shadow: 0px 5px 18px rgba(0,0,0,0.1);
 }
 
 <div

@@ -33,7 +33,7 @@ exports[`the P component should render a loading state 1`] = `
 Array [
   .c0 {
   background: #A5A5A5;
-  border-radius: 16px;
+  border-radius: 5px;
   display: block;
   height: 1rem;
   width: 85%;
@@ -45,11 +45,11 @@ Array [
 }
 
 <mark
-    className="c0 show-loading-animation ra2rjz-1 c1 custom-placeholder"
+    className="c0 show-loading-animation ra2rjz-1 c1 line custom-placeholder"
   />,
   .c0 {
   background: #A5A5A5;
-  border-radius: 16px;
+  border-radius: 5px;
   display: block;
   height: 1rem;
   width: 100%;
@@ -61,11 +61,11 @@ Array [
 }
 
 <mark
-    className="c0 show-loading-animation ra2rjz-1 c1 custom-placeholder"
+    className="c0 show-loading-animation ra2rjz-1 c1 line custom-placeholder"
   />,
   .c0 {
   background: #A5A5A5;
-  border-radius: 16px;
+  border-radius: 5px;
   display: block;
   height: 1rem;
   width: 75%;
@@ -77,7 +77,7 @@ Array [
 }
 
 <mark
-    className="c0 show-loading-animation ra2rjz-1 c1 custom-placeholder"
+    className="c0 show-loading-animation ra2rjz-1 c1 line custom-placeholder"
   />,
 ]
 `;
@@ -86,7 +86,7 @@ exports[`the P component should render a loading state via context 1`] = `
 Array [
   .c0 {
   background: #A5A5A5;
-  border-radius: 16px;
+  border-radius: 5px;
   display: block;
   height: 1rem;
   width: 85%;
@@ -98,11 +98,11 @@ Array [
 }
 
 <mark
-    className="c0 show-loading-animation ra2rjz-1 c1 custom-placeholder"
+    className="c0 show-loading-animation ra2rjz-1 c1 line custom-placeholder"
   />,
   .c0 {
   background: #A5A5A5;
-  border-radius: 16px;
+  border-radius: 5px;
   display: block;
   height: 1rem;
   width: 100%;
@@ -114,11 +114,11 @@ Array [
 }
 
 <mark
-    className="c0 show-loading-animation ra2rjz-1 c1 custom-placeholder"
+    className="c0 show-loading-animation ra2rjz-1 c1 line custom-placeholder"
   />,
   .c0 {
   background: #A5A5A5;
-  border-radius: 16px;
+  border-radius: 5px;
   display: block;
   height: 1rem;
   width: 75%;
@@ -130,7 +130,7 @@ Array [
 }
 
 <mark
-    className="c0 show-loading-animation ra2rjz-1 c1 custom-placeholder"
+    className="c0 show-loading-animation ra2rjz-1 c1 line custom-placeholder"
   />,
 ]
 `;

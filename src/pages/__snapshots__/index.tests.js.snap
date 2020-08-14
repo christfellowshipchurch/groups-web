@@ -24,6 +24,15 @@ Array [
         Boom
       </a>
     </li>
+    <li>
+      <a
+        href="/my-groups"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+      >
+        My Groups
+      </a>
+    </li>
   </ul>,
 ]
 `;

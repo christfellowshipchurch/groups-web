@@ -56,11 +56,6 @@ exports[`the GroupCard component should render 1`] = `
 `;
 
 exports[`the GroupCard component should render a loading state  1`] = `
-.c4 {
-  padding: 1rem 1rem;
-  padding: 1.25rem;
-}
-
 .c5 {
   background: #A5A5A5;
   border-radius: 5px;
@@ -73,7 +68,20 @@ exports[`the GroupCard component should render a loading state  1`] = `
   border-radius: 5px;
   display: block;
   width: 100%;
-  padding: 100% 0 0 0;
+  padding-top: 100%;
+}
+
+.c8 {
+  background: #A5A5A5;
+  border-radius: 5px;
+  display: block;
+  width: 0.6875rem;
+  padding-top: 0.6875rem;
+}
+
+.c4 {
+  padding: 1rem 1rem;
+  padding: 1.25rem;
 }
 
 .c3 {
@@ -121,28 +129,19 @@ exports[`the GroupCard component should render a loading state  1`] = `
 }
 
 .c7 > .custom-placeholder {
+  margin: 0 0.3125rem 0 0;
+}
+
+.c7 > .custom-placeholder.line {
   width: 15%;
-}
-
-.c8 {
-  fill: salmon;
-  height: 11px;
-  margin: 0 0.125rem 0.125rem 0;
-  width: auto;
-}
-
-.c10 {
-  fill: salmon;
-  height: 11px;
-  margin: 0 0.125rem 0.125rem 0;
-  width: auto;
+  margin-bottom: 0;
 }
 
 <div
   className="c0 c1 o4tkys-0 c1"
 >
   <mark
-    className="c2 j5u57d-1 c3 custom-placeholder"
+    className="c2 show-loading-animation c3 media custom-placeholder"
     size="100%"
   />
   <div
@@ -154,25 +153,27 @@ exports[`the GroupCard component should render a loading state  1`] = `
     }
   >
     <mark
-      className="c5 show-loading-animation ra2rjz-1 c6 custom-placeholder"
+      className="c5 show-loading-animation ra2rjz-1 c6 line custom-placeholder"
     />
     <mark
-      className="c5 show-loading-animation ra2rjz-1 c6 custom-placeholder"
+      className="c5 show-loading-animation ra2rjz-1 c6 line custom-placeholder"
     />
     <hgroup
       className="c7"
     >
-      <Svgr
-        className="c8"
+      <mark
+        className="c8 media custom-placeholder"
+        size={0.6875}
       />
       <mark
-        className="c5 show-loading-animation ra2rjz-1 c9 custom-placeholder"
-      />
-      <Svgr
-        className="c10"
+        className="c5 show-loading-animation ra2rjz-1 c9 line custom-placeholder"
       />
       <mark
-        className="c5 show-loading-animation ra2rjz-1 c9 custom-placeholder"
+        className="c8 media custom-placeholder"
+        size={0.6875}
+      />
+      <mark
+        className="c5 show-loading-animation ra2rjz-1 c9 line custom-placeholder"
       />
     </hgroup>
   </div>
@@ -180,6 +181,12 @@ exports[`the GroupCard component should render a loading state  1`] = `
 `;
 
 exports[`the GroupCard component should render with a groupSize 1`] = `
+.c6 {
+  fill: #303030;
+  height: auto;
+  width: 0.6875rem;
+}
+
 .c3 {
   padding: 1rem 1rem;
   padding: 1.25rem;
@@ -204,7 +211,7 @@ exports[`the GroupCard component should render with a groupSize 1`] = `
   margin: initial;
 }
 
-.c7 {
+.c8 {
   color: #505050;
   font-size: 0.75rem;
   font-weight: 500;
@@ -236,14 +243,17 @@ exports[`the GroupCard component should render with a groupSize 1`] = `
 }
 
 .c5 > .custom-placeholder {
-  width: 15%;
+  margin: 0 0.3125rem 0 0;
 }
 
-.c6 {
+.c5 > .custom-placeholder.line {
+  width: 15%;
+  margin-bottom: 0;
+}
+
+.c7 {
   fill: salmon;
-  height: 11px;
   margin: 0 0.125rem 0.125rem 0;
-  width: auto;
 }
 
 <div
@@ -271,10 +281,10 @@ exports[`the GroupCard component should render with a groupSize 1`] = `
       className="c5"
     >
       <Svgr
-        className="c6"
+        className="c6 c7"
       />
       <h6
-        className="c7 toneu3-2 ctXJce"
+        className="c8 toneu3-2 ctXJce"
       >
         11
       </h6>
@@ -353,6 +363,12 @@ exports[`the GroupCard component should render with a label 1`] = `
 `;
 
 exports[`the GroupCard component should render with a location 1`] = `
+.c6 {
+  fill: #303030;
+  height: auto;
+  width: 0.6875rem;
+}
+
 .c3 {
   padding: 1rem 1rem;
   padding: 1.25rem;
@@ -377,7 +393,7 @@ exports[`the GroupCard component should render with a location 1`] = `
   margin: initial;
 }
 
-.c7 {
+.c8 {
   color: #505050;
   font-size: 0.75rem;
   font-weight: 500;
@@ -409,14 +425,17 @@ exports[`the GroupCard component should render with a location 1`] = `
 }
 
 .c5 > .custom-placeholder {
-  width: 15%;
+  margin: 0 0.3125rem 0 0;
 }
 
-.c6 {
+.c5 > .custom-placeholder.line {
+  width: 15%;
+  margin-bottom: 0;
+}
+
+.c7 {
   fill: salmon;
-  height: 11px;
   margin: 0 0.125rem 0.125rem 0;
-  width: auto;
 }
 
 <div
@@ -444,10 +463,10 @@ exports[`the GroupCard component should render with a location 1`] = `
       className="c5"
     >
       <Svgr
-        className="c6"
+        className="c6 c7"
       />
       <h6
-        className="c7 toneu3-2 ctXJce"
+        className="c8 toneu3-2 ctXJce"
       >
         Location Name
       </h6>

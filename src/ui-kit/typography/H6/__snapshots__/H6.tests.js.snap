@@ -35,7 +35,7 @@ exports[`the H6 component should render 1`] = `
 exports[`the H6 component should render a loading state 1`] = `
 .c0 {
   background: #A5A5A5;
-  border-radius: 16px;
+  border-radius: 5px;
   display: block;
   height: 1rem;
 }
@@ -46,14 +46,14 @@ exports[`the H6 component should render a loading state 1`] = `
 }
 
 <mark
-  className="c0 show-loading-animation ra2rjz-1 c1 custom-placeholder"
+  className="c0 show-loading-animation ra2rjz-1 c1 line custom-placeholder"
 />
 `;
 
 exports[`the H6 component should render a loading state via context 1`] = `
 .c0 {
   background: #A5A5A5;
-  border-radius: 16px;
+  border-radius: 5px;
   display: block;
   height: 1rem;
 }
@@ -64,14 +64,14 @@ exports[`the H6 component should render a loading state via context 1`] = `
 }
 
 <mark
-  className="c0 show-loading-animation ra2rjz-1 c1 custom-placeholder"
+  className="c0 show-loading-animation ra2rjz-1 c1 line custom-placeholder"
 />
 `;
 
 exports[`the H6 component should render a loading state with vertical rhythm (withMargins) 1`] = `
 .c0 {
   background: #A5A5A5;
-  border-radius: 16px;
+  border-radius: 5px;
   display: block;
   height: 1rem;
 }
@@ -82,7 +82,7 @@ exports[`the H6 component should render a loading state with vertical rhythm (wi
 }
 
 <mark
-  className="c0 show-loading-animation ra2rjz-1 c1 custom-placeholder"
+  className="c0 show-loading-animation ra2rjz-1 c1 line custom-placeholder"
 />
 `;
 

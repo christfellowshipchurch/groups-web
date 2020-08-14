@@ -18,7 +18,7 @@ exports[`the CardImage component should render a loading state (isLoading) 1`] =
   border-radius: 5px;
   display: block;
   width: 100%;
-  padding: 100% 0 0 0;
+  padding-top: 100%;
 }
 
 .c1 {
@@ -26,7 +26,7 @@ exports[`the CardImage component should render a loading state (isLoading) 1`] =
 }
 
 <mark
-  className="c0 j5u57d-1 c1 custom-placeholder"
+  className="c0 show-loading-animation j5u57d-1 c1 media custom-placeholder"
   size="100%"
 />
 `;

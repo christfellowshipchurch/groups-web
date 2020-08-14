@@ -18,11 +18,11 @@ exports[`the Image component should render a loading state (isLoading) 1`] = `
   border-radius: 5px;
   display: block;
   width: 100%;
-  padding: 100% 0 0 0;
+  padding-top: 100%;
 }
 
 <mark
-  className="c0 custom-placeholder"
+  className="c0 show-loading-animation media custom-placeholder"
   size="100%"
 />
 `;
