@@ -20,7 +20,7 @@ const theme = {
   },
   sizing: {
     baseUnit: (unit = 1) => `${unit}rem`,
-    baseBorderRadius: '16px',
+    baseBorderRadius: '5px',
     avatar: {
       small: '40',
       medium: '80',
@@ -28,7 +28,7 @@ const theme = {
     },
   },
   shadows: {
-    default: '0px 5px 18px rgba(0, 0, 0, 0.1)',
+    default: '0 10px 9px -4px rgba(0,0,0,.07)',
   },
   helpers: {
     /*
