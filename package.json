@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
+    "export": "next export",
     "generate-schema": "yarn apollo client:download-schema",
     "lint": "eslint ./src --ext .js",
     "fixlint": "eslint ./src --ext .js --fix",
