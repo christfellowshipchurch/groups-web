@@ -1,17 +1,19 @@
-import { setContext } from 'apollo-link-context';
+import { ApolloLink } from '@apollo/client';
 
-export default setContext((_, { headers }) => {
+const authLink = new ApolloLink((operation, forward) => {
   // get the authentication token from local storage if it exists
-  const token = localStorage.getItem(process.env.AUTH_TOKEN_KEY);
-  if (!token || token === '') {
-    return {};
-  }
+  const token =
+    typeof window === 'undefined'
+      ? ''
+      : localStorage.getItem(process.env.AUTH_TOKEN_KEY);
 
-  // return the headers to the context so httpLink can read them
-  return {
+  operation.setContext(({ headers }) => ({
     headers: {
+      authorization: token,
       ...headers,
-      authorization: token || '',
     },
-  };
+  }));
+  return forward(operation);
 });
+
+export default authLink;
