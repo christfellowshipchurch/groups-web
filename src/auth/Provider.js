@@ -7,7 +7,10 @@ import React, {
 } from 'react';
 
 const initialState = '';
-const localState = localStorage.getItem(process.env.AUTH_TOKEN_KEY);
+const localState =
+  typeof window === 'undefined'
+    ? ''
+    : localStorage.getItem(process.env.AUTH_TOKEN_KEY);
 const AuthContext = createContext();
 const useAuth = () => useContext(AuthContext);
 
@@ -20,9 +23,10 @@ const reducer = (token, newToken) => {
 };
 
 const AuthProvider = (props) => {
+  const [triggerLogIn, setTriggerLogIn] = useState(false);
   const [token, setToken] = useReducer(reducer, localState || initialState);
   const [isLoggedIn, setIsLoggedIn] = useState(!!token);
-  const [triggerLogIn, setTriggerLogIn] = useState(false);
+
   const logout = () => {
     setToken(null);
   };
@@ -32,20 +36,33 @@ const AuthProvider = (props) => {
     setIsLoggedIn(!!token);
   }, [token]);
 
+  let authValue = {};
+  if (typeof window === 'undefined') {
+    authValue = {
+      token: '',
+      setToken: () => {},
+      isLoggedIn: false,
+      logout: () => {},
+      triggerLogIn,
+      logIn: () => {},
+      hideLogIn: () => {},
+    };
+  } else {
+    authValue = {
+      token,
+      setToken,
+      isLoggedIn,
+      logout,
+      triggerLogIn,
+      logIn: () => {
+        if (!isLoggedIn) setTriggerLogIn(true);
+      },
+      hideLogIn: () => setTriggerLogIn(false),
+    };
+  }
+
   return (
-    <AuthContext.Provider
-      value={{
-        token,
-        setToken,
-        isLoggedIn,
-        logout,
-        triggerLogIn,
-        logIn: () => {
-          if (!isLoggedIn) setTriggerLogIn(true);
-        },
-        hideLogIn: () => setTriggerLogIn(false),
-      }}
-    >
+    <AuthContext.Provider value={authValue}>
       {props.children}
     </AuthContext.Provider>
   );
