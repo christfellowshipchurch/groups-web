@@ -1,5 +1,5 @@
 import React from 'react';
-import { useQuery } from '@apollo/react-hooks';
+import { useQuery } from '@apollo/client';
 
 import { withApollo } from '../../lib/apollo';
 import { H1, H4 } from '../../ui-kit';
