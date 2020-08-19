@@ -1,9 +1,10 @@
 import React from 'react';
 import App from 'next/app';
 import Head from 'next/head';
-import { ApolloProvider } from '@apollo/react-hooks';
+import { ApolloProvider } from '@apollo/client';
 import PropTypes from 'prop-types';
 
+import { useAuth, AuthContext } from '../auth';
 import createApolloClient from '../createApolloClient';
 
 // On the client, we store the Apollo Client in the following variable.
@@ -16,7 +17,7 @@ let globalApolloClient = null;
  * @param  {NormalizedCacheObject} initialState
  * @param  {NextPageContext} ctx
  */
-const initApolloClient = (initialState, ctx) => {
+const initApolloClient = (initialState, ctx, logout) => {
   // Make sure to create a new client for every server-side request so that data
   // isn't shared between connections (which would be bad)
   if (typeof window === 'undefined') {
@@ -25,7 +26,7 @@ const initApolloClient = (initialState, ctx) => {
 
   // Reuse client on the client-side
   if (!globalApolloClient) {
-    globalApolloClient = createApolloClient(initialState, ctx);
+    globalApolloClient = createApolloClient(initialState, ctx, logout);
   }
 
   return globalApolloClient;
@@ -84,13 +85,14 @@ const initOnContext = (ctx) => {
  */
 const withApollo = ({ ssr = false } = {}) => (PageComponent) => {
   const WithApollo = ({ apolloClient, apolloState, ...pageProps }) => {
+    const { logout } = useAuth(AuthContext);
     let client;
     if (apolloClient) {
       // Happens on: getDataFromTree & next.js ssr
       client = apolloClient;
     } else {
       // Happens on: next.js csr
-      client = initApolloClient(apolloState, undefined);
+      client = initApolloClient(apolloState, undefined, logout);
     }
 
     return (
@@ -137,9 +139,11 @@ const withApollo = ({ ssr = false } = {}) => (PageComponent) => {
         // Only if dataFromTree is enabled
         if (ssr && AppTree) {
           try {
-            // Import `@apollo/react-ssr` dynamically.
+            // Import `@apollo/client/react/ssr` dynamically.
             // We don't want to have this in our client bundle.
-            const { getDataFromTree } = await import('@apollo/react-ssr');
+            const { getDataFromTree } = await import(
+              '@apollo/client/react/ssr'
+            );
 
             // Since AppComponents and PageComponents have different context types
             // we need to modify their props a little.

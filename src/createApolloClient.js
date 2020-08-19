@@ -1,16 +1,24 @@
-import { ApolloClient } from 'apollo-client';
-import { InMemoryCache } from 'apollo-cache-inmemory';
+import { ApolloClient, from } from '@apollo/client';
+import { InMemoryCache } from '@apollo/client/cache';
 import { HttpLink } from 'apollo-link-http';
 
-function createApolloClient(initialState, ctx) {
+import { authLink, authErrorLink } from './auth';
+
+function createApolloClient(initialState, ctx, logout) {
   // The `ctx` (NextPageContext) will only be present on the server.
   // use it to extract auth headers (ctx.req) or similar.
-  return new ApolloClient({
-    ssrMode: Boolean(ctx),
-    link: new HttpLink({
+  const link = from([
+    authLink,
+    authErrorLink(logout),
+    new HttpLink({
       uri: process.env.API, // Server URL (must be absolute)
       credentials: 'same-origin', // Additional fetch() options like `credentials` or `headers`
     }),
+  ]);
+
+  return new ApolloClient({
+    ssrMode: Boolean(ctx),
+    link,
     cache: new InMemoryCache().restore(initialState),
   });
 }

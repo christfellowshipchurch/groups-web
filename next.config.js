@@ -10,6 +10,7 @@ module.exports = {
   env: {
     API: process.env.API,
     TEST: process.env.TEST,
+    AUTH_TOKEN_KEY: process.env.AUTH_TOKEN_KEY,
   },
   webpack: (config) => {
     config.module.rules.push({
