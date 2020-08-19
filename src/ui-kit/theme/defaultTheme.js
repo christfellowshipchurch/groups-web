@@ -2,25 +2,33 @@
 
 const theme = {
   colors: {
-    primary: 'salmon',
+    primary: '#00aeef',
+    secondary: '#000',
+    alert: '#d52158',
+    success: '#1ec27f',
+    warning: '#e09541',
+    white: '#ffffff',
+    black: '#000000',
     text: {
       primary: '#303030',
       secondary: '#505050',
+      link: '#00aeef',
     },
     background: {
       paper: '#FFFFFF',
+      screen: '#f6f6f6',
       inactive: '#A5A5A5',
     },
   },
   typography: {
     baseFontSize: 1,
-    baseLineHeight: 1.5,
+    baseLineHeight: 1.44,
     fontFamily:
       'Inter, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif',
   },
   sizing: {
     baseUnit: (unit = 1) => `${unit}rem`,
-    baseBorderRadius: '5px',
+    baseBorderRadius: '.3rem',
     avatar: {
       small: '40',
       medium: '80',
